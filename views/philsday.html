@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>University of Iowa Foundation</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/football-legacy.css" />
+    <link rel="stylesheet" href="/stylesheets/philsday.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/reload-client.js"></script>
+    <script src="/javascripts/vendor/requirejs/require.js" data-main="/javascripts/main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="row">
+            <div class="twelve columns">
+                <div style="height:20px; float:left; margin-top:4px; margin-right:7px;">
+                    <img src="http://www.uifoundation.org/wp-content/themes/common_3_home/images/dome.png" alt="University of Iowa Foundation">
+                </div>
+                <h1 class="left"> <a href="http://www.uifoundation.org/">University of Iowa Foundation</a> 
+                </h1> <a class="reveal_menu show-for-small" style="float:right;" href="#" data-reveal-id="global_mobile">›</a> 
+                <ul class="global_nav right hide-for-small">
+                    <li id="menu-item-279" class="menu-item"> <a href="/campaign">Campaign</a> 
+                    </li>
+                    <li id="menu-item-280" class="menu-item"> <a href="/facultystaff">Faculty &amp; Staff</a> 
+                    </li>
+                    <li id="menu-item-281" class="menu-item"> <a href="/football-legacy">Football Legacy</a> 
+                    </li>
+                    <li id="menu-item-405" class="menu-item"> <a href="/grand-challenges">Grand Challenges</a> 
+                    </li>
+                    <li id="menu-item-405" class="menu-item"> <a href="/inspire">Inspire</a> 
+                    </li>
+                    <li id="menu-item-405" class="menu-item"> <a href="/one">One</a> 
+                    </li>
+                    <li id="menu-item-405" class="menu-item"> <a href="/philsday">Phils Day</a> 
+                    </li>
+                    <li id="menu-item-405" class="menu-item"> <a href="/philwashere">Phils Was Here</a> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <!--BEGIN HEADER-->
+        <header id="global">
+            <!--ENCLOSURE-->
+            <div class="enclosure">
+                <div class="navigation">
+                    <div class="row">
+                        <div class="twelve columns">
+                            <div style="height:20px; float:left; margin-top:4px; margin-right:7px;">
+                                <img src="http://www.uifoundation.org/campaign/wp-content/themes/campaign_site/images/dome.png" alt="University of Iowa Foundation">
+                            </div>
+                            <h1 class="left"> <a href="http://www.uifoundation.org/">University of Iowa Foundation</a> 
+                            </h1> <a class="reveal_menu show-for-small" style="float:right;" href="#" data-reveal-id="global_mobile">›</a> 
+                            <ul class="global_nav right hide-for-small">
+                                <li id="menu-item-279" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-279"> <a href="http://www.uifoundation.org/about">About the Foundation</a> 
+                                </li>
+                                <li id="menu-item-280" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-280"> <a href="http://www.uifoundation.org/thanks">Recognition and Thanks</a> 
+                                </li>
+                                <li id="menu-item-281" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-281"> <a href="http://www.uifoundation.org/ways">Ways to Give</a> 
+                                </li>
+                                <li id="menu-item-405" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-405"> <a href="http://www.uifoundation.org/careers">Careers</a> 
+                                </li>
+                                <li id="menu-item-379" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-379"> <a href="http://www.givetoiowa.org">Give Now</a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--END ENCLOSURE-->
+                <!--GLOBAL MENU ACTIVATION FOR MOBILE-->
+                <div class="show-for-small">
+                    <a class="sidebar-button" id="sidebarButton" href="#sidebar">
+                        <span style="line-height:30px;">☰</span>
+                    </a>
+                </div>
+                <!--END GLOBAL MENU ACTIVATION FOR MOBILE-->
+            </div>
+        </header>
+        <div id="wrapper">
+            <section class="cart_breadcrumbs">
+                <!--CART ENCLOSURE-->
+                <div class="cart_enclosure">
+                    <div class="row">
+                        <div class="twelve columns">
+                            <p class="left"><a href="http://www.uifoundation.org/philsday" title="Phil's Day">Phil's Day</a> 
+                            </p>
+                            <!--PAGE NAVIGATION-->
+                            <div class="right">
+                                <nav class="page_nav_options hide-for-small">
+                                    <ul>
+                                        <li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5"><a href="http://www.facebook.com/philwashere">Phil on Facebook</a> 
+                                        </li>
+                                        <li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6"><a href="http://www.uifoundation.org/philwashere/philsfacts.shtml">Phil’s Facts</a> 
+                                        </li>
+                                        <li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><a href="http://www.uifoundation.org/philwashere">Phil Was Here</a> 
+                                        </li>
+                                    </ul>
+                                    <!--<ul>                                      <li><a href="#">Campaign Priorities</a></li>                                      <li><a href="#">Scholarships</a></li>                                  </ul>-->
+                                </nav>
+                            </div>
+                            <!--END PAGE NAVIGATION-->
+                            <!--CART OPTIONS                          <div class="right">                          <a class="cart_amount">Total: $1000</a>                            <a class="small button checkout" href="#">Checkout</a>                          </div>                           END CART OPTIONS--></div>
+                    </div>
+                </div>
+            </section>
+            <section role="main">
+                <div class="row">
+                    <div class="twelve columns">
+                        <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fphilwashere&amp;send=false&amp;layout=button_count&amp;width=125&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21&amp;appId=202859216492760" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:125px; margin-top:10px; height:21px;" allowtransparency="true"></iframe>
+                        <div class="right" style="margin-top:10px; width:80px;">
+                            <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/tweet_button.1387492107.html#_=1387778544531&amp;count=horizontal&amp;hashtags=philsday&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fwww.uifoundation.org%2Fphilsday%2F2013%2F05%2F08%2Fhello-world%2F&amp;related=philwashere&amp;size=m&amp;text=Hello%20world!%20%7C%20Phil's%20Day&amp;url=http%3A%2F%2Fwww.uifoundation.org%2Fphilsday%2F2013%2F05%2F08%2Fhello-world%2F&amp;via=philwashere" class="twitter-share-button twitter-tweet-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 107px; height: 20px;"></iframe>
+                        </div>
+                        <script>
+                        ! function(d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0],
+                                p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + '://platform.twitter.com/widgets.js';
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, 'script', 'twitter-wjs');
+                        </script>
+                    </div>
+                </div>
+                <!--FEATURED ITEMS-->
+                <section id="phils_day">
+                    <!--BEGIN MAIN CONTENT-->
+                    <div class="row">
+                        <!--HOME SECTIONS-->
+                        <!--BOX 1-->
+                        <div class="eight columns">
+                            <div class="info_box">
+                                <img src="http://www.uifoundation.org/philsday/wp-content/themes/phils_day/images/old_cap.jpg">
+                                <div class="info_box_text">
+                                    <h3><a href="http://www.uifoundation.org/philsday/archive/schedule-of-events-2013/">Phil's Day – May 2!</a> 
+                                    </h3>
+                                    <p>We're tagging campus! Stickers, posters, and gold ribbons will highlight buildings and programs made possible by donations, and represent people who give, or benefit from private support.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--BOX 2-->
+                        <div class="four columns">
+                            <div class="info_box">
+                                <img src="http://www.uifoundation.org/philsday/wp-content/themes/phils_day/images/janice.jpg">
+                                <div class="info_box_text">
+                                    <h3><a href="http://www.uifoundation.org/philsday/archive/life-with-phil-2013/">Life with Phil</a> 
+                                    </h3>
+                                    <p>UI alumna Janice Ellig will share her professional and philanthropic journey in a Phil's Day talk.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--BOX 3-->
+                        <div class="four columns">
+                            <div class="info_box">
+                                <img src="http://www3.uifoundation.org/philsday/wp-content/uploads/2013/05/instagram_photo.jpg">
+                                <div class="info_box_text">
+                                    <h3><a href="http://www.uifoundation.org/philwashere/instagram/">Instagram Challenge</a> 
+                                    </h3>
+                                    <p>View entries to the #philwashere Instagram Challenge</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--BOX 4-->
+                        <div class="eight columns">
+                            <div class="info_box">
+                                <img src="http://www3.uifoundation.org/philsday/wp-content/uploads/2013/05/janice_philsday.png">
+                                <div class="info_box_text">
+                                    <h3><a href="http://www.flickr.com/photos/uifoundation/sets/72157633410663456/">Phil's Day 2013 Recap</a> 
+                                    </h3>
+                                    <p>Check out photos from last year's Phil's Day.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--BOX 5-->
+                        <div class="four columns">
+                            <div class="info_box">
+                                <img src="http://www.uifoundation.org/philsday/wp-content/themes/phils_day/images/collegiate.jpg">
+                                <div class="info_box_text">
+                                    <h3><a href="http://www.uifoundation.org/philsday/archive/collegiate-information-2013/">Collegiate Information</a> 
+                                    </h3>
+                                    <p>More information coming soon!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--BOX 6-->
+                        <div class="four columns">
+                            <div class="info_box" style="color:white">
+                                <div>
+                                    <img style="float:left; margin: 5px 5px 5px 5px" src="http://pbs.twimg.com/profile_images/491464061/Phil_Was_Here_black_on_gold_poster_normal.png"> <a href="https://www.twitter.com/philwashere" target="_blank">@philwashere</a> 
+                                    <br> <i>"Philanthropy in action at The University of Iowa"</i> 
+                                    <hr>
+                                    <div style="padding:0 5px 0 5px">
+                                        <ul class="pages" style="list-style:none">
+                                            <li>Students who still have finals <a href="http://twitter.com/uiowa" target="_blank">@uiowa</a> GOOD LUCK!
+                                                <br>
+                                                <span class="0_tweet_date">4 days ago</span>
+                                                <br><a href="http://twitter.com/intent/retweet?tweet_id=413517131821486080" target="_blank">RT</a> | <a href="http://twitter.com/intent/favorite?tweet_id=413517131821486080" target="_blank">Favorite</a> 
+                                                <hr>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <script type="text/javascript">
+                                    </script>
+                                </div>
+                                <div class="info_box_text">
+                                    <h3><a href="http://www.twitter.com/philwashere" target="_blank">Follow Phil's Day on Twitter</a> 
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!--BOX 7-->
+                        <div class="four columns">
+                            <div class="info_box">
+                                <img src="http://www.uifoundation.org/philsday/wp-content/themes/phils_day/images/sticker.jpg">
+                                <div class="info_box_text">
+                                    <h3><a href="#" data-reveal-id="modalSteps">Wear your sticker, win a prize!</a> 
+                                    </h3>
+                                    <p>The Phil's Day prize patrol will be on the lookout!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END FEATURED CONTENT-->
+                </section>
+            </section>
+        </div>
+        <div id="footer">
+            <!--BREADCRUMBS/TOP-->
+            <section class="footer_header">
+                <div class="row">
+                    <div class="twelve columns">
+                        <p><a href="http://www.uifoundation.org/">Home</a> / Phil's Day
+                            <a href="http://www.uifoundation.org/philsday"></a>/ <a href="http://www.uifoundation.org/philsday/category/uncategorized/" title="View all posts in Uncategorized">Uncategorized</a> / Hello world!</p>
+                    </div>
+                </div>
+            </section>
+            <!--CAMPAIGN/SEARCH-->
+            <section class="search_campaign">
+                <div class="row">
+                    <!--CAMPAIGN-->
+                    <div class="six columns">
+                        <a href="http://www3.uifoundation.org/campaign/">
+                            <img src="http://www.uifoundation.org/philsday/wp-content/themes/phils_day/images/fifm.png" alt="For Iowa. Forever More." style="border:0;">
+                        </a>
+                    </div>
+                    <!--SEARCH-->
+                    <div class="six columns">
+                        <!-- Postfix action -->
+                        <div class="row collapse">
+                            <div class="ten mobile-three columns">
+                                <!--Search results sent to /stories page using goolge custom search -->
+                                <form action="http://www.uifoundation.org/search/" id="cse-search-box">
+                                    <input type="hidden" name="cx" value="004292187385298253618:rfbc288j0ps">
+                                    <input type="hidden" name="ie" value="UTF-8">
+                                    <input class="search" type="text" name="q" placeholder="Search the UI Foundation">
+                                </form>
+                            </div>
+                            <div class="two mobile-one columns">
+                                <input class="button expand postfix" type="submit" name="sa" value="Search">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--SITE DESTINATIONS-->
+            <!--Footer links from RSS feed. Colleges, Programs, Ways to Give, Communication Options, and Connect with Us columns/links included-->
+            <!--Bottom Section with Contact Us, Private Poilicy, Trouble w/site, and Questions links included in footer-links.php as well -->
+            <section class="site_map">
+                <div class="row">
+                    <div class="three columns">
+                        <h4>Colleges</h4>
+                        <nav>
+                            <ul>
+                                <li> <a href="http://www.uifoundation.org/business/" title="Tippie College of Business">                                              Tippie College of Business                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/dentistry/" title="College of Dentistry">                                              College of Dentistry                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/education/" title="College of Education">                                              College of Education                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/engineering/" title="College of Engineering">                                              College of Engineering                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/law/" title="College of Law">                                              College of Law                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/liberal-arts/" title="College of Liberal Arts &amp; Sciences">                                              College of Liberal Arts &amp; Sciences                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/medicine/" title="UI Carver College of Medicine">                                              UI Carver College of Medicine                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/nursing/" title="College of Nursing">                                              College of Nursing                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/pharmacy/" title="College of Pharmacy">                                              College of Pharmacy                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/public-health/" title="College of Public Health">                                              College of Public Health                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/graduate/" title="Graduate College">                                              Graduate College                                        </a> 
+                                </li>
+                            </ul>
+                        </nav>
+                        <h4>Campaigns</h4>
+                        <nav>
+                            <ul>
+                                <li> <a href="http://www.uifoundation.org/campaign/" title="For Iowa. Forever More.">                                              For Iowa. Forever More.                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/iowafirst/" title="Iowa First">                                              Iowa First                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/artscampaign/" title="Arts and Minds">                                              Arts and Minds                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/iowainspired/" title="Iowa Inspired">                                              Iowa Inspired                                        </a> 
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="three columns">
+                        <h4>Programs</h4>
+                        <nav>
+                            <ul>
+                                <li> <a href="http://www.uifoundation.org/athletics/" title="Athletics">                                              Athletics                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/hancher/" title="Hancher">                                              Hancher                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/cancer/" title="Holden Comprehensive Cancer Center">                                              Holden Comprehensive Cancer Center                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/international/" title="International Programs">                                              International Programs                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/parents/" title="Parents Fund for Student Support">                                              Parents Fund for Student Support                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/museums/" title="Pentacrest Museums">                                              Pentacrest Museums                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/childrens-hospital/" title="UI Children's Hospital">                                              UI Children's Hospital                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/hospitals/" title="UI Hospitals and Clinics">                                              UI Hospitals and Clinics                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/uima/" title="UI Museum of Art">                                              UI Museum of Art                                        </a> 
+                                </li>
+                            </ul>
+                        </nav>
+                        <h4>University</h4>
+                        <nav>
+                            <ul>
+                                <li> <a href="http://www.uifoundation.org/impact/" title="Iowa Impact Fund">                                              Iowa Impact Fund                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/libraries/" title="UI Libraries">                                              UI Libraries                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/student-aid/" title="Student Success">                                              Student Success                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/uiaa/" title="UI Alumni Association">                                              UI Alumni Association                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/grand-challenges/" title="Grand Challenges Initiative">                                              Grand Challenges Initiative                                        </a> 
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="three columns">
+                        <h4>Ways to give</h4>
+                        <nav>
+                            <ul>
+                                <li> <a href="http://www.givetoiowa.org/all/" title="A-Z List of all areas">                                              A-Z List of all areas                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/ways/annual-giving/" title="Annual Giving">                                              Annual Giving                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/planned-giving/" title="Planned Giving">                                              Planned Giving                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/ways/cfr/" title="Corporate and Foundation Relations">                                              Corporate and Foundation Relations                                        </a> 
+                                </li>
+                            </ul>
+                        </nav>
+                        <h4>Contact Us</h4>
+                        <nav>
+                            <ul>
+                                <li> <a href="http://www.uifoundation.org/press" title="Press center">                                              Press center                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/careers/" title="Careers at the foundation">                                              Careers at the foundation                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/contact/staff-directory/" title="Staff directory">                                              Staff directory                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/forms/update-your-contact-information/" title="Update your information">                                              Update your information                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/forms/register-email-preferences/" title="Manage your email preferences">                                              Manage your email preferences                                        </a> 
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--ADDRESS-->
+                    <div class="three columns">
+                        <h4>The University of Iowa Foundation</h4>
+                        <p>P.O. Box 4550
+                            <br>Iowa City, Iowa 52244
+                            <br>(319) 335-3305 / (800) 648-6973
+                            <br> <a href="http://www.uifoundation.org/wp-content/uploads/2013/12/Driving+Directions.pdf">Directions</a>
+                        </p>
+                        <p><a href="http://www.uiowa.edu" target="_blank">The University of Iowa</a>
+                        </p>
+                        <h4>Connect with us</h4>
+                        <nav>
+                            <ul>
+                                <li> <a href="http://facebook.com/givetoiowa" title="Facebook">                                              Facebook                                        </a> 
+                                </li>
+                                <li> <a href="http://twitter.com/givetoiowa" title="Twitter">                                              Twitter                                        </a> 
+                                </li>
+                                <li> <a href="http://vimeo.com/givetoiowa" title="Vimeo">                                              Vimeo                                        </a> 
+                                </li>
+                                <li> <a href="http://www.youtube.com/user/givetoiowa" title="YouTube">                                              YouTube                                        </a> 
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+            <section class="bottom">
+                <div class="row">
+                    <div class="twelve columns">
+                        <ul>
+                            <li>
+                                <span class="footer_copy">© 1996-2013 University of Iowa Foundation</span>
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/contact/" title="Contact Us">Contact Us</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/privacy/" title="Privacy Policy">Privacy Policy</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/about/site" title="Trouble viewing this site?">Trouble viewing this site?</a> 
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="twelve columns">
+                        <p>NOTICE: The State University of Iowa Foundation is a 501(c)(3) tax-exempt organization soliciting tax-deductible private contributions for the benefit of the University of Iowa. Please review its <a href="/about/disclosure">full disclosure statement</a>.</p>
+                    </div>
+                </div>
+            </section>
+            <!--END FOOTER-->
+        </div>
+    </div>
+</body>
+
+</html>

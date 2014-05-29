@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>University of Iowa Foundation</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/philwashere.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/reload-client.js"></script>
+    <script src="/javascripts/vendor/requirejs/require.js" data-main="/javascripts/main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="row">
+            <div class="twelve columns">
+                <div style="height:20px; float:left; margin-top:4px; margin-right:7px;">
+                    <img src="http://www.uifoundation.org/wp-content/themes/common_3_home/images/dome.png" alt="University of Iowa Foundation">
+                </div>
+                <h1 class="left">                      <a href="http://www.uifoundation.org/">University of Iowa Foundation</a>                  </h1>  <a class="reveal_menu show-for-small" style="float:right;" href="#" data-reveal-id="global_mobile">›</a> 
+                <ul class="global_nav right hide-for-small">
+                    <li id="menu-item-279" class="menu-item"> <a href="/campaign">Campaign</a> 
+                    </li>
+                    <li id="menu-item-280" class="menu-item"> <a href="/facultystaff">Faculty &amp; Staff</a> 
+                    </li>
+                    <li id="menu-item-281" class="menu-item"> <a href="/football-legacy">Football Legacy</a> 
+                    </li>
+                    <li id="menu-item-405" class="menu-item"> <a href="/grand-challenges">Grand Challenges</a> 
+                    </li>
+                    <li id="menu-item-405" class="menu-item"> <a href="/inspire">Inspire</a> 
+                    </li>
+                    <li id="menu-item-405" class="menu-item"> <a href="/one">One</a> 
+                    </li>
+                    <li id="menu-item-405" class="menu-item"> <a href="/philsday">Phils Day</a> 
+                    </li>
+                    <li id="menu-item-405" class="menu-item"> <a href="/philwashere">Phils Was Here</a> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <!--BEGIN HEADER-->
+        <header id="global">
+            <!--ENCLOSURE-->
+            <div class="enclosure">
+                <div class="navigation">
+                    <div class="row">
+                        <div class="twelve columns">
+                            <div style="height:20px; float:left; margin-top:4px; margin-right:7px;">
+                                <img src="http://www.uifoundation.org/campaign/wp-content/themes/campaign_site/images/dome.png" alt="University of Iowa Foundation">
+                            </div>
+                            <h1 class="left">                                  <a href="http://www.uifoundation.org/">University of Iowa Foundation</a>                              </h1>  <a class="reveal_menu show-for-small" style="float:right;" href="#" data-reveal-id="global_mobile">›</a> 
+                            <ul class="global_nav right hide-for-small">
+                                <li id="menu-item-279" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-279"> <a href="http://www.uifoundation.org/about">About the Foundation</a> 
+                                </li>
+                                <li id="menu-item-280" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-280"> <a href="http://www.uifoundation.org/thanks">Recognition and Thanks</a> 
+                                </li>
+                                <li id="menu-item-281" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-281"> <a href="http://www.uifoundation.org/ways">Ways to Give</a> 
+                                </li>
+                                <li id="menu-item-405" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-405"> <a href="http://www.uifoundation.org/careers">Careers</a> 
+                                </li>
+                                <li id="menu-item-379" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-379"> <a href="http://www.givetoiowa.org">Give Now</a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--END ENCLOSURE-->
+                <!--GLOBAL MENU ACTIVATION FOR MOBILE-->
+                <div class="show-for-small">
+                    <a class="sidebar-button" id="sidebarButton" href="#sidebar"> <span style="line-height:30px;">☰</span> 
+                    </a>
+                </div>
+                <!--END GLOBAL MENU ACTIVATION FOR MOBILE-->
+            </div>
+        </header>
+        <div class="row container">
+            <!--MAIN IMAGE-->
+            <div class="row featured_header">
+                <div class="twelve columns">
+                    <div id="main_image_holder">
+                        <div id="featuredContent" class="target-slides" style="display:none;">
+                            <!--SLIDE-->
+                            <div>
+                                <div class="slider_content">
+                                    <h2>National Philanthropy Day</h2>  <a href="http://www.facebook.com/philwashere/">Learn more</a> 
+                                </div>
+                                <img src="http://www.uifoundation.org/philwashere/wp-content/uploads/sites/60/2013/11/pwh_philanthropy_day_2013.png" class="support tag close">
+                            </div>
+                            <!--SLIDE-->
+                            <div>
+                                <div class="slider_content">
+                                    <h2>Meet our SPG Members</h2>  <a href="http://www.uifoundation.org/philwashere/student-philanthropy-group/members/">Learn more</a> 
+                                </div>
+                                <img src="http://www.uifoundation.org/philwashere/wp-content/uploads/sites/60/2013/11/phil-spg.jpg" class="support tag close">
+                            </div>
+                            <!--SLIDE-->
+                            <div>
+                                <div class="slider_content">
+                                    <h2>Learn about Phil's Day</h2>  <a href="http://www.uifoundation.org/philsday">Learn more</a> 
+                                </div>
+                                <img src="http://www.uifoundation.org/philwashere/wp-content/uploads/sites/60/2013/11/phils-day.jpg" class="support tag close">
+                            </div>
+                            <!--SLIDE-->
+                            <div>
+                                <div class="slider_content">
+                                    <h2>Brush up on your phil's facts</h2>  <a href="http://www.uifoundation.org/philwashere/phils-facts-2/">Learn more</a> 
+                                </div>
+                                <img src="http://www.uifoundation.org/philwashere/wp-content/uploads/sites/60/2013/11/phil-facts.jpg" class="support tag close">
+                            </div>
+                            <!--SLIDE-->
+                            <div>
+                                <div class="slider_content">
+                                    <h2>President's Block Party</h2>  <a href="http://oniowa.uiowa.edu">Learn more</a> 
+                                </div>
+                                <img src="http://www.uifoundation.org/wp-content/themes/phil_foundation/images/presidents-block-party.jpg" class="support tag close">
+                            </div>
+                            <!--SLIDE-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!--RIGHT COLUMNS-->
+                <div class="nine columns">
+                    <h2>Phil Was Here</h2> 
+                    <p>Phil stands for philanthropy and represents everyone who supports the University of Iowa by making a contribution, as well as everyone who benefits from those gifts.</p>
+                    <!--SITE LEADE INS-->
+                    <!--RIGHT COLUMNS-->
+                    <div class="six columns home_widget">
+                        <h4>Student Philanthropy Group</h4> 
+                        <div class="textwidget">
+                            <p>
+                                <a href="http://www.uifoundation.org/philwashere/student-philanthropy-group/">
+                                    <img src="http://www.uifoundation.org/philwashere/wp-content/uploads/sites/60/2013/11/spg-teaser.jpg">
+                                </a>
+                            </p>
+                            <p><a href="http://www.uifoundation.org/philwashere/student-philanthropy-group/">Help spread the word about Phil.</a> 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="six columns home_widget">
+                        <h4>Who is Phil?</h4> 
+                        <div class="textwidget">
+                            <p>
+                                <a href="http://www.uifoundation.org/philwashere/about/">
+                                    <img src="http://www.uifoundation.org/philwashere/wp-content/uploads/sites/60/2013/11/phil-whosphil.jpg">
+                                </a>
+                            </p>
+                            <p><a href="http://www.uifoundation.org/philwashere/about/">Find out why Phil is a big name on the UI campus.</a> 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="six columns home_widget">
+                        <h4>Phil’s Facts Quiz</h4> 
+                        <div class="textwidget">
+                            <p>
+                                <a href="http://www.uifoundation.org/philwashere/phils-facts-2/">
+                                    <img src="http://www3.uifoundation.org/philwashere/wp-content/uploads/2012/11/phils_facts_enter.jpg">
+                                </a>
+                            </p>
+                            <p><a href="http://www.uifoundation.org/philwashere/phils-facts-2/">Test your Phil know-how</a> 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="six columns home_widget">
+                        <h4>Phil’s Day</h4> 
+                        <div class="textwidget">
+                            <p>
+                                <a href="http://www.uifoundation.org/philsday/">
+                                    <img src="http://www.uifoundation.org/philwashere/wp-content/uploads/sites/60/2013/05/phil_tag.jpg">
+                                </a>
+                            </p>
+                            <p><a href="http://www.uifoundation.org/philsday/">Learn more about Phil's special day.</a> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="three columns">
+                    <!--<h4>@PHILWASHERE</h4>                  <small>Like the latest updates? Follow Phil on Twitter!</small>                  <div class="tweet">                                    </div> -->
+                    <div class="panel">
+                        <h4>Twitter</h4> 
+                        <img style="float:left; margin: 0 5px 0 0" src="http://pbs.twimg.com/profile_images/491464061/Phil_Was_Here_black_on_gold_poster_normal.png"> <a href="https://www.twitter.com/philwashere" target="_blank">@philwashere</a> 
+                        <br> <i>"Philanthropy in action at The University of Iowa"</i> 
+                        <hr>
+                        <ul class="pages">
+                            <li>Students who still have finals <a href="http://twitter.com/uiowa" target="_blank">@uiowa</a> GOOD LUCK!
+                                <br> <span class="0_tweet_date"></span> 
+                                <br><a href="http://twitter.com/intent/retweet?tweet_id=413517131821486080" target="_blank">RT</a> | <a href="http://twitter.com/intent/favorite?tweet_id=413517131821486080" target="_blank">Favorite</a> 
+                                <hr>
+                            </li>
+                            <li>Head over to our Facebook page to entering the Phil's Fact Quiz for your chance to win some yummy <a href="http://twitter.com/YotopiaIowaCity" target="_blank">@YotopiaIowaCity</a>  <a href="http://twitter.com/search?q=%23PhilWasHere"
+                                target="_blank">#PhilWasHere</a> 
+                                <br> <span class="1_tweet_date"></span> 
+                                <br><a href="http://twitter.com/intent/retweet?tweet_id=410082384520814593" target="_blank">RT</a> | <a href="http://twitter.com/intent/favorite?tweet_id=410082384520814593" target="_blank">Favorite</a> 
+                                <hr>
+                            </li>
+                            <li>#GivingTuesday is today. Join the trend and give something more. Celebrate generosity. <a href="http://twitter.com/search?q=%23Philwashere" target="_blank">#Philwashere</a>  <a href="http://twitter.com/search?q=%23uiowa" target="_blank">#uiowa</a> 
+                                <a
+                                href="http://twitter.com/search?q=%23givetoiowa" target="_blank">#givetoiowa</a>
+                                    <br> <span class="2_tweet_date"></span> 
+                                    <br><a href="http://twitter.com/intent/retweet?tweet_id=407917213673197569" target="_blank">RT</a> | <a href="http://twitter.com/intent/favorite?tweet_id=407917213673197569" target="_blank">Favorite</a> 
+                                    <hr>
+                            </li>
+                        </ul>
+                        <script type="text/javascript">
+                            jQuery(document).ready(function() {
+                                moment.lang('en');
+                                var date_val_0 = 1387425141;
+                                var date_0 = moment.unix(date_val_0).fromNow();
+                                jQuery(".0_tweet_date").html(date_0);
+                                var date_val_1 = 1386606234;
+                                var date_1 = moment.unix(date_val_1).fromNow();
+                                jQuery(".1_tweet_date").html(date_1);
+                                var date_val_2 = 1386090017;
+                                var date_2 = moment.unix(date_val_2).fromNow();
+                                jQuery(".2_tweet_date").html(date_2);
+                            });
+                        </script>
+                    </div>
+                    <div class="flickr-slider panel">
+                        <h4>We Are Phil Photos</h4> 
+                        <ul class="slider target" style="display:none;">
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8117/8705337008_2065803349_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8267/8704213709_cc8693413e_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8394/8705337050_30f4fffac2_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8412/8705337118_dc6b88bf57_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8274/8704173417_d201cc7562_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8547/8705296690_890d19816f_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8262/8704173459_df0a3b06d0_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8393/8704173487_3a2c5f9ede_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8405/8704173537_27748c502c_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8412/8704173557_2d1a515617_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8259/8704173581_2282cc0a4f_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8137/8704173603_d08f6fe9e9_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8405/8704173635_099968f4a7_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8538/8705296934_3c63014117_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8542/8704173693_08aa62a9aa_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8275/8704173699_934e4ede50_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8267/8705295682_a17e253f5f_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8274/8704172487_8462e0e4ab_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8420/8705295774_77789ef557_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8273/8705295848_713a580525_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8133/8705295900_1665c6cde2_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8127/8704172671_07c4abe550_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8398/8705295960_99540923a2_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8125/8704172745_bcf993ed26_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8409/8705296012_8b1e26b0b7_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8259/8704172815_79d2632978_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8556/8704172841_b5a1dcea40_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8400/8704172879_434b2eab2d_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8418/8705296128_10ef5dc9d0_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8137/8704172959_69fdca3e90_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8534/8705296260_9f3801e82b_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8127/8704173005_65ab1d59c4_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8255/8704173075_a0492aaf6e_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8128/8705296372_e3602e06f7_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8262/8705296408_d2a6715d8e_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8271/8704173203_74ccd2d5f7_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8399/8705296468_28ce78f3d8_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8560/8705296506_f1e10eb6ee_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8549/8704173287_c502c1b550_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8121/8705296590_4e18b128f0_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8263/8705296620_97a4772986_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8400/8705297038_de6b3c6540_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8114/8705297064_96b88ce378_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8394/8705297106_b68d0115a1_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8552/8704173829_36b246a100_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8540/8704173863_2dd85ef623_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8402/8704173889_ff3ca60d79_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8277/8704173931_5a4bca70f0_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8137/8705297242_5b8645d332_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8280/8705297268_3303047060_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8413/8704174047_dec11bf54c_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8399/8705297322_30db82fbd0_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8399/8704174111_6afc0461a2_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8403/8704174163_e5d275cf03_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8259/8705297396_c5afb8c93c_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8550/8704174203_6e0a34477b_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8557/8705297422_6fda6f50af_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8417/8704174267_050ea04c3c_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8403/8705297478_95ac7babe0_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8399/8705297502_92845b2a93_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8543/8705297532_43b072dfa0_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8254/8705297578_6ef89fb149_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8262/8704174403_8be478036d_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8259/8705297638_e55c49e636_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8270/8705297666_4720fd6b0c_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8541/8705297696_5e865fa9f4_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8413/8705297720_ba40d976a4_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8557/8704174523_675870df56_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8418/8705297764_899d11f3c4_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8553/8705297802_0e5ea92bbb_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8124/8705297856_3663aec5a1_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8132/8704174619_8c17cabacf_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8538/8704174651_43109abcbe_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8400/8704174707_6a8fd2ae14_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8417/8704174739_cb73b2dd24_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8129/8704174753_9fc1316259_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8395/8704174785_dcafb58f10_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8547/8704174809_b78c637693_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8270/8704174847_4b2aa4426e_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8272/8704174891_9f82736e40_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8266/8705298112_baa3c2f91c_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8536/8705298118_b159d92ca0_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8540/8704174961_42433c5f4e_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8118/8704174993_fe54d2c0b9_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8136/8704175055_13b82c51b0_o.jpg" alt="">
+                            </li>
+                            <li class="slide">
+                                <img src="http://farm9.static.flickr.com/8420/8705298254_4b3f41d292_o.jpg" alt="">
+                            </li>
+                        </ul>
+                        <p><a href="http://www.flickr.com/photos/uifoundation/sets/72157633410663456/">Click here to see all photos!</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <!--BREADCRUMBS/TOP-->
+            <section class="footer_header">
+                <div class="row">
+                    <div class="twelve columns">
+                        <p><a href="http://www.uifoundation.org/">Home</a> / Phil's Day
+                            <a href="http://www.uifoundation.org/philsday"></a>/ <a href="http://www.uifoundation.org/philsday/category/uncategorized/" title="View all posts in Uncategorized">Uncategorized</a> / Hello world!</p>
+                    </div>
+                </div>
+            </section>
+            <!--CAMPAIGN/SEARCH-->
+            <section class="search_campaign">
+                <div class="row">
+                    <!--CAMPAIGN-->
+                    <div class="six columns">
+                        <a href="http://www3.uifoundation.org/campaign/">
+                            <img src="http://www.uifoundation.org/philsday/wp-content/themes/phils_day/images/fifm.png" alt="For Iowa. Forever More." style="border:0;">
+                        </a>
+                    </div>
+                    <!--SEARCH-->
+                    <div class="six columns">
+                        <!-- Postfix action -->
+                        <div class="row collapse">
+                            <div class="ten mobile-three columns">
+                                <!--Search results sent to /stories page using goolge custom search -->
+                                <form action="http://www.uifoundation.org/search/" id="cse-search-box">
+                                    <input type="hidden" name="cx" value="004292187385298253618:rfbc288j0ps">
+                                    <input type="hidden" name="ie" value="UTF-8">
+                                    <input class="search" type="text" name="q" placeholder="Search the UI Foundation">
+                                </form>
+                            </div>
+                            <div class="two mobile-one columns">
+                                <input class="button expand postfix" type="submit" name="sa" value="Search">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--SITE DESTINATIONS-->
+            <!--Footer links from RSS feed. Colleges, Programs, Ways to Give, Communication Options, and Connect with Us columns/links included-->
+            <!--Bottom Section with Contact Us, Private Poilicy, Trouble w/site, and Questions links included in footer-links.php as well -->
+            <section class="site_map">
+                <div class="row">
+                    <div class="three columns">
+                        <h4>Colleges</h4> 
+                        <nav>
+                            <ul>
+                                <li> <a href="http://www.uifoundation.org/business/" title="Tippie College of Business">                                              Tippie College of Business                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/dentistry/" title="College of Dentistry">                                              College of Dentistry                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/education/" title="College of Education">                                              College of Education                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/engineering/" title="College of Engineering">                                              College of Engineering                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/law/" title="College of Law">                                              College of Law                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/liberal-arts/" title="College of Liberal Arts &amp; Sciences">                                              College of Liberal Arts &amp; Sciences                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/medicine/" title="UI Carver College of Medicine">                                              UI Carver College of Medicine                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/nursing/" title="College of Nursing">                                              College of Nursing                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/pharmacy/" title="College of Pharmacy">                                              College of Pharmacy                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/public-health/" title="College of Public Health">                                              College of Public Health                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/graduate/" title="Graduate College">                                              Graduate College                                        </a> 
+                                </li>
+                            </ul>
+                        </nav>
+                        <h4>Campaigns</h4> 
+                        <nav>
+                            <ul>
+                                <li> <a href="http://www.uifoundation.org/campaign/" title="For Iowa. Forever More.">                                              For Iowa. Forever More.                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/iowafirst/" title="Iowa First">                                              Iowa First                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/artscampaign/" title="Arts and Minds">                                              Arts and Minds                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/iowainspired/" title="Iowa Inspired">                                              Iowa Inspired                                        </a> 
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="three columns">
+                        <h4>Programs</h4> 
+                        <nav>
+                            <ul>
+                                <li> <a href="http://www.uifoundation.org/athletics/" title="Athletics">                                              Athletics                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/hancher/" title="Hancher">                                              Hancher                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/cancer/" title="Holden Comprehensive Cancer Center">                                              Holden Comprehensive Cancer Center                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/international/" title="International Programs">                                              International Programs                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/parents/" title="Parents Fund for Student Support">                                              Parents Fund for Student Support                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/museums/" title="Pentacrest Museums">                                              Pentacrest Museums                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/childrens-hospital/" title="UI Children's Hospital">                                              UI Children's Hospital                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/hospitals/" title="UI Hospitals and Clinics">                                              UI Hospitals and Clinics                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/uima/" title="UI Museum of Art">                                              UI Museum of Art                                        </a> 
+                                </li>
+                            </ul>
+                        </nav>
+                        <h4>University</h4> 
+                        <nav>
+                            <ul>
+                                <li> <a href="http://www.uifoundation.org/impact/" title="Iowa Impact Fund">                                              Iowa Impact Fund                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/libraries/" title="UI Libraries">                                              UI Libraries                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/student-aid/" title="Student Success">                                              Student Success                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/uiaa/" title="UI Alumni Association">                                              UI Alumni Association                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/grand-challenges/" title="Grand Challenges Initiative">                                              Grand Challenges Initiative                                        </a> 
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="three columns">
+                        <h4>Ways to give</h4> 
+                        <nav>
+                            <ul>
+                                <li> <a href="http://www.givetoiowa.org/all/" title="A-Z List of all areas">                                              A-Z List of all areas                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/ways/annual-giving/" title="Annual Giving">                                              Annual Giving                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/planned-giving/" title="Planned Giving">                                              Planned Giving                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/ways/cfr/" title="Corporate and Foundation Relations">                                              Corporate and Foundation Relations                                        </a> 
+                                </li>
+                            </ul>
+                        </nav>
+                        <h4>Contact Us</h4> 
+                        <nav>
+                            <ul>
+                                <li> <a href="http://www.uifoundation.org/press" title="Press center">                                              Press center                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/careers/" title="Careers at the foundation">                                              Careers at the foundation                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/contact/staff-directory/" title="Staff directory">                                              Staff directory                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/forms/update-your-contact-information/" title="Update your information">                                              Update your information                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/forms/register-email-preferences/" title="Manage your email preferences">                                              Manage your email preferences                                        </a> 
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--ADDRESS-->
+                    <div class="three columns">
+                        <h4>The University of Iowa Foundation</h4> 
+                        <p>P.O. Box 4550
+                            <br>Iowa City, Iowa 52244
+                            <br>(319) 335-3305 / (800) 648-6973
+                            <br> <a href="http://www.uifoundation.org/wp-content/uploads/2013/12/Driving+Directions.pdf">Directions</a> 
+                        </p>
+                        <p><a href="http://www.uiowa.edu" target="_blank">The University of Iowa</a> 
+                        </p>
+                        <h4>Connect with us</h4> 
+                        <nav>
+                            <ul>
+                                <li> <a href="http://facebook.com/givetoiowa" title="Facebook">                                              Facebook                                        </a> 
+                                </li>
+                                <li> <a href="http://twitter.com/givetoiowa" title="Twitter">                                              Twitter                                        </a> 
+                                </li>
+                                <li> <a href="http://vimeo.com/givetoiowa" title="Vimeo">                                              Vimeo                                        </a> 
+                                </li>
+                                <li> <a href="http://www.youtube.com/user/givetoiowa" title="YouTube">                                              YouTube                                        </a> 
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+            <section class="bottom">
+                <div class="row">
+                    <div class="twelve columns">
+                        <ul>
+                            <li> <span class="footer_copy">© 1996-2013 University of Iowa Foundation</span> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/contact/" title="Contact Us">Contact Us</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/privacy/" title="Privacy Policy">Privacy Policy</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/about/site" title="Trouble viewing this site?">Trouble viewing this site?</a> 
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="twelve columns">
+                        <p>NOTICE: The State University of Iowa Foundation is a 501(c)(3) tax-exempt organization soliciting tax-deductible private contributions for the benefit of the University of Iowa. Please review its <a href="/about/disclosure">full disclosure statement</a>.</p>
+                    </div>
+                </div>
+            </section>
+            <!--END FOOTER-->
+        </div>
+    </div>
+</body>
+
+</html>

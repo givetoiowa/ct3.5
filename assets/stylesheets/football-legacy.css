@@ -1,0 +1,608 @@
+/*
+Theme Name: The Iowa Football Legacy Campaign
+Theme URI:  http://www.uifoundation.org
+Description: Theme for the The Iowa Football Legacy Campaign
+Version: 1.0
+Author: Harrison Wheeler / University of Iowa Foundation
+Author URI: http://www.uifounfation.org
+*/
+ html, body {
+    height: 100%;
+}
+body {
+    margin:0px;
+    padding:0px;
+    background-color:#EFEFEF;
+    background-repeat:repeat-x;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin:0px;
+    padding:0px;
+}
+#global_navigation_holder {
+    width:100%;
+    float:left;
+    background-color:#1c1c1c;
+    border-bottom:4px solid #C93;
+    padding:2px 0;
+}
+#global_navigation {
+    width:960px;
+    margin:auto;
+    color:#FFF;
+    font-size:11px;
+}
+#global_navigation ul {
+    text-align:right;
+    float:right;
+    margin-right:20px;
+}
+#global_navigation li {
+    display:inline;
+    line-height:30px;
+    color:#FFF;
+}
+#global_navigation li a {
+    color:#C90;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:11px;
+    text-decoration:none;
+}
+#global_navigation li a:hover {
+    color:#FFF;
+    text-decoration:underline;
+}
+.bx-captions h2 {
+    color:#FFF;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+}
+.bx-captions p {
+    color:#FFF;
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#slider {
+    width:100%;
+    float:left;
+}
+#slider img {
+    float:left;
+}
+#slider li {
+    list-style:none;
+}
+#featured_image_holder {
+    width:960px;
+}
+#content_navigation {
+    width:100%;
+    float:left;
+    padding:15px 0;
+    margin-top:20px;
+}
+#content_navigation h2 {
+    float:left;
+    /*font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
+    font-size:20px;
+    color:#333;
+    font-weight:600;
+}
+#content_navigation h2 a {
+    color:#333;
+    text-decoration:none;
+}
+#content_navigation h2 a:hover {
+    color:#444;
+    text-decoration:none;
+}
+#content_navigation ul {
+    float:right;
+}
+#content_navigation li {
+    /*font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
+    font-size:13px;
+    display:inline;
+    margin-left:10px;
+    font-weight:600;
+    float:left;
+    padding:5px;
+}
+#content_navigation li a {
+    text-decoration:none;
+    color:#777;
+}
+#content_navigation li a:hover {
+    color:#C90;
+}
+#content_navigation li.current_page_item a {
+    text-decoration:none;
+    color:#C90;
+}
+#content_holder {
+    width: 100%;
+    float: left;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    margin-bottom: 200px;
+}
+.content_supplement_holder {
+    width:100%;
+    float:left;
+    padding:10px 0;
+}
+.content_supplement_video {
+    width:232px;
+    height:133px;
+    float:left;
+    background-color:#FFF;
+    padding:3px;
+    border:1px solid #EFEFEF;
+}
+.supplement_video_holder {
+    width:155px;
+    height:200px;
+    padding:3px;
+    border:1px solid #EFEFEF;
+    float:left;
+}
+.supplement_video_holder img {
+    width:155px;
+    height:200px;
+    float:left;
+}
+.supplement_video_filter {
+    width:232px;
+    height:133px;
+    position:absolute;
+    background-image:url(images/video_filter.png);
+    background-repeat:no-repeat;
+}
+#content_supplement_video_text {
+    float:left;
+    width:250px;
+    margin-left:10px;
+}
+#content_supplement_video_text h3 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:600;
+    font-size:16px;
+}
+#content_supplement_video_text h3 a {
+    color:#09C;
+    text-decoration:none;
+}
+#content_supplement_video_text h3 a:hover {
+    color:#09C;
+    text-decoration:underline;
+}
+#content_supplement_video_text p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    color:#999;
+    line-height:16px;
+}
+#content_supplement_photos {
+    width:500px;
+    float:left;
+}
+#content_supplement_photos ul {
+    width:100%;
+    float:left;
+    margin:0px;
+}
+#content_supplement_photos li {
+    width:100px;
+    height:100px;
+    float:left;
+    border:1px solid #EFEFEF;
+    list-style:none;
+    margin-right:10px;
+    margin-bottom:10px;
+    padding:3px;
+    margin:0 5px 5px 0;
+}
+.supplement_photo_filter {
+    width:100px;
+    height:100px;
+    position:absolute;
+    background-image:url(images/photo_filter.png);
+    background-repeat:no-repeat;
+}
+#small {
+    font-size:12px;
+    color:#666;
+    line-height:16px;
+}
+#small a {
+    text-decoration:none;
+    color:#666;
+}
+.interior_nav {
+    width:100%;
+    float:left;
+}
+.interior_nav ul {
+    width:100%;
+    float:left;
+}
+.interior_nav li {
+    width:400px;
+    float:left;
+    padding:20px;
+    background-color:#FFF;
+    list-style:none;
+    margin-bottom:5px;
+    border:1px solid #EFEFEF;
+}
+.interior_nav li h4 a {
+    color:#09C;
+    text-decoration:none;
+}
+.left_content_holder {
+    width:580px;
+    float:left;
+    padding:40px;
+}
+.left_content_holder small {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:#666;
+    font-weight:600;
+}
+.left_content_holder h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:32px;
+    font-weight:600;
+    margin-bottom:10px;
+    color:#C90;
+}
+.left_content_holder h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:32px;
+    font-weight:600;
+    margin-bottom:10px;
+    color:#444;
+}
+.left_content_holder h3 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:24px;
+    font-weight:600;
+    margin-bottom:10px;
+    color:#444;
+}
+.left_content_holder h4 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+    font-weight:600;
+    color:#555;
+}
+.left_content_holder ul {
+    margin:0 0 0 40px;
+    padding:0px;
+    float:left;
+}
+.left_content_holder li {
+    float:left;
+    margin-bottom:10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:#666;
+    line-height:20px;
+    width:100%;
+}
+.left_content_holder p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px;
+    margin-bottom:10px;
+    color:#666;
+    line-height:20px;
+}
+.content_block blockquote {
+    float:right;
+    /*font-family:Georgia, "Times New Roman", Times, serif;*/
+    font-style:italic;
+    font-weight:100;
+    font-size:18px;
+    line-height:22px;
+    color:#666;
+    border: none;
+    border-bottom:1px dotted #CCC;
+    padding-bottom:20px;
+}
+.pager_active {
+    background-color:#F00;
+}
+
+/** RESET AND LAYOUT
+===================================*/
+ .bx-wrapper {
+    position: relative;
+    margin: 0 0 5px;
+    padding: 0;
+    *zoom: 1;
+}
+.bx-wrapper img {
+    width: 100%;
+    display: block;
+}
+/* PAGER */
+ .bx-wrapper .bx-pager {
+    text-align: center;
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #666;
+    padding-top: 20px;
+}
+.bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #666;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #000;
+}
+.content_block {
+    float:left;
+    width:320px;
+    padding:20px;
+    margin-top:80px;
+}
+.content_block p {
+    font-weight:600;
+    font-size:14px;
+    line-height:20px;
+    color:#999;
+    margin-left:40px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.full_content_holder {
+    width:520px;
+    float:left;
+    padding:60px;
+}
+.full_content_holder * {
+    font-family:Arial, Helvetica, sans-serif;
+}
+.full_content_holder small {
+    
+    font-size:14px;
+    color:#666;
+    font-weight:600;
+}
+.full_content_holder h1 {
+    font-size:32px;
+    font-weight:600;
+    margin-bottom:10px;
+    color:#C90;
+}
+.full_content_holder h2 {
+    font-size:36px;
+    font-weight:600;
+    margin-bottom:10px;
+    color:#444;
+}
+.full_content_holder h3 {
+    font-size:24px;
+    font-weight:600;
+    margin-bottom:10px;
+    color:#444;
+}
+.full_content_holder h4 {
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:10px;
+    color:#555;
+}
+.full_content_holder p {
+    font-size:15px;
+    margin-bottom:10px;
+    color:#999;
+    font-weight:100;
+    line-height:20px;
+}
+.right_content_holder {
+    width:240px;
+    float:left;
+    padding:30px;
+}
+.right_content_nav {
+    width:200px;
+    float:left;
+    padding:20px;
+}
+.right_content_nav h3 {
+    color:#333;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+    margin-bottom:5px;
+}
+.right_content_nav ul {
+    width:100%;
+    float:left;
+}
+.right_content_nav li {
+    float:left;
+    list-style:none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px;
+    line-height:20px;
+    font-weight:600;
+}
+.right_content_nav li a {
+    color:#09C;
+    text-decoration:none;
+}
+.right_content_nav li a:hover {
+    color:#C90;
+}
+.right_feature_share {
+    float:left;
+    padding:20px;
+    width:200px;
+}
+.right_feature_share ul {
+    float:left;
+    width:100%;
+}
+.right_feature_share li {
+    display:inline;
+    float:left;
+    width:75px;
+    margin-right:10px;
+}
+.right_feature {
+    float:left;
+    padding:20px;
+    width:200px;
+}
+.right_feature a {
+    color:#C90;
+    font-weight:600;
+    text-decoration:none;
+}
+.right_feature a:hover {
+    text-decoration:underline;
+}
+.right_feature p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    color:#999;
+}
+.right_feature h3 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px;
+    color:#666;
+    margin-bottom:5px;
+}
+.pdf_holder img {
+    width:155px;
+    height:200px;
+    padding:3px;
+    border:1px solid #EFEFEF;
+    float:left;
+}
+.pdf_filter {
+    width:155px;
+    height:200px;
+    position:absolute;
+    background-image:url(images/pdf_filter.png);
+    background-repeat:no-repeat;
+}
+.clear {
+    clear:both;
+}
+.tooltip {
+    display:none;
+    background-color:#000;
+    font-size:12px;
+    height:70px;
+    width:160px;
+    padding:25px;
+    color:#fff;
+}
+table {
+    margin-bottom: 1.4em;
+    width:100%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+}
+th {
+    font-weight: bold;
+}
+thead th {
+    border-bottom:2px solid #CCC;
+    color:#666;
+}
+th, td, caption {
+    padding: 6px 10px 6px 5px;
+}
+td {
+    color:#444;
+    border-bottom:1px solid #CCC;
+}
+/*
+  You can zebra-stripe your tables in outdated browsers by adding 
+  the class "even" to every other table row. 
+ */
+ tbody tr:nth-child(even) td, tbody tr.even td {
+    background: #EFEFEF;
+}
+tfoot {
+    font-style: italic;
+}
+caption {
+    background: #eee;
+}
+/* HOME NAVIGATION */
+ .home_navigation {
+    width:900px;
+    float:left;
+    padding:20px 30px;
+    border-bottom:1px solid #EFEFEF;
+}
+.home_navigation ul {
+    text-align:center;
+}
+.home_navigation li {
+    display:inline;
+    margin-left:20px;
+}
+.home_navigation li a {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+    text-decoration:none;
+    color:#666;
+    font-weight:600;
+}
+.home_navigation li a:hover {
+    color:#C90;
+}
+#latest_news {
+    width:100%;
+    float:left;
+}
+#latest_news {
+    width:100%;
+    float:left;
+    margin-top:20px;
+}
+#latest_news h3 {
+    font-size:20px;
+    color:#666;
+}
+#latest_news img {
+    float:left;
+    border:1px solid #EFEFEF;
+    padding:2px;
+}
+#latest_news ul {
+    margin:0 0 0 20px;
+    padding:0px;
+}
+#latest_news li {
+    margin:0 0 10px 0;
+    padding:0px;
+    list-style-position:outside;
+    list-style-image:url(images/external-link.gif);
+    font-size:13px;
+    line-height:14px;
+    color:#999;
+}
+#latest_news li a {
+    color:#C90;
+    font-weight:600;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "appname",
+  "version": "0.0.1",
+  "description": "A Mimosa starter skeleton",
+  "dependencies": {
+    "consolidate": "0.10.0",
+    "ejs": "0.8.5",
+    "coffee-script": "1.6.3",
+    "express": "3.4.7"
+  },
+  "devDependencies": {
+    "mimosa-coffeescript": "*",
+    "mimosa-stylus": "*",
+    "mimosa-jade": "*"
+  }
+}

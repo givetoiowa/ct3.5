@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>University of Iowa Foundation</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/one.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/reload-client.js"></script>
+    <script src="/javascripts/vendor/requirejs/require.js" data-main="/javascripts/main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="row">
+            <div class="twelve columns">
+                <div style="height:20px; float:left; margin-top:4px; margin-right:7px;">
+                    <img src="http://www.uifoundation.org/wp-content/themes/common_3_home/images/dome.png" alt="University of Iowa Foundation">
+                </div>
+                <h1 class="left">                      <a href="http://www.uifoundation.org/">University of Iowa Foundation</a>                  </h1>  <a class="reveal_menu show-for-small" style="float:right;" href="#" data-reveal-id="global_mobile">›</a> 
+                <ul class="global_nav right hide-for-small">
+                    <li id="menu-item-279" class="menu-item"> <a href="/campaign">Campaign</a> 
+                    </li>
+                    <li id="menu-item-280" class="menu-item"> <a href="/facultystaff">Faculty &amp; Staff</a> 
+                    </li>
+                    <li id="menu-item-281" class="menu-item"> <a href="/football-legacy">Football Legacy</a> 
+                    </li>
+                    <li id="menu-item-405" class="menu-item"> <a href="/grand-challenges">Grand Challenges</a> 
+                    </li>
+                    <li id="menu-item-405" class="menu-item"> <a href="/inspire">Inspire</a> 
+                    </li>
+                    <li id="menu-item-405" class="menu-item"> <a href="/one">One</a>  <a href="http://www.uifoundation.org/one/">One</a> 
+                    </li>
+                    <li id="menu-item-405" class="menu-item"> <a href="/philsday">Phils Day</a> 
+                    </li>
+                    <li id="menu-item-405" class="menu-item"> <a href="/philwashere">Phils Was Here</a> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <!--BEGIN HEADER-->
+        <header id="global">
+            <!--ENCLOSURE-->
+            <div class="enclosure">
+                <div class="navigation">
+                    <div class="row">
+                        <div class="twelve columns">
+                            <div style="height:20px; float:left; margin-top:4px; margin-right:7px;">
+                                <img src="http://www.uifoundation.org/campaign/wp-content/themes/campaign_site/images/dome.png" alt="University of Iowa Foundation">
+                            </div>
+                            <h1 class="left">                                  <a href="http://www.uifoundation.org/">University of Iowa Foundation</a>                              </h1>  <a class="reveal_menu show-for-small" style="float:right;" href="#" data-reveal-id="global_mobile">›</a> 
+                            <ul class="global_nav right hide-for-small">
+                                <li id="menu-item-279" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-279"> <a href="http://www.uifoundation.org/about">About the Foundation</a> 
+                                </li>
+                                <li id="menu-item-280" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-280"> <a href="http://www.uifoundation.org/thanks">Recognition and Thanks</a> 
+                                </li>
+                                <li id="menu-item-281" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-281"> <a href="http://www.uifoundation.org/ways">Ways to Give</a> 
+                                </li>
+                                <li id="menu-item-405" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-405"> <a href="http://www.uifoundation.org/careers">Careers</a> 
+                                </li>
+                                <li id="menu-item-379" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-379"> <a href="http://www.givetoiowa.org">Give Now</a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--END ENCLOSURE-->
+                <!--GLOBAL MENU ACTIVATION FOR MOBILE-->
+                <div class="show-for-small">
+                    <a class="sidebar-button" id="sidebarButton" href="#sidebar"> <span style="line-height:30px;">☰</span> 
+                    </a>
+                </div>
+                <!--END GLOBAL MENU ACTIVATION FOR MOBILE-->
+            </div>
+        </header>
+        <!--GLOBAL NAVIGATION HOLDER-->
+        <div id="global_navigation_holder">
+            <div id="global_navigation">
+                <!--FOUNDATION LOGO-->
+                <div id="foundation_logo">
+                    <a href="http://www.uifoundation.org">
+                        <img src="http://www3.uifoundation.org/inspire/wp-content/themes/annual-report/images/uif-banner-small.gif" border="0">
+                    </a>
+                </div>
+                <!--FOUNDATION NAVIGATION-->
+                <ul>
+                    <li> <strong><a href="http://www.givetoiowa.org/" target="_blank">Give Now</a>                              </strong> 
+                    </li>&nbsp;|&nbsp;
+                    <li><a href="http://www.uifoundation.org/about/" target="_blank">About the Foundation</a> 
+                    </li>&nbsp;|&nbsp;
+                    <li><a href="http://www.uifoundation.org/thanks/" target="_blank">Recognition and Thanks</a> 
+                    </li>&nbsp;|&nbsp;
+                    <li><a href="http://www.uifoundation.org/ways/" target="_blank">Ways to Give</a> 
+                    </li>
+                </ul>
+                <!--CLEAR-->
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="home_feature">
+                <!--ABSOLUTE HOLDER-->
+                <div id="local_nav_holder">
+                    <!-- Local Nav -->
+                    <div id="local_navigation_holder">
+                        <div id="logo_holder">
+                            <img style="float:left;" src="http://www3.uifoundation.org/one/wp-content/uploads/2012/10/power_one_right2.png">
+                            <p>2012 Annual Report on Giving to the University of Iowa</p>
+                        </div>
+                        <ul id="local_navigation">
+                            <li id="menu-item-39" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-39"><a href="http://www.uifoundation.org/one">Home</a> 
+                            </li>
+                            <li id="menu-item-163" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-163"><a href="http://www.uifoundation.org/one/contents-page/">Features</a> 
+                            </li>
+                            <li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="http://www.uifoundation.org/one/a-message-from-leadership/">Leaders’ Message</a> 
+                            </li>
+                            <li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="http://www.uifoundation.org/one/statistics/">Statistics</a> 
+                            </li>
+                            <li id="menu-item-53" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53"><a href="http://www.uifoundation.org/one/gift-highlights/">Gift Highlights</a> 
+                            </li>
+                            <li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59"><a href="http://www.uifoundation.org/one/foundation-news/">Foundation News</a> 
+                            </li>
+                            <li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="http://www.uifoundation.org/one/presidents-club/">Presidents Club</a> 
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end local_navigation_holder -->
+                </div>
+                <div id="feature_holder">
+                    <ul class="test-slider">
+                        <li>
+                            <a href="http://www3.uifoundation.org/one/contents/">
+                                <img src="http://www.uifoundation.org/one/wp-content/themes/ar12_common/images/home_1.png" border="0">
+                            </a>
+                        </li>
+                        <!--<li><a href="http://www3.uifoundation.org/one/family/"><img src="http://www3.uifoundation.org/one/wp-content/uploads/2012/10/one_family.jpg" border="0" /></a></li>                                                      <li><a href="http://www3.uifoundation.org/one/connection/"><img src="http://www3.uifoundation.org/one/wp-content/uploads/2012/10/chabal_front_photo2.jpg"  border="0" /></a></li>                      <li><a href="http://www3.uifoundation.org/one/moment/"><img src=http://www.uifoundation.org/one/wp-content/themes/ar12_common/images/home_4.jpg border="0" /></a></li>-->
+                    </ul>
+                </div>
+            </div>
+            <div id="home_bar_holder">
+                <div id="home_bar">
+                    <div id="home_column_holder">
+                        <div id="home_column_left">
+                            <p>One isn't always the loneliest
+                                <br>number. Sometimes the power of
+                                <br>one becomes the power of many
+                                <br>through the simple act of giving
+                                <br>to the University of Iowa.</p>
+                        </div>
+                        <div id="home_column_right">
+                            <p>All it takes is one person . . . one connection . . .
+                                <br>one moment of generosity to help make our
+                                <br>university, and our world, a better place.</p>
+                            <p>Each one of us has the power to create change.
+                                <br>And together, we can do more than we ever
+                                <br>dreamed possible.</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Content -->
+            <div id="main" class="clearfix">
+                <div class="grid_6 home">
+                    <div class="banner_6_l home_push">
+                        <img src="http://www3.uifoundation.org/one/wp-content/uploads/2012/09/leaders_message.jpg">
+                    </div>
+                    <h3>Leaders' Message</h3> 
+                    <p>Read a message from the leadership of the UI and the UI Foundation.</p> <a href="http://www3.uifoundation.org/one/a-message-from-leadership/#">Read More</a> 
+                </div>
+                <div class="grid_6 home right_home">
+                    <div class="banner_6_r">
+                        <img src="http://www3.uifoundation.org/one/wp-content/uploads/2012/09/gift_highlights.jpg">
+                    </div>
+                    <h3>Gift Highlights</h3> 
+                    <p>See a sample of gifts made through the UI Foundation to support the UI.</p> <a href="http://www3.uifoundation.org/one/gift-highlights/">Read More</a> 
+                </div>
+                <div class="grid_6 home">
+                    <div class="banner_6_l  home_push">
+                        <img src="http://www3.uifoundation.org/one/wp-content/uploads/2012/09/foundation_news.jpg">
+                    </div>
+                    <h3>Foundation News</h3> 
+                    <p>Read about foundation highlights for the year.</p> <a href="http://www3.uifoundation.org/one/foundation-news/">Read More</a> 
+                </div>
+                <div class="grid_6 home right_home">
+                    <div class="banner_6_r">
+                        <!--<img src="http://www3.uifoundation.org/one/wp-content/uploads/2012/09/presidents_club.jpg"/>-->
+                        <img src="http://www3.uifoundation.org/one/wp-content/uploads/2012/10/ui_pc1.jpg">
+                    </div>
+                    <h3>Presidents Club</h3> 
+                    <p>Learn more about the Presidents Club.</p> <a href="http://www3.uifoundation.org/one/presidents-club/">Read More</a> 
+                </div>
+            </div>
+            <!-- end main -->
+            <div class="push"></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+@font-face {
+    font-family:'LeagueGothicRegular';
+    src: url('../fonts/LeagueGothic/LeagueGothic.eot');
+    src: url('../fonts/LeagueGothic/LeagueGothic-Regular.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/LeagueGothic/LeagueGothic-Regular.woff') format('woff'), 
+    url('../fonts/LeagueGothic/LeagueGothic-Regular.ttf') format('truetype'), 
+    url('../fonts/LeagueGothic/LeagueGothic-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*@font-face {
+  font-family:'OpenSansRegular';å
+  src: url('../fonts/OpenSans/OpenSans-Regular.eot');
+  src: url('../fonts/OpenSans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-Regular.woff') format('woff'), url('../fonts/OpenSans/OpenSans-Regular.ttf') format('truetype'), url('../fonts/OpenSans/OpenSans-Regular.svg#OpenSans') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}*/
+
+/* Use Google Font first in case user has it cached */
+
+/* @font-face {
+    font-family:'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+    font-family:'OpenSansItalic';
+    src: url('../fonts/OpenSans-Italic.eot');
+    src: url('../fonts/OpenSans-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Italic.woff') format('woff'), url('../fonts/OpenSans-Italic.ttf') format('truetype'), url('../fonts/OpenSans-Italic.svg#OpenSansItalic') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family:'OpenSansSemibold';
+    src: url('../fonts/OpenSans-Semibold.eot');
+    src: url('../fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Semibold.woff') format('woff'), url('../fonts/OpenSans-Semibold.ttf') format('truetype'), url('../fonts/OpenSans-Semibold.svg#OpenSansSemibold') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family:'OpenSansBold';
+    src: url('../fonts/OpenSans-Bold.eot');
+    src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Bold.woff') format('woff'), url('../fonts/OpenSans-Bold.ttf') format('truetype'), url('../fonts/OpenSans-Bold.svg#OpenSansBold') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family:'OpenSansBoldItalic';
+    src: url('../fonts/OpenSans-BoldItalic.eot');
+    src: url('../fonts/OpenSans-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-BoldItalic.woff') format('woff'), url('../fonts/OpenSans-BoldItalic.ttf') format('truetype'), url('../fonts/OpenSans-BoldItalic.svg#OpenSansBoldItalic') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}*/
+
+/* Font Definitions */
+ .site_map p {
+    font-family:'OpenSans-Light';
+}
+.site_map li a {
+    font-family:'OpenSans-Light';
+}
+.bottom li {
+    font-family:'OpenSans-Light';
+}
+.bottom p {
+    font-family:'OpenSans-Light';
+}
+#sidebar a {
+    font-family:'OpenSans';
+}
+#sidebar small {
+    font-family:'OpenSans';
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family:'OpenSans';
+}
+form {
+    font-family:'OpenSans-Light';
+}
+p.lead {
+    font-family:'Open Sans';
+}
+form label {
+    font-family:'OpenSans';
+}
+p {
+    font-family:Georgia, "Times New Roman", Times, serif;
+}
+ul, ol, dl {
+    font-family:Georgia, "Times New Roman", Times, serif;
+}
+#header h2 {
+    font-family:'OpenSansBold';
+}
+.navigation h1 {
+    font-family:'OpenSans';
+}
+.global_nav li a {
+    font-family:'OpenSans';
+}
+#content_navigation h2 {
+    font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+#content_navigation li {
+    font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.content_block blockquote {
+    font-family:Georgia, "Times New Roman", Times, serif;
+}
+.right_feature p, .right_feature h3 {
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* Keystroke Characters ---------------------- */
+ .keystroke, kbd {
+    font-family:"Consolas", "Menlo", "Courier", monospace;
+}
+table thead tr th, table tfoot tr td {
+    font-family:'OpenSans';
+}
+@media only screen and (max-width: 800px) {
+    .cart_breadcrumbs p {
+        font-family:'OpenSans';
+    }
+}
+@media only screen and (max-width: 520px) {
+    .featured_information_countdown small {
+        font-family:'OpenSans';
+    }
+}
+/* Footer Fonts */
+ input[type="text"].search {
+    font-family:'OpenSansLight';
+}
+.footer_header p {
+    font-family:'OpenSans';
+}
+.site_map p {
+    font-family:'OpenSansLight';
+}
+.site_map h4 {
+    font-family:'OpenSansLight';
+}
+.site_map li a {
+    font-family:'OpenSansLight';
+}
+.bottom li {
+    font-family:'OpenSansLight';
+}
+.bottom p {
+    font-family:'OpenSansLight';
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family:'LeagueGothicRegular';
+}

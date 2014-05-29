@@ -1,0 +1,70 @@
+/*PHIL TEASER*/
+ .phil_teaser {
+  width:100%;
+  padding:50px 0;
+  text-align:center;
+  margin-top:0px;
+  margin-bottom:30px;
+  background-color:#F5F5F5;
+}
+.phil_teaser h2 {
+  font-family:'OpenSans-Light';
+  color:#333;
+  font-size:55px;
+}
+.container {
+  width:100%;
+  background-color:#FFF;
+  overflow:hidden;
+  float:left;
+  margin:0px;
+  padding:0px;
+}
+#wrapper {
+    width: 100%;
+    background-color: #FFD214;
+    background-image: url(http://www3.uifoundation.org/philwashere/wp-content/uploads/2012/11/bg.png);
+    background-repeat: repeat-x;
+    overflow: hidden;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+.info_box {
+    width: 100%;
+    position: relative;
+    float: left;
+    background-color: #333;
+    height: 350px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 13px 2px #D8AE00;
+}
+.info_box_text {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    float: left;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+}
+.info_box_text h3 {
+    color: #FFF;
+    margin: 0 0 5px 0;
+    font-family:'LeagueGothicRegular';
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 100;
+}
+.info_box_text p {
+    color: #CCC;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 17px;
+    color: #666;
+}
+
+.events td {
+    font-size:15px;
+}

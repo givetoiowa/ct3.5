@@ -1,0 +1,1048 @@
+/*
+Theme Name: Phil Was Here Theme
+Theme URI:  http://www.harrisonwheeler.com
+Description: Promotion Theme by Harrison Wheeler
+Version: 1.0
+Author: Harrison Wheeler
+Author URI: http://www.harrisonwheeler.com
+*/
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+ body.custom-background {
+    background-color: #FFD214;
+    background-image: url('http://www.uifoundation.org/philwashere/wp-content/uploads/sites/60/2013/05/bg_phil.png');
+    background-repeat: repeat-x;
+    background-position: top left;
+    background-attachment: scroll;
+}
+html, body {
+    height: 100%;
+}
+#wrap {
+    min-height: 100%;
+    width:100%;
+}
+#main {
+    overflow:auto;
+}
+/* must be same height as the footer */
+
+/* CALL FONTS */
+ @font-face {
+    font-family:'LeagueGothicRegular';
+    src: url('fonts/League_Gothic-webfont.eot');
+    src: url('fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/League_Gothic-webfont.woff') format('woff'), url('fonts/League_Gothic-webfont.ttf') format('truetype'), url('fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:'OpenSansLight';
+    src: url('fonts/OpenSans-Light-webfont.eot');
+    src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/../fonts/OpenSans-Light-webfont.woff') format('woff'), url('fonts/OpenSans-Light-webfont.ttf') format('truetype'), url('fonts/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family:'OpenSansLightItalic';
+    src: url('fonts/OpenSans-LightItalic-webfont.eot');
+    src: url('fonts/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-LightItalic-webfont.woff') format('woff'), url('fonts/OpenSans-LightItalic-webfont.ttf') format('truetype'), url('fonts/OpenSans-LightItalic-webfont.svg#OpenSansLightItalic') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family:'OpenSansRegular';
+    src: url('OpenSans-Regular-webfont.eot');
+    src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Regular-webfont.woff') format('woff'), url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'), url('fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family:'OpenSansItalic';
+    src: url('fonts/OpenSans-Italic-webfont.eot');
+    src: url('fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Italic-webfont.woff') format('woff'), url('fonts/OpenSans-Italic-webfont.ttf') format('truetype'), url('fonts/OpenSans-Italic-webfont.svg#OpenSansItalic') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family:'OpenSansSemibold';
+    src: url('fonts/OpenSans-Semibold-webfont.eot');
+    src: url('fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Semibold-webfont.woff') format('woff'), url('fonts/OpenSans-Semibold-webfont.ttf') format('truetype'), url('fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family:'OpenSansSemiboldItalic';
+    src: url('fonts/OpenSans-SemiboldItalic-webfont.eot');
+    src: url('fonts/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-SemiboldItalic-webfont.woff') format('woff'), url('fonts/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'), url('fonts/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family:'OpenSansBold';
+    src: url('fonts/OpenSans-Bold-webfont.eot');
+    src: url('fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Bold-webfont.woff') format('woff'), url('fonts/OpenSans-Bold-webfont.ttf') format('truetype'), url('fonts/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family:'OpenSansBoldItalic';
+    src: url('fonts/OpenSans-BoldItalic-webfont.eot');
+    src: url('fonts/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-BoldItalic-webfont.woff') format('woff'), url('fonts/OpenSans-BoldItalic-webfont.ttf') format('truetype'), url('fonts/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family:'OpenSansExtrabold';
+    src: url('fonts/OpenSans-ExtraBold-webfont.eot');
+    src: url('fonts/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-ExtraBold-webfont.woff') format('woff'), url('fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype'), url('fonts/OpenSans-ExtraBold-webfont.svg#OpenSansExtrabold') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family:'OpenSansExtraboldItalic';
+    src: url('fonts/OpenSans-ExtraBoldItalic-webfont.eot');
+    src: url('fonts/OpenSans-ExtraBoldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-ExtraBoldItalic-webfont.woff') format('woff'), url('fonts/OpenSans-ExtraBoldItalic-webfont.ttf') format('truetype'), url('fonts/OpenSans-ExtraBoldItalic-webfont.svg#OpenSansExtraboldItalic') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family:'LeagueGothicRegular';
+    src: url('fonts/League_Gothic-webfont.eot');
+    src: url('fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/League_Gothic-webfont.woff') format('woff'), url('fonts/League_Gothic-webfont.ttf') format('truetype'), url('fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight:100;
+}
+/*Opera Fix*/
+ body:before {
+    /* thanks to Maleika (Kohoutec)*/
+    content:"";
+    height:100%;
+    float:left;
+    width:0;
+    margin-top:-32767px;
+    /* thank you Erik J - negate effect of float*/
+}
+/* HEADER STYLE */
+ #header {
+    width:100%;
+    margin:0;
+    float:left;
+}
+#header h2 {
+    font-size:15px;
+    margin:0px;
+    padding:15px 0px 15px;
+    font-family:'OpenSansBold';
+    text-transform:uppercase;
+    font-weight:100;
+    text-align:center;
+}
+/* NEW HEADER STYLE */
+ .navigation {
+    z-index:99999;
+    line-height:45px;
+    width:100%;
+    background-color:#666;
+    text-shadow:-1px -1px 0px #111;
+    margin:0px;
+    padding:0px;
+    border-top:1px solid #777;
+    border-bottom:1px solid #111;
+    background-color: #424343;
+    background-image: url(images/fallback-gradient.png);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#424343), to(#2F2F2E));
+    background-image: -webkit-linear-gradient(top, #424343, #2F2F2E);
+    background-image: -moz-linear-gradient(top, #424343, #2F2F2E);
+    background-image: -ms-linear-gradient(top, #424343, #2F2F2E);
+    background-image: -o-linear-gradient(top, #424343, #2F2F2E);
+}
+.navigation h1 {
+    font-family:'OpenSansRegular';
+    font-size:12px;
+    padding:0px;
+    margin:0px;
+    color:#FFF;
+    float:left;
+    font-weight:100;
+    line-height:45px;
+    text-shadow: -1px -1px 0px #000;
+}
+.reveal_menu a {
+    color:#C90;
+}
+.global_nav {
+    float:right;
+    margin:0px;
+    padding:0px;
+}
+.global_nav ul {
+    margin:0px;
+    padding:0px;
+    float:right;
+}
+.global_nav li {
+    display:inline;
+    float:left;
+    margin:0px;
+    padding:0px;
+    font-size:13px;
+    margin-left:10px;
+    line-height:45px;
+}
+.global_nav li a {
+    color:#CCC;
+    font-family:'OpenSansRegular';
+}
+.global_nav li a:hover {
+    color:#FFF;
+}
+/* ADDS VISUAL FLARE TO HEADER*/
+ .enclosure {
+    width:100%;
+    border-top:1px solid #111;
+    border-bottom:1px solid #C90;
+    float:left;
+}
+#global_nav {
+    width:100%;
+    background-color:#1c1c1c;
+    border-bottom:3px solid #C90;
+    padding:2px 0;
+}
+#global_nav ul {
+    float:right;
+    margin:0px;
+    padding:0px;
+}
+#global_nav li {
+    display:inline;
+    margin:0 0 0 5px;
+    padding:0px;
+    line-height:27px;
+}
+#global_nav li a {
+    margin:0px;
+    padding:0px;
+    font-size:11px;
+    line-height:14px;
+    color:#C90;
+}
+#global_nav h1 {
+    color:#C90;
+    font-size:14px;
+    font-weight:100;
+    margin:0px;
+    padding:0px;
+}
+#site_name {
+    font-size:64px;
+    font-family:'LeagueGothicRegular';
+    text-transform:uppercase;
+    font-weight:100;
+    margin:20px 0 0 0;
+    padding:0px;
+    text-shadow: 1px 1px 1px #DBA700;
+    color:#FFF;
+}
+.row_container {
+    background-color:#FFF;
+    border:1px solid #CCC;
+    width: 1000px;
+    max-width: 100%;
+    min-width: 768px;
+    margin: 0 auto;
+}
+.container {
+    background-color:#FFF;
+    border:1px solid #CCC;
+    padding:0 15px;
+}
+.site_nav {
+    padding:15px 0;
+}
+.flickr-slider p {
+    float:left;
+    margin-top:-15px;
+}
+/* FOOTER STYLES */
+ input[type="text"].search {
+    margin:0px;
+    padding:0 10px;
+    font-family:'OpenSansLight';
+}
+#footer {
+    position: relative;
+    height: 540px;
+    clear:both;
+    background-color:#333;
+    border-top:1px solid #CC9900;
+    position: relative;
+    clear:both;
+    text-shadow: -1px -1px 0px #222;
+}
+.footer_header {
+    float:left;
+    width:100%;
+    background-color:#222;
+    padding:10px 0;
+    border-top:1px solid #111;
+    border-bottom:1px solid #111;
+    background-image: url(images/top_bar_texture.jpg);
+    background-repeat:repeat-x;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#424343), to(#2F2F2E));
+    background-image: -webkit-linear-gradient(top, #424343, #2F2F2E);
+    background-image: -moz-linear-gradient(top, #424343, #2F2F2E);
+    background-image: -ms-linear-gradient(top, #424343, #2F2F2E);
+    background-image: -o-linear-gradient(top, #424343, #2F2F2E);
+    color:#CCC;
+    background-color:#222;
+}
+.footer_header p {
+    font-size:12px;
+    font-family:'OpenSansRegular';
+    font-weight:100;
+    margin:0px;
+    padding:0px;
+    color:#ccc;
+}
+.search_campaign {
+    width:100%;
+    float:left;
+    padding:10px 0;
+    border-top:1px solid #444;
+    border-bottom:1px solid #111;
+}
+.site_map {
+    width:100%;
+    float:left;
+    padding:20px 0;
+    border-top:1px solid #444;
+    border-bottom:1px solid #111;
+}
+.site_map p {
+    font-family:'OpenSansLight';
+    font-size:12px;
+    color:#CCC;
+    line-height:18px;
+}
+.site_map h4 {
+    font-size:12px;
+    color:#C90;
+    margin:0 0 5px 0;
+    padding:0px;
+    text-transform:uppercase;
+}
+.site_map li {
+    list-style:none;
+}
+.site_map li a {
+    font-family:'OpenSansLight';
+    font-size:12px;
+    color:#CCC;
+}
+.site_map li a:hover {
+    color:#FFF;
+}
+.bottom {
+    width:100%;
+    float:left;
+    border-top:#444 1px solid;
+    padding:20px 0;
+    background-color:#333;
+}
+.bottom ul {
+    margin:0 0 5px 0;
+    padding:0px;
+    text-align:center;
+}
+.bottom li {
+    display:inline;
+    font-size:12px;
+    margin-right:10px;
+    color:#CCC;
+    font-family:'OpenSansLight';
+}
+.bottom li a {
+    color:#C90;
+}
+.bottom p {
+    font-family:'OpenSansLight';
+    font-size:13px;
+    color:#CCC;
+    line-height:18px;
+    text-align:center;
+}
+.footer_info p a {
+    color:#C90;
+}
+.sub_nav {
+    background-color:#F0F0F0;
+    margin-left:-25px;
+}
+.tabs {
+    background-color:#333;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#666), to(#333));
+    background-image: -webkit-linear-gradient(top, #666, #333);
+    background-image: -moz-linear-gradient(top, #666, #333);
+    background-image: -ms-linear-gradient(top, #666, #333);
+    background-image: -o-linear-gradient(top, #666, #333);
+    margin:0px;
+    text-shadow: -1px -1px 0px #222;
+    height:50px;
+}
+.tabs-content {
+    background-color:#EFEFEF;
+    -moz-box-shadow: inset 0 0 15px #CCC;
+    -webkit-box-shadow: inset 0 0 15px #CCC;
+    box-shadow: inset 0 0 15px #CCC;
+    background-image:url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/billie_holiday.png);
+}
+.tabs-content li {
+    padding:20px;
+}
+.tabs dd.active a, .tabs li.active a {
+    border:none;
+    font-weight:900;
+    color:#FC0;
+    cursor: default;
+    font-weight: 700;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#222), to(#444));
+    background-image: -webkit-linear-gradient(top, #222, #444);
+    background-image: -moz-linear-gradient(top, #222, #444);
+    background-image: -ms-linear-gradient(top, #222, #444);
+    background-image: -o-linear-gradient(top, #222, #444);
+}
+.tabs dd a:focus, .tabs li a:focus {
+    color:#FC3;
+    font-weight: 900;
+}
+.tabs dd a, .tabs li a {
+    display: block;
+    font-size: 16px;
+    color:#FFF;
+    height: 49px;
+    line-height: 50px;
+    padding: 0px 23.8px;
+    font-weight:900;
+}
+.tabs dd.active, .tabs li.active {
+    border-top:none;
+    margin-top: 0px;
+}
+.panel h4 {
+    font-size:20px;
+    margin-bottom:7px;
+    color:#4A494A;
+    font-family:'LeagueGothicRegular';
+    text-transform:uppercase;
+    font-weight:100;
+}
+.panel h5 {
+    font-size:14px;
+    margin-bottom:7px;
+    color:#666;
+    margin:0px;
+}
+.panel p {
+    font-size:11px;
+    line-height:14px;
+    color:#A7A9AC;
+}
+.panel ul {
+    margin:0px;
+    padding:0px;
+}
+.panel li {
+    margin:0 0 5px 0;
+    padding:0px;
+    list-style:none;
+}
+.panel li h3 {
+    margin:0 0 3px 0;
+    padding:0px;
+    font-size:13px;
+}
+.panel li h3 a {
+    color:#666;
+}
+.panel li h3 a:hover {
+    color:#333;
+}
+.panel li p {
+    color:#666;
+    margin:0px;
+}
+.panel a {
+    font-weight:900;
+    color:#333;
+}
+/* PHILS FACTS STYLES */
+ .phils_fact {
+    width:100%;
+    background-color:#FFF;
+    padding:15px;
+    moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    /* future proofing */
+    -khtml-border-radius: 10px;
+    /* for old Konqueror browsers */
+    margin-bottom:15px;
+    -moz-box-shadow: 1px 1px 5px 1px #CCC;
+    -webkit-box-shadow: 1px 1px 5px 1px #CCC;
+    box-shadow: 1px 1px 5px 1px #CCC;
+}
+.phils_fact h4 {
+    margin:0 0 7px 0;
+    padding:0px;
+    font-size:16px;
+    color:#6D6E71;
+    line-height:18px;
+}
+.phils_fact p {
+    margin:0px;
+    padding:0px;
+    font-size:13px;
+    color:#A7A9AC;
+}
+.main_image_clear {
+}
+#sub_image_holder {
+    width: 102%;
+    border: 1px solid #CCC;
+    background-color:#CCC;
+    text-align: left;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -51%;
+    z-index:999;
+    height:auto;
+}
+#sub_image_holder img {
+    float:left;
+}
+#main_image_holder img {
+    float:left;
+}
+#main_image_holder {
+    width: 102%;
+    border: 1px solid #CCC;
+    background-color:#CCC;
+    text-align: left;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -51%;
+    z-index:999;
+    height:400px;
+}
+#main_image_holder img {
+    float:left;
+}
+.bxsliderWrap {
+    display:none;
+}
+.profile_preview {
+    margin-bottom:20px;
+    min-height:340px;
+}
+.profile_preview img {
+    margin-bottom:10px;
+    border:1px solid #CCC;
+}
+.profile_preview h4 {
+    font-size:20px;
+    line-height:20px;
+    margin:0 0 5px 0;
+    padding:0px;
+    color:#333;
+    font-family:'LeagueGothicRegular';
+    text-transform:uppercase;
+}
+.profile_image {
+    margin:0px;
+    padding:0px;
+}
+.profile_image img {
+    border:1px solid #333;
+    -moz-box-shadow: 3px 1px 20px 1px #000;
+    -webkit-box-shadow: 3px 1px 20px 1px #000;
+    box-shadow: 3px 1px 20px 1px #000;
+}
+.profile_preview h4 a {
+    color:#333;
+    margin:0px;
+    padding:0px;
+    font-weight:100;
+}
+.profile_preview h4 a:hover {
+    color:#666;
+}
+.profile_preview p {
+    font-size:11px;
+    color:#999;
+    line-height:13px;
+    margin:0px;
+    padding:0px;
+}
+.profile_main {
+    background-color:#666;
+    padding:10px;
+    border:1px solid #CCC;
+    -moz-box-shadow: inset 0 0 15px #000000;
+    -webkit-box-shadow: inset 0 0 15px #000000;
+    box-shadow: inset 0 0 15px #000000;
+    background-image:url(images/debut_dark.png);
+}
+.profile_main h2 {
+    color:#CCC;
+    margin:0 0 10px 0;
+    padding:0px;
+    font-family:'LeagueGothicRegular';
+    text-transform:uppercase;
+    font-size:45px;
+    color:#FFF;
+    font-weight:100;
+    text-shadow: 1px 1px 5px #000;
+}
+.profile_main p strong {
+    text-transform:uppercase;
+    font-size:13px;
+    color:#CCC;
+}
+.profile_main p {
+    color:#999;
+    font-size:14px;
+    line-height:17px;
+    text-shadow: 1px 1px 5px #000;
+}
+.profile_detail {
+    padding:20px;
+}
+.profile_detail p {
+    font-size:14px;
+    line-height:18px;
+    color:#999;
+}
+.profile_detail h5 {
+    font-size:13px;
+    text-transform:uppercase;
+    color:#333;
+    margin:0 0 10px 0;
+}
+.slider_content {
+    position:absolute;
+    background-color:#FFF;
+    width:500px;
+    margin-left:30px;
+    margin-top:275px;
+    padding:10px;
+}
+.slider_content a {
+    background-color:#666;
+    padding:5px;
+    position:absolute;
+    margin-left:450px;
+    width:100px;
+    display:block;
+    margin-top:-35px;
+    font-family:Georgia, "Times New Roman", Times, serif;
+    text-transform:lowercase;
+    font-style:italic;
+    font-size:18px;
+}
+.slider_content h2 {
+    font-family:'LeagueGothicRegular';
+    font-size:40px;
+    text-transform:uppercase;
+    font-weight:100;
+    margin:0px;
+    padding:0px;
+}
+.twitter {
+    background-color:#6CF;
+    border:1px dotted #06C;
+}
+.twitter h4 {
+    color:#FFF;
+    font-size:24px;
+    text-shadow: 1px 1px 0px #06C;
+    margin:0px;
+    padding:0px;
+}
+.twitter small {
+    color:#FFF;
+    font-size:11px;
+    padding-bottom:5px;
+}
+.twitter ul {
+    margin:10px 0 0 0;
+    border-top:1px dotted #09F;
+}
+.twitter li {
+    margin:0px;
+    padding:10px 0px;
+    list-style:none;
+    font-size:11px;
+    line-height:12px;
+    border-bottom:1px dotted #09F;
+    color:#06C;
+}
+.twitter li a {
+    color:#039;
+}
+.twitter li a:hover {
+    border-bottom:dotted #039 1px;
+}
+/* -----------------------------------------
+  BLOG POST STYLES
+----------------------------------------- */
+ .blog_header h1 {
+    background-color:#555;
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-family:'LeagueGothicRegular';
+    text-transform:uppercase;
+    font-weight:100;
+    font-size:40px;
+    color:#FFF;
+    margin:-10px auto 20px auto;
+    width:350px;
+    padding:10px 0;
+    text-shadow: -1px -1px 0px #333;
+    border-bottom:1px solid #000;
+    border-right:1px solid #000;
+}
+.contributors {
+    float:left;
+    width:100%;
+}
+.contributors h3 {
+    font-family:'LeagueGothicRegular';
+    text-transform:uppercase;
+    font-size:26px;
+    color:#FFF;
+    font-weight:100;
+    text-shadow: 1px 1px 2px #000;
+}
+.contributors ul {
+    margin:0px;
+    padding:0px;
+}
+.contributors li {
+    margin:0 5px 0 0;
+    padding:0px;
+    display:inline;
+}
+.contributors li img {
+    border:1px solid #CCC;
+    -moz-box-shadow: 1px 1px 2px 1px #222;
+    -webkit-box-shadow: 1px 1px 2px 1px #222;
+    box-shadow: 1px 1px 2px 1px #222;
+}
+.post_categories {
+    float:left;
+    width:100%;
+}
+.post_categories h3 {
+    font-family:'LeagueGothicRegular';
+    text-transform:uppercase;
+    font-size:26px;
+    color:#FFF;
+    font-weight:100;
+    text-shadow: 1px 1px 2px #000;
+}
+.post_categories ul {
+    width:100%;
+    float:left;
+}
+.post_categories li {
+    display:inline;
+    float:left;
+    margin-right:10px;
+}
+.post_categories li a {
+    font-family:'LeagueGothicRegular';
+    text-transform:uppercase;
+    font-size:20px;
+    color:#FFF;
+    display:block;
+    padding:10px 20px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    /* future proofing */
+    -khtml-border-radius: 7px;
+    /* for old Konqueror browsers */
+    text-shadow: 1px 1px 3px #069;
+    -moz-box-shadow: 1px 1px 2px 1px #222;
+    -webkit-box-shadow: 1px 1px 2px 1px #222;
+    box-shadow: 1px 1px 2px 1px #222;
+    background-color:#6CF;
+    border:1px solid #0CF;
+}
+.post {
+    width:100%;
+    padding:10px;
+    background-color:#FFF;
+    /*border-right:1px solid #CCC;
+  border-bottom:1px solid #CCC;*/
+    border:1px solid #CCC;
+    margin-bottom:20px;
+    float:left;
+    -moz-box-shadow: 1px 1px 10px 3px #222;
+    -webkit-box-shadow: 1px 1px 10px 3px #222;
+    box-shadow: 1px 1px 10px 3px #222;
+}
+.post img {
+    margin-bottom:5px;
+    border:1px solid #CCC;
+}
+.post p {
+    font-size:12px;
+    color:#999;
+    margin-bottom:10px;
+}
+.post h2 {
+    margin:0 0 5px 0;
+    padding:0px;
+    font-size:20px;
+    color:#333;
+}
+.post_date {
+    background-color:#FC0;
+    padding:7px;
+    margin-left:-10px;
+    margin-top:-20px;
+    border-right:1px solid #F90;
+    border-bottom:1px solid #F90;
+    text-shadow: -1px -1px 0px #F90;
+}
+.post_date_text {
+    font-family:'LeagueGothicRegular';
+    text-transform:uppercase;
+    font-weight:100;
+    color:#FFF;
+    font-size:14px;
+    text-align:center;
+}
+.post_date_month {
+    font-family:'LeagueGothicRegular';
+    text-transform:uppercase;
+    font-weight:100;
+    color:#FFF;
+    font-size:20px;
+    text-align:center;
+    line-height:18px;
+}
+.post_date_day {
+    font-family:'LeagueGothicRegular';
+    text-transform:uppercase;
+    font-weight:100;
+    color:#FFF;
+    font-size:37px;
+    line-height:37px;
+    text-align:center;
+}
+.post_date_year {
+    font-family:'LeagueGothicRegular';
+    text-transform:uppercase;
+    font-weight:100;
+    color:#FFF;
+    font-size:26px;
+    line-height:22px;
+    text-align:center;
+}
+.post_meta {
+    background-color:#F6F6F6;
+    border-top:1px dotted #CCC;
+    padding:5px 10px;
+    float:left;
+    width:100%;
+}
+.post_meta p {
+    float:left;
+    line-height:25px;
+    margin:0px;
+    padding:0px;
+    font-size:11px;
+}
+.post_meta p a {
+    font-weight:900;
+    color:#666;
+}
+.post_meta img {
+    border:1px solid #CCC;
+    float:left;
+    margin-right:10px;
+}
+.page_title {
+    margin:0 0 15px 0;
+    float:left;
+}
+.breadcrumb_holder {
+    width:100%;
+    float:left;
+    margin-top:20px;
+    margin-bottom:5px;
+    font-size:15px;
+    color:#666;
+    font-family:'LeagueGothicRegular';
+    text-transform:uppercase;
+}
+.breadcrumb_holder a {
+    color:#999;
+    font-weight:100;
+}
+.blog_featured {
+    background-image:url(images/debut_dark.png);
+    -moz-box-shadow: inset 0 0 15px #000000;
+    -webkit-box-shadow: inset 0 0 15px #000000;
+    box-shadow: inset 0 0 15px #000000;
+}
+.blog_featured h1 {
+    font-family:'LeagueGothicRegular';
+    text-transform:uppercase;
+    font-size:36px;
+    padding:0px;
+    margin:20px 0;
+    font-weight:100;
+    color:#FFF;
+    text-shadow: 1px 1px 1px #DBA700;
+}
+.blog_banner {
+    width:100%;
+    float:left;
+    background-image:url(images/banner_bg.png);
+    background-position:center;
+    padding:10px 0 10px 0;
+    background-repeat:no-repeat;
+}
+.interior h3 {
+    font-size:18px;
+}
+.interior p {
+    font-size:12px;
+    line-height:16px;
+}
+.home_widget img {
+    border:1px solid #CCC;
+}
+.nine ul {
+    margin:0 0 0 20px;
+    padding:0px;
+}
+.nine li {
+    margin:0px;
+    padding:0px;
+    color:#999;
+}
+.featured_header {
+    height:420px;
+}
+.single_post {
+    color:#FFF;
+    font-family:'LeagueGothicRegular';
+    text-transform:uppercase;
+    font-size:70px;
+    margin-bottom:20px;
+    font-weight:100;
+    width:80%;
+}
+.application_holder {
+    float:left;
+}
+.tab_link {
+    font-family:'LeagueGothicRegular';
+    text-transform:uppercase;
+    font-size:18px;
+}
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+ @media only screen and (max-width: 767px) {
+    /* Global Misc --- */
+    .sub_nav {
+        background-color:#F0F0F0;
+        margin:0;
+    }
+    #main_image_holder {
+        width: 100%;
+        border: 1px solid #CCC;
+        background-color:#CCC;
+        text-align: left;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        margin-left: -50%;
+        z-index:999;
+        height:100px;
+    }
+    .home_image_holder {
+        height:100px;
+    }
+    .featured_header {
+        height:120px;
+    }
+    #site_name {
+        text-align:center;
+    }
+    .mobile {
+        margin:0 10px;
+    }
+    .mobile li {
+        width:100%;
+        background-color:#666;
+        float:left;
+        margin-bottom:1px;
+    }
+    .mobile li a {
+        font-size:11px;
+        color:#FFF;
+    }
+    .mobile > li > a:first-child {
+        position: relative;
+        padding: 0 10px;
+        display: block;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    .mobile ul > li.active, .top-bar ul > li:hover {
+        background: #C90;
+    }
+}
+
+/*PHIL TEASER*/
+ .phil_teaser {
+  width:100%;
+  padding:50px 0;
+  text-align:center;
+  margin-top:0px;
+  margin-bottom:30px;
+  background-color:#F5F5F5;
+}
+.phil_teaser h2 {
+  font-family:'OpenSans-Light';
+  color:#333;
+  font-size:55px;
+}
+.container {
+  width:100%;
+  background-color:#FFF;
+  overflow:hidden;
+  float:left;
+  margin:0px;
+  padding:0px;
+}
+
+
+

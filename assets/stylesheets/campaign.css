@@ -1,0 +1,753 @@
+/*
+Theme Name: UI Foundation Campaign Prospectus
+Theme URI: htt://www.uifoundation.org/
+Author: Harrison Wheeler / University of Iowa Foundation
+Author URI: htt://www.uifoundation.org/
+*/
+
+/* HEADER STYLE */
+
+/* ADDS VISUAL FLARE TO HEADER*/
+.enclosure {
+    width:100%;
+    border-top:1px solid #111;
+    border-bottom:1px solid #C90;
+    float:left;
+}
+.reveal_menu a {
+    color:#C90;
+}
+/*Opera Fix*/
+ body:before {
+    /* thanks to Maleika (Kohoutec)*/
+    content:"";
+    height:100%;
+    float:left;
+    width:0;
+    margin-top:-32767px;
+    /* thank you Erik J - negate effect of float*/
+}
+html, body {
+    height: 100%;
+}
+body {
+}
+.content_holder {
+    background-color:#FFF;
+    border:1px solid #CCC;
+    margin-bottom:30px;
+    margin-top:20px;
+    padding-top:10px;
+}
+p {
+    line-height:22px;
+    font-size:15px;
+}
+/* must be same height as the footer Was causing excess padding so changed to zero (was 150px)*/
+
+/* FOOTER STYLES */
+ input[type="text"].search {
+    margin:0px;
+    padding:0 10px;
+}
+#footer {
+    position: relative;
+    width:100%;
+    height: 540px;
+    clear:both;
+    background-color:#333;
+    border-top:1px solid #CC9900;
+    position: relative;
+    clear:both;
+    text-shadow: -1px -1px 0px #222;
+}
+.footer_header {
+    float:left;
+    width:100%;
+    background-color:#222;
+    padding:10px 0;
+    border-top:1px solid #111;
+    border-bottom:1px solid #111;
+    background-image: url(img/top_bar_texture.jpg);
+    background-repeat:repeat-x;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#424343), to(#2F2F2E));
+    background-image: -webkit-linear-gradient(top, #424343, #2F2F2E);
+    background-image: -moz-linear-gradient(top, #424343, #2F2F2E);
+    background-image: -ms-linear-gradient(top, #424343, #2F2F2E);
+    background-image: -o-linear-gradient(top, #424343, #2F2F2E);
+    color:#CCC;
+    background-color:#222;
+}
+.footer_header p {
+    font-size:12px;
+    /*font-family:'OpenSans';*/
+    font-weight:100;
+    margin:0px;
+    padding:0px;
+    color:#ccc;
+}
+.search_campaign {
+    width:100%;
+    float:left;
+    padding:10px 0;
+    border-top:1px solid #444;
+    border-bottom:1px solid #111;
+}
+.site_map {
+    width:100%;
+    float:left;
+    padding:20px 0;
+    border-top:1px solid #444;
+    border-bottom:1px solid #111;
+}
+.site_map p {
+    /*font-family:'OpenSansLight';*/
+    font-size:12px;
+    color:#CCC;
+    line-height:18px;
+}
+.site_map h4 {
+    font-size:12px;
+    color:#C90;
+    margin:0 0 5px 0;
+    padding:0px;
+    text-transform:uppercase;
+    /*font-family:'OpenSansLight';*/
+    font-weight:100;
+}
+.site_map ul {
+    margin:0px;
+    padding:0px;
+}
+.site_map li {
+    list-style:none;
+    margin:0px;
+    padding:0px;
+}
+.site_map li a {
+    /*font-family:'OpenSansLight';*/
+    font-size:12px;
+    color:#CCC;
+}
+.site_map li a:hover {
+    color:#FFF;
+}
+.bottom {
+    width:100%;
+    float:left;
+    border-top:#444 1px solid;
+    padding:20px 0;
+    background-color:#333;
+}
+.bottom ul {
+    margin:0 0 5px 0;
+    padding:0px;
+    text-align:center;
+}
+.bottom li {
+    display:inline;
+    font-size:12px;
+    margin-right:10px;
+    color:#CCC;
+    /*font-family:'OpenSansLight';*/
+}
+.bottom li a {
+    color:#C90;
+}
+.bottom p {
+    /*font-family:'OpenSansLight';*/
+    font-size:13px;
+    color:#CCC;
+    line-height:18px;
+    text-align:center;
+}
+h2, h3, h4, h5, h6 {
+    margin-bottom:10px;
+    font-weight:100;
+    /*font-family:'LeagueGothicRegular';*/
+    text-transform:uppercase;
+}
+#footer p {
+    font-size:11px;
+    color:#CCC;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#footer a {
+    font-weight:600;
+}
+.sub_nav_header {
+    background-color:#333;
+    /* Safari 4+, Chrome 1-9 */
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#555555), to(#222222));
+    /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+    background-image: -webkit-linear-gradient(top, #555555, #22222);
+    /* Firefox 3.6+ */
+    background-image: -moz-linear-gradient(top, #222222, #333333);
+    /* IE 10+ */
+    background-image: -ms-linear-gradient(top, #222222, #333333);
+    /* Opera 11.10+ */
+    background-image: -o-linear-gradient(top, #222222, #333333);
+    padding:10px 10px;
+    border-bottom:1px solid #000;
+}
+.sub_nav_header h5 {
+    color:#FFF;
+    font-weight:900;
+    margin:0px;
+    text-shadow: 1px 1px 0px #000;
+}
+.sub_nav_holder {
+    font-size:12px;
+    background-color:#EFEFEF;
+    margin-left:-20px;
+    border:1px solid #CCC;
+    background-color:#444444;
+    padding:0px;
+    margin-bottom:20px;
+}
+.sub_nav ul {
+    margin:0px;
+    padding:0px;
+}
+.sub_nav li {
+    list-style:none;
+    padding:7px 10px;
+    border-bottom:1px solid #333;
+    border-top:1px solid #666;
+}
+.sub_nav li a {
+    font-size:13px;
+    font-weight:bold;
+    color:#CCC;
+    text-shadow: 1px 1px 0px #000;
+}
+/*
+header{
+  width:100%;
+  float:left;
+  background-color:#1c1c1c;
+  padding:0px;
+  margin-bottom:30px;
+  border-bottom:3px solid #C90;
+}
+
+header h6{
+  font-size:12px;
+  font-weight:900;
+  margin:0px;
+  padding:0px;
+  line-height:22px; 
+}
+
+header ul{
+  margin:0px;
+  padding:0px;
+}
+
+
+header li{
+  display:inline;
+  font-size:10px;
+  font-weight:900;
+  margin-left:5px;
+  margin:0px;
+  line-height:30px;
+}
+
+header li a{
+  font-family:Arial, Helvetica, sans-serif;
+  margin:0 0 0 5px;
+  font-size:11px;
+}*/
+ #featuredContent h2 {
+    color:#FFF;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:48px;
+    font-weight:bold;
+    padding-top:80px;
+}
+.lead_in {
+    padding-top:40px;
+    padding-bottom:20px;
+}
+.lead_in h4 {
+    font-size:30px;
+    margin:0px;
+    padding:0px;
+}
+.lead_in img {
+    margin-bottom:20px;
+    border:1px solid #CCC;
+    padding:4px;
+    background-color:#FFF;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    /* future proofing */
+    -khtml-border-radius: 3px;
+    /* for old Konqueror browsers */
+}
+h1 {
+    /*font-family:'LeagueGothicRegular';*/
+    text-transform:uppercase;
+    font-size:50px;
+    font-weight:100;
+}
+h2 {
+    /*font-family:'LeagueGothicRegular';*/
+    text-transform:uppercase;
+    font-size:36px;
+}
+h3 {
+    /*font-family:'LeagueGothicRegular';*/
+    text-transform:uppercase;
+    font-size:28px;
+}
+.sub_navigation {
+    width:100%;
+    float:left;
+    padding:10px 0;
+    border-bottom:1px dotted #CCC;
+}
+.sub_navigation ul {
+    margin:0px;
+    padding:0px;
+}
+.sub_navigation li {
+    list-style:none;
+    display:inline;
+    margin:0 10px;
+    padding:0px;
+}
+.sub_navigation li a {
+    font-family:'LeagueGothicRegular';
+    text-transform:uppercase;
+    font-size:18px;
+    color:#39C;
+}
+.columns h5 {
+    color:#999;
+}
+.columns ul,
+.columns ol {
+    font-family:Georgia, "Times New Roman", Times, serif;
+}
+.columns ul {
+    color:#666;
+}
+.columns ol {
+    margin-left:20px;
+    color:#666;
+}
+.columns li {
+    font-size:14px;
+}
+.story {
+    width:100%;
+    float:left;
+    background-color:#F9E38C;
+    padding:40px 0;
+    margin-top:30px;
+    border-top:1px dotted #FC3;
+    border-bottom:1px dotted #FC3;
+}
+.breadcrumb_holder,
+.breadcrumb_holder a,
+.breadcrumb_holder p,
+small,
+.campaign .progress_bar h1,
+.campaign .progress_bar h2 {
+    font-family:'LeagueGothicRegular';
+}
+.breadcrumb_holder {
+    width:100%;
+    background-color:#EFEFEF;
+    float:left;
+    padding: 10px 0;
+    
+    text-transform:uppercase;
+    color:#666;
+    border-bottom:1px solid #CCC;
+}
+.breadcrumb_holder a {
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+}
+.breadcrumb_holder p {
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+}
+small {
+    text-transform:uppercase;
+    font-size:18px;
+}
+.widget {
+    float:left;
+    width:100%;
+    margin-bottom:30px;
+}
+.campaign .progress_bar {
+    background-color:#F9E38C;
+    width:100%;
+    float:left;
+    padding:20px 0;
+    margin-bottom:30px;
+    border-top:1px dotted #B9AA66;
+    border-bottom:1px dotted #B9AA66;
+}
+.campaign .progress_bar h2 {
+    /*font-family:'LeagueGothicRegular';*/
+    text-transform:uppercase;
+    font-size:36px;
+    text-align:center;
+    color:#B9AA67;
+}
+.campaign .progress_bar h1 {
+    /*font-family:'LeagueGothicRegular';*/
+    text-transform:uppercase;
+    font-size:120px;
+    text-align:center;
+    color:#3A3520;
+}
+.campaign .progress_bar p {
+    text-align:center;
+    color:#B9AA67;
+    font-style:italic;
+    font-size:24px;
+}
+.index_header {
+    border-bottom:1px dotted #FFF;
+    background-color:#9CF;
+    padding:10px 0 20px;
+    background-image:url(img/bg_index.jpg);
+    background-repeat:repeat-x;
+    background-position:top;
+}
+.leadership {
+}
+.leadership_column img {
+    padding:4px;
+    background-color:#FFF;
+    border:1px solid #CCC;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    /* future proofing */
+    -khtml-border-radius: 3px;
+    /* for old Konqueror browsers */
+    margin:0px;
+}
+.leadership h3 {
+    /*font-family:'LeagueGothicRegular';*/
+    text-transform:uppercase;
+    font-size:26px;
+    margin:0px;
+    padding:0px;
+    color:#666;
+    font-weight:100;
+}
+.leadership h4 {
+    margin-top:20px;
+}
+.leadership p {
+    margin:0 0 10px 0;
+    padding:0px;
+}
+.leadership_column p {
+    margin:0 0 10px 0;
+    padding:0px;
+    font-size:13px;
+    line-height:15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.leadership_column h6 {
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-size:14px;
+    color:#999;
+    margin:0;
+    padding:0px;
+    text-transform:none;
+    font-style:italic;
+}
+.leadership h5 {
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-size:14px;
+    color:#999;
+    margin:0px;
+    padding:0px;
+    text-transform:none;
+    margin:0px;
+    padding:0px;
+}
+.home h3 {
+    font-size:24px;
+}
+.home_campaign {
+    background-color:#9CF;
+    text-align:center;
+    padding:20px;
+    margin-bottom:20px;
+    border-bottom:1px dotted #FFF;
+    background-image:url(img/bg_index.jpg);
+    background-position:center;
+    border-top:1px solid #09F;
+}
+.home_campaign h3 {
+    margin:0px;
+    padding:0px;
+    color:#FFF;
+}
+.home_campaign p {
+    margin:0px;
+    padding:0px;
+}
+.home_info {
+    padding:60px 0;
+    float:left;
+    width:100%;
+}
+.slider_holder {
+    width:100%;
+    background-color:#EFEFEF;
+    border-top:1px #ccc solid;
+    border-bottom:1px #ccc solid;
+    padding:30px 0;
+}
+.slide_button {
+    float:left;
+}
+.slide_button a {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    /* future proofing */
+    -khtml-border-radius: 5px;
+    /* for old Konqueror browsers */
+    background-color:#09F;
+    color:#FFF;
+    padding:10px 20px;
+    float:left;
+    display:block;
+    font-style:normal;
+    text-transform:uppercase;
+    font-weight:900;
+}
+.slide_content {
+    padding-top:110px;
+}
+.slide_content p {
+    color:#FFF;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:24px;
+    line-height:30px;
+}
+.slide_content h1 {
+    color:#FFF;
+    line-height: 55px;
+}
+.slide_content small {
+    color:#FFF;
+    margin:0px;
+    padding:0px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform:none;
+}
+.slide_nav a img {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    /* future proofing */
+    -khtml-border-radius: 3px;
+    /* for old Konqueror browsers */
+}
+.slide_nav h3 {
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#FFF;
+    font-size:14px;
+    margin-top:10px;
+    text-transform:none;
+    color:#666;
+    font-weight:100;
+}
+/* Breadcrums ---------------------- */
+ ul.breadcrumbs {
+    display: block;
+    background:none;
+    padding:0px;
+    border:none;
+    overflow: hidden;
+    margin:0 0 10px 0;
+}
+ul.breadcrumbs li {
+    margin: 0;
+    padding: 0 7px 0 0;
+    float: left;
+    list-style: none;
+}
+ul.breadcrumbs li a, ul.breadcrumbs li span {
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size: 11px;
+    font-size: 1.1rem;
+    padding-left: 7px;
+}
+ul.breadcrumbs li:first-child a, ul.breadcrumbs li:first-child span {
+    padding-left: 0;
+}
+ul.breadcrumbs li:before {
+    content:"/";
+    color: #aaa;
+}
+ul.breadcrumbs li:first-child:before {
+    content:" ";
+}
+ul.breadcrumbs li.current a {
+    cursor: default;
+    color: #333;
+}
+ul.breadcrumbs li:hover a, ul.breadcrumbs li a:focus {
+    text-decoration:none;
+}
+ul.breadcrumbs li.current:hover a, ul.breadcrumbs li.current a:focus {
+    text-decoration: none;
+}
+ul.breadcrumbs li.unavailable a {
+    color: #999;
+}
+ul.breadcrumbs li.unavailable:hover a, ul.breadcrumbs li.unavailable a:focus {
+    text-decoration: none;
+    color: #999;
+    cursor: default;
+}
+table {
+    margin-bottom: 1.4em;
+    width:100%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+}
+th {
+    font-weight: bold;
+}
+thead th {
+    border-bottom:2px solid #CCC;
+    color:#666;
+}
+th, td, caption {
+    padding: 6px 10px 6px 5px;
+}
+td {
+    color:#444;
+    border-bottom:1px solid #CCC;
+}
+/*
+  You can zebra-stripe your tables in outdated browsers by adding 
+  the class "even" to every other table row. 
+ */
+ tbody tr:nth-child(even) td, tbody tr.even td {
+    background: #EFEFEF;
+}
+tfoot {
+    font-style: italic;
+}
+caption {
+    background: #eee;
+}
+.propsectus_text {
+    padding:20px;
+    margin-top:90px;
+    margin-bottom:120px;
+    border:1px solid #EFEFEF;
+}
+.propsectus_text h3 {
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-style:italic;
+    color:#CCC;
+    margin:0px;
+    text-transform:none;
+}
+@media only screen and (max-width: 767px) {
+    /* Global Misc --- */
+    .sub_nav_holder {
+        font-size:12px;
+        background-color:#EFEFEF;
+        margin:0 10px 20px 10px;
+        padding:0px;
+    }
+    .navigation_header {
+        margin-top:0px;
+        text-align:center;
+    }
+    .navigation_header ul {
+        margin:10px 0 0 0;
+        padding:0px;
+        float:left;
+    }
+    .navigation_header li {
+        margin:0;
+        float:left;
+        width:50%;
+    }
+    .navigation_header li a {
+        font-weight:900;
+        display:block;
+        padding:10px;
+        width:100%;
+        float:left;
+        text-shadow: 1px 1px 0px #000;
+        color:#CCC;
+        font-size:4.5vw;
+    }
+    .navigation_header li a:hover {
+        background-color:#222;
+    }
+    .navigation_header h1 {
+        color:#333;
+        font-size:26px;
+        margin-bottom:20px;
+    }
+    .content_holder {
+        margin-left:15px;
+        margin-right:15px;
+    }
+    .progress_bar h1 {
+        font-family:'LeagueGothicRegular';
+        text-transform:uppercase;
+        font-size:80px;
+        text-align:center;
+        color:#3A3520;
+    }
+    .sub_navigation {
+        display:none;
+        height:0px;
+    }
+    .top_menu {
+        width:100%;
+    }
+}
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+/* -----------------------------------------
+   Page Name 1
+----------------------------------------- */
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+h1.monthly-percent,
+h1.monthly-progress {
+    margin:: 0;
+    line-height: 132px;
+}
+
+.campaign .slider_holder a img {
+    border: 5px solid #EFEFEF;
+}
+.campaign .slider_holder a.active img {
+    border: 5px solid #09F;
+}

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>University of Iowa Foundation</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/facultystaff.css" />
+    <link rel="stylesheet" href="/stylesheets/jquery.bxslider.css" />
+    <link rel="stylesheet" href="/stylesheets/philsday.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/reload-client.js"></script>
+    <script src="/javascripts/vendor/requirejs/require.js" data-main="/javascripts/main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+</head>
+
+<body class="faculty">
+    <div class="navigation">
+        <div class="row">
+            <div class="twelve columns">
+                <div style="height:20px; float:left; margin-top:4px; margin-right:7px;">
+                    <img src="http://www.uifoundation.org/wp-content/themes/common_3_home/images/dome.png" alt="University of Iowa Foundation">
+                </div>
+                <h1 class="left">                      <a href="http://www.uifoundation.org/">University of Iowa Foundation</a>                  </h1>  <a class="reveal_menu show-for-small" style="float:right;" href="#" data-reveal-id="global_mobile">›</a> 
+                <ul class="global_nav right hide-for-small">
+                    <li id="menu-item-279" class="menu-item"> <a href="/campaign">Campaign</a> 
+                    </li>
+                    <li id="menu-item-280" class="menu-item"> <a href="/facultystaff">Faculty &amp; Staff</a> 
+                    </li>
+                    <li id="menu-item-281" class="menu-item"> <a href="/football-legacy">Football Legacy</a> 
+                    </li>
+                    <li id="menu-item-405" class="menu-item"> <a href="/grand-challenges">Grand Challenges</a> 
+                    </li>
+                    <li id="menu-item-405" class="menu-item"> <a href="/inspire">Inspire</a> 
+                    </li>
+                    <li id="menu-item-405" class="menu-item"> <a href="/one">One</a> 
+                    </li>
+                    <li id="menu-item-405" class="menu-item"> <a href="/philsday">Phils Day</a> 
+                    </li>
+                    <li id="menu-item-405" class="menu-item"> <a href="/philwashere">Phils Was Here</a> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <!--BEGIN HEADER-->
+        <header id="global">
+            <!--ENCLOSURE-->
+            <div class="enclosure">
+                <div class="navigation">
+                    <div class="row">
+                        <div class="twelve columns">
+                            <div style="height:20px; float:left; margin-top:4px; margin-right:7px;">
+                                <img src="http://www.uifoundation.org/campaign/wp-content/themes/campaign_site/images/dome.png" alt="University of Iowa Foundation">
+                            </div>
+                            <h1 class="left">                                  <a href="http://www.uifoundation.org/">University of Iowa Foundation</a>                              </h1>  <a class="reveal_menu show-for-small" style="float:right;" href="#" data-reveal-id="global_mobile">›</a> 
+                            <ul class="global_nav right hide-for-small">
+                                <li id="menu-item-279" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-279"> <a href="http://www.uifoundation.org/about">About the Foundation</a> 
+                                </li>
+                                <li id="menu-item-280" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-280"> <a href="http://www.uifoundation.org/thanks">Recognition and Thanks</a> 
+                                </li>
+                                <li id="menu-item-281" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-281"> <a href="http://www.uifoundation.org/ways">Ways to Give</a> 
+                                </li>
+                                <li id="menu-item-405" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-405"> <a href="http://www.uifoundation.org/careers">Careers</a> 
+                                </li>
+                                <li id="menu-item-379" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-379"> <a href="http://www.givetoiowa.org">Give Now</a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--END ENCLOSURE-->
+                <!--GLOBAL MENU ACTIVATION FOR MOBILE-->
+                <div class="show-for-small">
+                    <a class="sidebar-button" id="sidebarButton" href="#sidebar"> <span style="line-height:30px;">☰</span> 
+                    </a>
+                </div>
+                <!--END GLOBAL MENU ACTIVATION FOR MOBILE-->
+            </div>
+        </header>
+        <section class="cart_breadcrumbs">
+            <!--CART ENCLOSURE-->
+            <div class="cart_enclosure">
+                <div class="row">
+                    <div class="twelve columns">
+                        <p class="left"><a href="http://www.uifoundation.org/facultystaff" title="We Are Phil: 2013 Faculty Staff Program">We Are Phil: 2013 Faculty Staff Program</a> 
+                        </p>
+                        <!--PAGE NAVIGATION-->
+                        <div class="right">
+                            <nav class="page_nav_options hide-for-small">
+                                <ul>
+                                    <li><a href="http://www.uifoundation.org/facultystaff/faq">Frequently Asked Questions</a> 
+                                    </li>
+                                    <li><a href="http://www.uifoundation.org/facultystaff/giving">Giving</a> 
+                                    </li>
+                                    <li><a href="http://www.uifoundation.org/facultystaff/leadership">Leadership</a> 
+                                    </li>
+                                    <li><a href="http://www.uifoundation.org/facultystaff/resources">Resources</a> 
+                                    </li>
+                                    <li><a href="http://www.uifoundation.org/facultystaff/stories">Stories</a> 
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!--END PAGE NAVIGATION-->
+                        <!--CART OPTIONS                          <div class="right">                          <a class="cart_amount">Total: $1000</a>                            <a class="small button checkout" href="#">Checkout</a>                          </div>                           END CART OPTIONS--></div>
+                </div>
+            </div>
+        </section>
+        <section role="main" class="page-bg">
+            <!--BEGIN FEATURED CONTENT-->
+            <section class="featured_content_home">
+                <div class="row home_video_fix">
+                    <div class="eleven columns centered">
+                        <!--RELATIVE POSITIONING-->
+                        <div class="featured_content_holder_home">
+                            <!--ABSOLUTE POSITIONING-->
+                            <!--FEATURED VIDEO-->
+                            <div class="flex-video widescreen vimeo home">
+                                <iframe src="//www.youtube.com/embed/NdiMenufnQY?rel=0&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--END FEATURED CONTENT-->
+            <!--BEGIN MAIN CONTENT-->
+            <div class="row">
+                <!--Interior Content-->
+                <div class="eleven columns centered">
+                    <div class="right" style="width:200px;"><a class="large button" style="margin-bottom:0;" href="http://www.givetoiowa.org">Give to Iowa</a> 
+                    </div>
+                    <h1>Who is Phil?</h1> 
+                    <p>Who is Phil? Phil is short for philanthropy, and at the UI, Phil is our nickname for everyone who donates to the university, as well as all those who benefit from private support. That means you are Phil too.</p>
+                    <p>Through participation in the annual <em>We Are Phil</em>giving program, you have the opportunity to deepen your commitment—and make an even bigger impact—by making a donation to support the university. The goal of this new giving program
+                        is participation…increasing the number of UI faculty and staff who give to Iowa.</p>
+                    <p>Your gift—no matter the size—can support scholarship, enhance patient care, spark creativity, or speed research. For a list of funds you can help support, visit <a href="http://www.givetoiowa.org/">www.givetoiowa.org</a>.</p>
+                    <p>Be Phil! With <strong>hundreds of active funds</strong>, the UI offers giving opportunities to match nearly every interest. Following are just a few areas where your gift can make a big difference:</p>
+                </div>
+                <!--STATISTICS SECTION-->
+                <div class="row">
+                    <div class="eleven columns centered"></div>
+                    <div class="twelve columns">
+                        <div class="stats-slider">
+                            <div class="panel radius slide">
+                                <h4>1,769</h4> 
+                                <h5>scholarship funds</h5> 
+                            </div>
+                            <div class="panel radius slide">
+                                <h4>443</h4> 
+                                <h5>faculty support funds</h5> 
+                            </div>
+                            <div class="panel radius slide">
+                                <h4>475</h4> 
+                                <h5>research funds</h5> 
+                            </div>
+                            <div class="panel radius slide">
+                                <h4>200</h4> 
+                                <h5>areas of study</h5> 
+                            </div>
+                            <div class="panel radius slide">
+                                <h4>213</h4> 
+                                <h5>named faculty positions</h5> 
+                            </div>
+                            <div class="panel radius slide">
+                                <h4>24</h4> 
+                                <h5>athletic teams</h5> 
+                            </div>
+                        </div>
+                        <!--CLOSE SLIDER-->
+                    </div>
+                    <!--END TWELVE COLUMNS-->
+                </div>
+                <!--FEATURED PROFILE SECTION-->
+                <section id="featured_profile">
+                    <!--STORIES-->
+                    <div class="row">
+                        <ul class="profile-slider">
+                            <li class="slide">
+                                <ul class="story_profile block-grid two-up mobile-one-up">
+                                    <li class="six columns featured_profile_container">
+                                        <div class="featured_profile_video flex-video widescreen" style="padding-bottom:61.25% !important;">
+                                            <iframe width="450" height="338" src="http://www.youtube.com/embed/2SZSxQILK8s?rel=0&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                    </li>
+                                    <li class="six columns quote_block">
+                                        <h5>Your Gifts Help</h5> 
+                                        <blockquote>"When we work together as a unit we can get so much more accomplished"</blockquote>
+                                        <h3>                                              <small>                                                  <em>Georgina Dodge</em>                                              </small>                                          </h3> 
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <ul class="story_profile block-grid two-up mobile-one-up">
+                                    <li class="six columns featured_profile_container">
+                                        <div class="featured_profile_video flex-video widescreen" style="padding-bottom:61.25% !important;">
+                                            <iframe width="450" height="338" src="http://www.youtube.com/embed/PzW_IE5Vtt8?rel=0&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                    </li>
+                                    <li class="six columns quote_block">
+                                        <h5>Your Gifts Help</h5> 
+                                        <blockquote>"If you don't go, you don't know."</blockquote>
+                                        <h3>                                              <small>                                                  <em>Craig Just</em>                                              </small>                                          </h3> 
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <ul class="story_profile block-grid two-up mobile-one-up">
+                                    <li class="six columns featured_profile_container">
+                                        <div class="featured_profile_video flex-video widescreen" style="padding-bottom:61.25% !important;">
+                                            <iframe width="450" height="338" src="http://www.youtube.com/embed/pZ8MRCeHYs8?rel=0&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                    </li>
+                                    <li class="six columns quote_block">
+                                        <h5>Your Gifts Help</h5> 
+                                        <blockquote>"How are you helping to give back to the University?"</blockquote>
+                                        <h3>                                              <small>                                                  <em>Rachel Marie-Crane Williams</em>                                              </small>                                          </h3> 
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <ul class="story_profile block-grid two-up mobile-one-up">
+                                    <li class="six columns featured_profile_container">
+                                        <div class="featured_profile_video flex-video widescreen" style="padding-bottom:61.25% !important;">
+                                            <iframe width="450" height="338" src="http://www.youtube.com/embed/KQQNVVQDVuU?rel=0&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                    </li>
+                                    <li class="six columns quote_block">
+                                        <h5>Your Gifts Help</h5> 
+                                        <blockquote>"By supporting and giving to the UI we can nourish and empower college students to become an innovative and outstanding part of society."</blockquote>
+                                        <h3>                                              <small>                                                  <em>Michael O. Chan</em>                                              </small>                                          </h3> 
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <ul class="story_profile block-grid two-up mobile-one-up">
+                                    <li class="six columns featured_profile_container">
+                                        <div class="featured_profile_video flex-video widescreen" style="padding-bottom:61.25% !important;">
+                                            <iframe width="450" height="338" src="http://www.youtube.com/embed/vBzdp-lMXAI?rel=0&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                    </li>
+                                    <li class="six columns quote_block">
+                                        <h5>Your Gifts Help</h5> 
+                                        <blockquote>"We hope that every day of research will lead these amazing doctors to better results for future patients. With our gifts . . . we can carry on what Carolyn wanted to do."</blockquote>
+                                        <h3>                                              <small>                                                  <em>Joan Kjaer Kirkman</em>                                              </small>                                          </h3> 
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <ul class="story_profile block-grid two-up mobile-one-up">
+                                    <li class="six columns featured_profile_container">
+                                        <div class="featured_profile_video flex-video widescreen" style="padding-bottom:61.25% !important;">
+                                            <iframe width="450" height="338" src="http://www.youtube.com/embed/p9-Doso212Q?rel=0&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                    </li>
+                                    <li class="six columns quote_block">
+                                        <h5>Your Gifts Help</h5> 
+                                        <blockquote>"We're all trying to chip in to help this big team, the University of Iowa."</blockquote>
+                                        <h3>                                              <small>                                                  <em>Matthew Howard</em>                                              </small>                                          </h3> 
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <ul class="story_profile block-grid two-up mobile-one-up">
+                                    <li class="six columns featured_profile_container">
+                                        <div class="featured_profile_video flex-video widescreen" style="padding-bottom:61.25% !important;">
+                                            <iframe width="450" height="338" src="http://www.youtube.com/embed/WgzAIfLWg5E?rel=0&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                    </li>
+                                    <li class="six columns quote_block">
+                                        <h5>Your Gifts Help</h5> 
+                                        <blockquote>"Here at the university we all have many opportunities to be a part of philanthropy."</blockquote>
+                                        <h3>                                              <small>                                                  <em>Joni Troester</em>                                              </small>                                          </h3> 
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <ul class="story_profile block-grid two-up mobile-one-up">
+                                    <li class="six columns featured_profile_container">
+                                        <div class="featured_profile_video flex-video widescreen" style="padding-bottom:61.25% !important;">
+                                            <iframe width="450" height="338" src="http://www.youtube.com/embed/QrjWMXWrUvo?rel=0&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                    </li>
+                                    <li class="six columns quote_block">
+                                        <h5>Your Gifts Help</h5> 
+                                        <blockquote>"Lives are changing at the University of Iowa."</blockquote>
+                                        <h3>                                              <small>                                                  <em>Jerry Schnoor</em>                                              </small>                                          </h3> 
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <h4><a style="float:right; margin-top:-40px; padding-right:30px;" href="http://www.uifoundation.org/facultystaff/stories">See all stories here!</a>                      </h4> 
+                </section>
+                <!--END FEATURED PROFILE-->
+                <!--EVENT SCHEDULE-->
+                <div class="six columns">
+                    <h4>We Are Phil</h4> 
+                    <p>The launch may be over, but <em>We Are Phil</em>is just beginning. For this year—our first annual appeal—you have until June 30, 2014, to make your gift and be counted. Thank you!</p>
+                    <!-- <h4>Event Schedule for                                            December 23, 2013                            </h4>                                             <p>Want to see a different day?                                       <select id="pick-day">                                                       <option value="mon1">Monday, 10/21/2013</option>                                      <option value="tues1">Tuesday, 10/22/2013</option>                              <option value="wed1">Wednesday, 10/23/2013</option>                              <option value="thurs1">Thursday, 10/24/2013</option>                              <option value="fri1">Friday, 10/25/2013</option>                              <option value="mon2">Monday, 10/28/2013</option>                              <option value="tues2">Tuesday, 10/29/2013</option>                              <option value="wed2">Wednesday, 10/30/2013</option>                              <option value="thurs2">Thursday, 10/31/2013</option>                              <option value="fri2">Friday, 11/1/2013</option>                          </select></p>                      <!--The script below shows the respective table for each select option-->
+                    <!--<script type="text/javascript">                          /* $(document).ready(function() {                              //Display current date's events                               var date = new Date();                              var day = date.getDate();                                                        if (day == 21) {                                  $('.tues1, .wed1, .thurs1, .fri1, .mon2, .tues2, .wed2, .thurs2, .fri2').hide();                                  $('.mon1').show();                              } else if (day == 22){                                  $('.mon1, .wed1, .thurs1, .fri1, .mon2, .tues2, .wed2, .thurs2, .fri2').hide();                                  $('.tues1').show();                                                       } else if (day == 23) {                                  $('.tues1, .mon1, .thurs1, .fri1, .mon2, .tues2, .wed2, .thurs2, .fri2').hide();                                  $('.wed1').show();                                                        } else if (day == 24) {                                  $('.tues1, .wed1, .mon1, .fri1, .mon2, .tues2, .wed2, .thurs2, .fri2').hide();                                  $('.thurs1').show();                                                      } else if (day == 25) {                                  $('.tues1, .wed1, .thurs1, .mon1, .mon2, .tues2, .wed2, .thurs2, .fri2').hide();                                  $('.fri1').show();                                                            } else if (day == 28) {                                  $('.tues1, .wed1, .thurs1, .fri1, .mon1, .tues2, .wed2, .thurs2, .fri2').hide();                                  $('.mon2').show();                                                        } else if (day == 29) {                                  $('.tues1, .wed1, .thurs1, .fri1, .mon2, .mon1, .wed2, .thurs2, .fri2').hide();                                  $('.tues2').show();                               } else if (day == 30) {                                  $('.tues1, .wed1, .thurs1, .fri1, .mon2, .tues2, .mon1, .thurs2, .fri2').hide();                                  $('.wed2').show();                              } else if (day == 31){                                  $('.tues1, .wed1, .thurs1, .fri1, .mon2, .tues2, .wed2, .mon1, .fri2').hide();                                  $('.thurs2').show();                                  } else if (day == 1){                                  $('.tues1, .wed1, .thurs1, .fri1, .mon2, .tues2, .wed2, .thurs2, .mon1').hide();                                  $('.fri2').show();                              } else {                                $('.tues1, .wed1, .thurs1, .fri1, .mon2, .tues2, .wed2, .thurs2, .mon1, .fri2').hide();                         }                                                                $('#pick-day').trigger('change');                                                            $('#pick-day').change(function() {                                  var n = $(this).val();                                  switch(n) {                                      case 'mon1':                                          $('.tues1, .wed1, .thurs1, .fri1, .mon2, .tues2, .wed2, .thurs2, .fri2').hide();                                          $('.mon1').show();                                          break;                                      case 'tues1':                                          $('.mon1, .wed1, .thurs1, .fri1, .mon2, .tues2, .wed2, .thurs2, .fri2').hide();                                          $('.tues1').show();                                          break;                                      case 'wed1':                                          $('.tues1, .mon1, .thurs1, .fri1, .mon2, .tues2, .wed2, .thurs2, .fri2').hide();                                          $('.wed1').show();                                          break;                                      case 'thurs1':                                          $('.tues1, .wed1, .mon1, .fri1, .mon2, .tues2, .wed2, .thurs2, .fri2').hide();                                          $('.thurs1').show();                                          break;                                      case 'fri1':                                          $('.tues1, .wed1, .thurs1, .mon1, .mon2, .tues2, .wed2, .thurs2, .fri2').hide();                                          $('.fri1').show();                                                        break;                                      case 'mon2':                                          $('.tues1, .wed1, .thurs1, .fri1, .mon1, .tues2, .wed2, .thurs2, .fri2').hide();                                          $('.mon2').show();                                                                break;                                      case 'tues2':                                          $('.tues1, .wed1, .thurs1, .fri1, .mon2, .mon1, .wed2, .thurs2, .fri2').hide();                                          $('.tues2').show();                                                                       break;                                      case 'wed2':                                          $('.tues1, .wed1, .thurs1, .fri1, .mon2, .tues2, .mon1, .thurs2, .fri2').hide();                                          $('.wed2').show();                                                                            break;                                      case 'thurs2':                                          $('.tues1, .wed1, .thurs1, .fri1, .mon2, .tues2, .wed2, .mon1, .fri2').hide();                                          $('.thurs2').show();                                                                              break;                                      case 'fri2':                                          $('.tues1, .wed1, .thurs1, .fri1, .mon2, .tues2, .wed2, .thurs2, .mon1').hide();                                          $('.fri2').show();                                          break;                                                                }                              });                                            });*/                      </script>                      <table  CELLPADDING="2" CELLSPACING="2" class="mon1 events">                          <thead>                              <tr>                                  <th width="33.33%">Time</th>                                  <th>Event</th>                                                            </tr>                          </thead>                          <tbody>                              <tr>                                  <td>7:00 - 9:00 AM</td>                                  <td>WAP Table – UIHC Fountain Lobby </td>                                                                </tr>                              <tr>                                  <td>8:00 AM - 4:00 PM</td>                              <td>Open house/ update on Children’s Hospital progress (JPP Lobby) </td>                                                            </tr>                              <tr>                                  <td>9:00 - 11:00 AM</td>                                  <td>UI Health Care WAP table – MERF Atrium</td>                                                                </tr>                              <tr>                                  <td>11:00AM - 1:00PM</td>                                  <td>UI HEALTH CARE WAP TABLE - IRL </td>                                                                </tr>                              <tr>                                  <td>11:30 AM</td>                                  <td>TCOB daily activity/game- West galleria of PBB </td>                                                                </tr>                              <tr>                                  <td>11:30 AM - 1:00 PM</td>                                  <td>College of Pharmacy Fiesta kick-off lunch – COP Banker Student Center</td>                                                                </tr>                              <tr>                                  <td>3:00 PM</td>                                  <td>2:45-4:00 College of Education kick-off- Teacher Leader Center 1st fl Lindquist </td>                                                            </tr>                              <tr>                                  <td>4:00 PM</td>                                  <td>College of Engineering kick-off reception, Seamans Ctr. Student Commons </td>                              </tr>                          </tbody>                      </table>                                            <table  CELLPADDING="2" CELLSPACING="2" class="tues1 events">                          <thead>                              <tr>                                  <th width="33.33%">Time</th>                                  <th>Event</th>                                                            </tr>                          </thead>                          <tbody>                              <tr>                                  <td>7:00 AM - 9:00 AM</td>                                  <td>UI Health Care WAP table – Colloton Lobby </td>                                                        </tr>                              <tr>                                  <td>9:00 AM</td>                                  <td>College of Pharmacy- bagels at IDIS (Bio Ventures Center) and PRL</td>                                                            </tr>                              <tr>                                  <td>9:00 AM - 11:00 AM</td>                                  <td>UI Health Care WAP table- Bowen Science Bldg </td>                                                            </tr>                              <tr>                                  <td>11:00 AM - 1:00 PM</td>                                  <td>TCOB “Drumming Up Fun” kick-off lunch with steel drum band, Dessert Bake-Off with UIF judges -- PBB S401/patio (11:30-1:30) </td>                                                                </tr>                              <tr>                                  <td>2:30 PM</td>                                  <td>College of Pharmacy Minute to Win It – COP Banker Student Center</td>                                            </tr>                              <tr>                                  <td>2:50 PM</td>                                  <td>College of Nursing Kickoff Celebration, CON lower level well area (outside of rm 22)</td>                                                            </tr>                              <tr>                                  <td>2:00 - 8:00 PM</td>                                  <td>Open house/ update on Children’s Hospital progress (Melrose conf. rms 1&2) </td>                                                                </tr>                          </tbody>                      </table>                                            <table  CELLPADDING="2" CELLSPACING="2" class="wed1 events">                          <thead>                              <tr>                                  <th width="33.33%">Time</th>                                  <th>Event</th>                                                                </tr>                          </thead>                          <tbody>                              <tr>                                  <td>11:30 AM</td>                                  <td>TCOB Minute to Win It game—with trophy awarded to winning department, South Galleria PBB</td>                                                                </tr>                              <tr>                                  <td>11:30 AM - 1:30 PM</td>                                  <td>UI Health Care WAP table- UIHC Cafeteria 1st floor </td>                              </tr>                              <tr>                                  <td>11:30 AM - 1:30 PM</td>                             <td>UI Health Care WAP table- EMRB Atrium</td>                                                      </tr>                              <tr>                                <td>11:00 AM - 1:00 PM</td>                             <td>College of Pharmacy sandwich bar lunch w/student speakers at noon</td>                              </tr>                              <tr>                                  <td>3:00 - 5:00 PM</td>                                  <td>UI Health Care WAP table- UIHC Fountain Lobby</td>                                                            </tr>                              <tr>                                  <td>7:00 - 9:00 PM (tentative)</td>                                  <td>UI Health Care WAP table- UIHC Fountain Lobby</td>                                                            </tr>                              <tr>                                  <td>9:30PM - 2:30 AM (tentative)</td>                                  <td>CUI Health Care WAP table- UIHC Fountain Lobby</td>                                                        </tr>                          </tbody>                      </table>                                            <table  CELLPADDING="2" CELLSPACING="2" class="thurs1 events">                          <thead>                              <tr>                                  <th width="33.33%">Time</th>                                  <th>Event</th>                              </tr>                          </thead>                          <tbody>                              <tr>                                  <td>TIME TBD</td>                                  <td>WAP table at College of Public Health</td>                                                                </tr>                              <tr>                                  <td>7:00 AM - 9:00 AM</td>                                  <td>UI Health Care WAP table- UIHC Fountain Lobby </td>                                                            </tr>                              <tr>                                  <td>7:00 - 9:00 AM</td>                                  <td>UI Health Care WAP table – Colloton Lobby</td>                                                        </tr>                              <tr>                                  <td>9:00 AM - 11:00 AM</td>                                  <td>UI Health Care WAP table- MERF Atrium</td>                                                                </tr>                              <tr>                                  <td>10:30 AM</td>                                  <td>College of Pharmacy Minute to Win It competition, Banker Student Center</td>                              </tr>                              <tr>                                  <td>11:30 AM</td>                                  <td>TCOB trophy award for highest participation dept, South Galleria PBB</td>                                  <td></td>                              </tr>                              <tr>                                  <td>9:30 PM - 2:30 AM (tentative)</td>                                  <td>UI Health Care WAP table- UIHC Fountain Lobby</td>                                    </tr>                          </tbody>                      </table>                                            <table  CELLPADDING="2" CELLSPACING="2" class="fri1 events">                          <thead>                              <tr>                                  <th width="33.33%">Time</th>                                  <th>Event</th>                                                                </tr>                          </thead>                          <tbody>                              <tr>                                  <td>7:00 AM - 9:00 AM</td>                                  <td>UI Health Care WAP table – EMRB Atrium </td>                                                            </tr>                              <tr>                                  <td>11:30 AM - 1:30 PM</td>                                  <td>UI Health Care WAP table- UIHC Cafeteria 1st floor</td>                                                            </tr>                              <tr>                                  <td>11:30 AM</td>                                  <td>TCOB daily activity/game</td>                                    </tr>                              <tr>                                  <td>11:30 AM</td>                                  <td>College of Pharmacy Talent/Art show, luncheon (S545, S543, S552) </td>                                                        </tr>                          </tbody>                      </table>                                            <table  CELLPADDING="2" CELLSPACING="2" class="mon2 events">                          <thead>                              <tr>                                  <th width="33.33%">Time</th>                                  <th>Event</th>                                                                </tr>                          </thead>                          <tbody>                              <tr>                                  <td>8:30 - 9:30 AM</td>                                  <td>College of Pharmacy Dunkin’ Donuts breakfast, COP Banker Center </td>                                                                </tr>                              <tr>                                  <td>9:00 AM</td>                                  <td>College of Pharmacy breakfast </td>                                                            </tr>                              <tr>                                  <td>9:00 - 11:00 AM</td>                                  <td>UI Health Care WAP table- MERF Atrium</td>                                                                </tr>                              <tr>                                  <td>11:00 AM - 1:00 PM</td>                                  <td>UI Health Care WAP table- IRL</td>                                                                </tr>                              <tr>                                  <td>11:30 AM - 1:30 PM</td>                                  <td>UI Health Care WAP table- UIHC Cafeteria 1st floor</td>                              </tr>                              <tr>                                  <td>3:00 - 5:00 PM</td>                                  <td>UI Health Care WAP table- UIHC Fountain Lobby (tentative)</td>                                                                </tr>                          </tbody>                      </table>                                            <table  CELLPADDING="2" CELLSPACING="2" class="tues2 events">                          <thead>                              <tr>                                  <th width="33.33%">Time</th>                                  <th>Event</th>                                                                </tr>                          </thead>                          <tbody>                              <tr>                                  <td>7:00 - 9:00 AM</td>                                  <td>UI Health Care WAP table- UIHC Fountain Lobby </td>                                                                </tr>                              <tr>                                  <td>10:30 AM</td>                                  <td>College of Pharmacy Minute to Win It, COP Banker Center </td>                                                            </tr>                              <tr>                                  <td>11:30 AM - 12:30 PM</td>                                  <td>College of Public Health- WAP table at UCC</td>                                                                </tr>                              <tr>                                  <td>11:30 AM - 1:30 PM</td>                                  <td>UI Health Care WAP table- Colloton Lobby</td>                                                                </tr>                              <tr>                                  <td>3:00 - 5:00 PM</td>                                  <td>UI Health Care WAP table- UIHC Fountain Lobby (tentative)</td>                              </tr>                          </tbody>                      </table>                                            <table  CELLPADDING="2" CELLSPACING="2" class="wed2 events">                          <thead>                              <tr>                                  <th width="33.33%">Time</th>                                  <th>Event</th>                                                                </tr>                          </thead>                          <tbody>                              <tr>                                  <td>TIME TBD</td>                                  <td>College of Public Health WAP table at IREH </td>                                                                </tr>                              <tr>                                  <td>9:00 - 11:00 AM</td>                                  <td>UI Health Care WAP table- Bowen Science Bldg </td>                                                            </tr>                              <tr>                                  <td>11:00 AM - 1:00 PM</td>                                  <td>College of Pharmacy Lunches- Banker Center, IDIS, and PRL</td>                                                                </tr>                              <tr>                                  <td>11:30 AM - 1:30 PM</td>                                  <td>UI Health Care WAP table- UIHC Cafeteria 1st floor</td>                                                                </tr>                            </tbody>                      </table>                                <table  CELLPADDING="2" CELLSPACING="2" class="thurs2 events">                          <thead>                              <tr>                                  <th width="33.33%">Time</th>                                  <th>Event</th>                                                                </tr>                          </thead>                          <tbody>                              <tr>                                  <td>11:30 AM - 12:30 PM</td>                                  <td>College of Public Health WAP table at CPHB – With staff members dressed as PHILs for Halloween </td>                                                                </tr>                              <tr>                                  <td>11:30 AM - 1:30 PM</td>                                  <td>UI Health Care WAP table- Colloton Lobby </td>                                                            </tr>                              <tr>                                  <td>11:30 AM - 1:30 PM</td>                                  <td>UI Health Care WAP table- UIHC Fountain Lobby</td>                                                                </tr>                              <tr>                                  <td>3:00 PM</td>                                  <td>College of Pharmacy costume contest and PIE IN THE FACE event (voting will happen throughout the week to see who gets it) – location in front of COP bldg</td>                                                                </tr>                              <tr>                                  <td>3:00 - 5:00 PM</td>                                  <td>UI Health Care WAP table- UIHC Fountain Lobby (tentative)</td>                                                                </tr>                            </tbody>                      </table>                                                                    <table  CELLPADDING="2" CELLSPACING="2" class="fri2 events">                          <thead>                              <tr>                                  <th width="33.33%">Time</th>                                  <th>Event</th>                                                            </tr>                          </thead>                          <tbody>                              <tr>                                  <td>7:00 - 9:00 AM</td>                                  <td>UI Health Care WAP table- EMRB </td>                                                        </tr>                              <tr>                                  <td>9:00 - 11:00 AM</td>                                  <td>UI Health Care WAP table – MERF Atrium</td>                                                            </tr>                              <tr>                                  <td>11:00 AM - 1:00 PM</td>                                  <td>College of Pharmacy Tailgate lunch w/ Herky & Spirit Squad, COP Banker Center</td>                                                        </tr>                          </tbody>                      </table>                                              -->
+                </div>
+                <div class="six columns flickr-show">
+                    <!--FLICKR SLIDE SHOW-->
+                    <h4>Event Photos</h4> 
+                    <ul xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"
+                    xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" class="flickr-slider">
+                        <li class="slide">
+                            <img src="http://farm6.staticflickr.com/5492/10952186003_eac98e0279_b.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="http://farm8.staticflickr.com/7386/10951947635_40083466e1_b.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="http://farm8.staticflickr.com/7315/10951946855_800a8b6e43_b.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="http://farm6.staticflickr.com/5535/10952183593_b9cfd0e403_b.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="http://farm6.staticflickr.com/5532/10952110834_5a834b3375_b.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="http://farm8.staticflickr.com/7368/10951945815_94c059e03f_b.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="http://farm8.staticflickr.com/7432/10805869213_ccb7d9cc80_b.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="http://farm8.staticflickr.com/7342/10805608416_80dcefb8fc_b.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="http://farm8.staticflickr.com/7358/10805870133_047da04606_b.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="http://farm8.staticflickr.com/7374/10805870463_5ffee24c6d_b.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="http://farm8.staticflickr.com/7416/10805612135_1a79da74f9_b.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="http://farm4.staticflickr.com/3780/10805609436_8eeb845a1f_b.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="http://farm4.staticflickr.com/3795/10805609726_d3e6d092db_b.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="http://farm4.staticflickr.com/3729/10805750954_67d78d8758_b.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="http://farm3.staticflickr.com/2832/10805608116_cb358b3158_b.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="http://farm3.staticflickr.com/2843/10614772835_6a40ea3d85_b.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="http://farm8.staticflickr.com/7303/10615043933_f69fc12035_b.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="http://farm8.staticflickr.com/7340/10615043863_2754a36d6c_b.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="http://farm4.staticflickr.com/3666/10614967123_cd0c73724e_b.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="http://farm6.staticflickr.com/5528/10614966643_cdbabe2768_b.jpg" alt="">
+                        </li>
+                    </ul>
+                    <h4><a style="float:right; margin-top:-40px; padding-right:30px;" href="http://www.flickr.com/photos/uifoundation/sets/72157636592946753/" target="_blank">See all photos here!</a>                          </h4> 
+                </div>
+            </div>
+        </section>
+        <div id="footer">
+            <!--BREADCRUMBS/TOP-->
+            <section class="footer_header">
+                <div class="row">
+                    <div class="twelve columns">
+                        <p>Home / Welcome</p>
+                    </div>
+                </div>
+            </section>
+            <!--CAMPAIGN/SEARCH-->
+            <section class="search_campaign">
+                <div class="row">
+                    <!--CAMPAIGN-->
+                    <div class="six columns">
+                        <a href="http://www3.uifoundation.org/campaign/">
+                            <img src="http://www.uifoundation.org/facultystaff/wp-content/themes/common_3_We_are_phil//images/fifm.png" alt="For Iowa. Forever More." style="border:0;">
+                        </a>
+                    </div>
+                    <!--SEARCH-->
+                    <div class="six columns">
+                        <!-- Postfix action -->
+                        <div class="row collapse">
+                            <div class="ten mobile-three columns">
+                                <!--Search results sent to /stories page using goolge custom search -->
+                                <form action="http://www.uifoundation.org/search/" id="cse-search-box">
+                                    <input type="hidden" name="cx" value="004292187385298253618:rfbc288j0ps">
+                                    <input type="hidden" name="ie" value="UTF-8">
+                                    <input class="search" type="text" name="q" placeholder="Search the UI Foundation">
+                                </form>
+                            </div>
+                            <div class="two mobile-one columns">
+                                <input class="button expand postfix" type="submit" name="sa" value="Search">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--SITE DESTINATIONS-->
+            <!--Footer links from RSS feed. Colleges, Programs, Ways to Give, Communication Options, and Connect with Us columns/links included                  Bottom Section with Contact Us, Private Poilicy, Trouble w/site, and Questions links included in footer-links.php as well -->
+            <section class="site_map">
+                <div class="row">
+                    <div class="three columns">
+                        <h4>Colleges</h4> 
+                        <nav>
+                            <ul>
+                                <li> <a href="http://www.uifoundation.org/business/" title="Tippie College of Business">                                              Tippie College of Business                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/dentistry/" title="College of Dentistry">                                              College of Dentistry                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/education/" title="College of Education">                                              College of Education                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/engineering/" title="College of Engineering">                                              College of Engineering                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/law/" title="College of Law">                                              College of Law                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/liberal-arts/" title="College of Liberal Arts &amp; Sciences">                                              College of Liberal Arts &amp; Sciences                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/medicine/" title="UI Carver College of Medicine">                                              UI Carver College of Medicine                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/nursing/" title="College of Nursing">                                              College of Nursing                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/pharmacy/" title="College of Pharmacy">                                              College of Pharmacy                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/public-health/" title="College of Public Health">                                              College of Public Health                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/graduate/" title="Graduate College">                                              Graduate College                                        </a> 
+                                </li>
+                            </ul>
+                        </nav>
+                        <h4>Campaigns</h4> 
+                        <nav>
+                            <ul>
+                                <li> <a href="http://www.uifoundation.org/campaign/" title="For Iowa. Forever More.">                                              For Iowa. Forever More.                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/iowafirst/" title="Iowa First">                                              Iowa First                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/artscampaign/" title="Arts and Minds">                                              Arts and Minds                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/iowainspired/" title="Iowa Inspired">                                              Iowa Inspired                                        </a> 
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="three columns">
+                        <h4>Programs</h4> 
+                        <nav>
+                            <ul>
+                                <li> <a href="http://www.uifoundation.org/athletics/" title="Athletics">                                              Athletics                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/hancher/" title="Hancher">                                              Hancher                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/cancer/" title="Holden Comprehensive Cancer Center">                                              Holden Comprehensive Cancer Center                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/international/" title="International Programs">                                              International Programs                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/parents/" title="Parents Fund for Student Support">                                              Parents Fund for Student Support                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/museums/" title="Pentacrest Museums">                                              Pentacrest Museums                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/childrens-hospital/" title="UI Children's Hospital">                                              UI Children's Hospital                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/hospitals/" title="UI Hospitals and Clinics">                                              UI Hospitals and Clinics                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/uima/" title="UI Museum of Art">                                              UI Museum of Art                                        </a> 
+                                </li>
+                            </ul>
+                        </nav>
+                        <h4>University</h4> 
+                        <nav>
+                            <ul>
+                                <li> <a href="http://www.uifoundation.org/impact/" title="Iowa Impact Fund">                                              Iowa Impact Fund                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/libraries/" title="UI Libraries">                                              UI Libraries                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/student-aid/" title="Student Success">                                              Student Success                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/uiaa/" title="UI Alumni Association">                                              UI Alumni Association                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/grand-challenges/" title="Grand Challenges Initiative">                                              Grand Challenges Initiative                                        </a> 
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="three columns">
+                        <h4>Ways to give</h4> 
+                        <nav>
+                            <ul>
+                                <li> <a href="http://www.givetoiowa.org/all/" title="A-Z List of all areas">                                              A-Z List of all areas                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/ways/annual-giving/" title="Annual Giving">                                              Annual Giving                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/planned-giving/" title="Planned Giving">                                              Planned Giving                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/ways/cfr/" title="Corporate and Foundation Relations">                                              Corporate and Foundation Relations                                        </a> 
+                                </li>
+                            </ul>
+                        </nav>
+                        <h4>Contact Us</h4> 
+                        <nav>
+                            <ul>
+                                <li> <a href="http://www.uifoundation.org/press" title="Press center">                                              Press center                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/careers/" title="Careers at the foundation">                                              Careers at the foundation                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/contact/staff-directory/" title="Staff directory">                                              Staff directory                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/forms/update-your-contact-information/" title="Update your information">                                              Update your information                                        </a> 
+                                </li>
+                                <li> <a href="http://www.uifoundation.org/forms/register-email-preferences/" title="Manage your email preferences">                                              Manage your email preferences                                        </a> 
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--ADDRESS-->
+                    <div class="three columns">
+                        <h4>The University of Iowa Foundation</h4> 
+                        <p>P.O. Box 4550
+                            <br>Iowa City, Iowa 52244
+                            <br>(319) 335-3305 / (800) 648-6973
+                            <br> <a href="http://www.uifoundation.org/wp-content/uploads/2013/12/Driving+Directions.pdf">Directions</a> 
+                        </p>
+                        <p><a href="http://www.uiowa.edu" target="_blank">The University of Iowa</a> 
+                        </p>
+                        <h4>Connect with us</h4> 
+                        <nav>
+                            <ul>
+                                <li> <a href="http://facebook.com/givetoiowa" title="Facebook">                                              Facebook                                        </a> 
+                                </li>
+                                <li> <a href="http://twitter.com/givetoiowa" title="Twitter">                                              Twitter                                        </a> 
+                                </li>
+                                <li> <a href="http://vimeo.com/givetoiowa" title="Vimeo">                                              Vimeo                                        </a> 
+                                </li>
+                                <li> <a href="http://www.youtube.com/user/givetoiowa" title="YouTube">                                              YouTube                                        </a> 
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+            <section class="bottom">
+                <div class="row">
+                    <div class="twelve columns">
+                        <ul>
+                            <li> <span class="footer_copy">© 1996-2013 University of Iowa Foundation</span> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/contact/" title="Contact Us">Contact Us</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/privacy/" title="Privacy Policy">Privacy Policy</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/about/site" title="Trouble viewing this site?">Trouble viewing this site?</a> 
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="twelve columns">
+                        <p>NOTICE: The State University of Iowa Foundation is a 501(c)(3) tax-exempt organization soliciting tax-deductible private contributions for the benefit of the University of Iowa. Please review its <a href="/about/disclosure">full disclosure statement</a>.</p>
+                    </div>
+                </div>
+            </section>
+            <!--END FOOTER-->
+        </div>
+    </div>
+</body>
+
+</html>
