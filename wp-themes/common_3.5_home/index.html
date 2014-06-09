@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>University of Iowa Foundation</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
+    <script src="javascripts/vendor/requirejs/require.js" data-main="javascripts/main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
+</head>
+
+<body>
+    <div class="enclosure">
+        <div class="navigation">
+            <div class="row">
+                <div class="twelve columns">
+                    <div style="height:20px; float:left; margin-top:4px; margin-right:7px;">
+                        <img src="images/dome.png" alt="University of Iowa Foundation">
+                    </div>
+                    <h1 class="left">                          <a href="http://www.uifoundation.org/">University of Iowa Foundation</a>                      </h1>  <a class="reveal_menu show-for-small" style="float:right;" href="#" data-reveal-id="global_mobile">›</a> 
+                    <ul class="global_nav right hide-for-small">
+                        <li id="menu-item-279" class="menu-item"> <a href="/campaign">Campaign</a> 
+                        </li>
+                        <li id="menu-item-280" class="menu-item"> <a href="/facultystaff">Faculty &amp; Staff</a> 
+                        </li>
+                        <li id="menu-item-281" class="menu-item"> <a href="/football-legacy">Football Legacy</a> 
+                        </li>
+                        <li id="menu-item-405" class="menu-item"> <a href="/grand-challenges">Grand Challenges</a> 
+                        </li>
+                        <li id="menu-item-405" class="menu-item"> <a href="/inspire">Inspire</a> 
+                        </li>
+                        <li id="menu-item-405" class="menu-item"> <a href="/one">One</a> 
+                        </li>
+                        <li id="menu-item-405" class="menu-item"> <a href="/philsday">Phils Day</a> 
+                        </li>
+                        <li id="menu-item-405" class="menu-item"> <a href="/philwashere">Phils Was Here</a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="row">
+                <div class="twelve columns">
+                    <div style="height:20px; float:left; margin-top:4px; margin-right:7px;">
+                        <img src="images/dome.png" alt="University of Iowa Foundation">
+                    </div>
+                    <h1 class="left"><a href="http://www.uifoundation.org/">University of Iowa Foundation</a></h1>  
+                    <a class="reveal_menu show-for-small" style="float:right;" href="#" data-reveal-id="global_mobile">›</a> 
+                    <ul class="global_nav right hide-for-small">
+                        <li id="menu-item-279" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-279"> <a href="http://www.uifoundation.org/about">About the Foundation</a> 
+                        </li>
+                        <li id="menu-item-280" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-280"> <a href="http://www.uifoundation.org/thanks">Recognition and Thanks</a> 
+                        </li>
+                        <li id="menu-item-281" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-281"> <a href="http://www.uifoundation.org/ways">Ways to Give</a> 
+                        </li>
+                        <li id="menu-item-405" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-405"> <a href="http://www.uifoundation.org/careers">Careers</a> 
+                        </li>
+                        <li id="menu-item-379" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-379"> <a href="http://www.givetoiowa.org">Give Now</a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--END ENCLOSURE-->
+    </div>
+    <section class="home_featured_content">
+        <div class="bx-wrapper" style="max-width: 100%;">
+            <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 448px;">
+                <ul class="slider_main" style="width: auto; position: relative;">
+                    <!--SLIDE 1-->
+                    <li style="background-image: url(images/old_cap.jpg); float: none; list-style: none; position: absolute; width: 1425px; z-index: 0; display: none; background-position: 50% 100%; background-repeat: no-repeat no-repeat;">
+                        <div class="row">
+                            <!--RELATIVE POSITIONING-->
+                            <div class="home_featured_content_holder">
+                                <div class="twelve columns" style="height:448px; margin:0px; padding:0px;">
+                                    <!--TEXT FOR IMAGE-->
+                                    <div class="home_featured_content_text" style="margin-bottom:120px;">
+                                        <div class="eight columns offset-by-four"> <small>For Iowa. Forever More.</small> 
+                                            <!--HEADER 1-->
+                                            <h1>Making a difference in communities around the world</h1>  <a class="button medium" href="http://www.uifoundation.org/campaign/">Read more</a> &nbsp;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--SLIDE 2-->
+                    <li style="background-image: url(images/grad_student.jpg); float: none; list-style: none; position: absolute; width: 1425px; z-index: 0; display: none; background-position: 50% 100%; background-repeat: no-repeat no-repeat;">
+                        <div class="row">
+                            <!--RELATIVE POSITIONING-->
+                            <div class="home_featured_content_holder">
+                                <div class="twelve columns" style="height:448px; margin:0px; padding:0px;">
+                                    <!--TEXT FOR IMAGE-->
+                                    <div class="home_featured_content_text" style="margin-bottom:120px;">
+                                        <div class="seven columns offset-by-five"> <small>For Iowa. Forever More.</small> 
+                                            <!--HEADER 1-->
+                                            <h1>Tomorrow's leaders are in UI classrooms today</h1>  <a class="button medium" href="http://www.uifoundation.org/campaign/strategies/educating-our-students/">Read more</a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--SLIDE 3-->
+                    <li style="background-image: url(images/researcher.jpg); float: none; list-style: none; position: absolute; width: 1425px; z-index: 0; display: none; background-position: 50% 100%; background-repeat: no-repeat no-repeat;">
+                        <div class="row">
+                            <div class="twelve columns centered">
+                                <!--RELATIVE POSITIONING-->
+                                <div class="home_featured_content_holder">
+                                    <!--TEXT FOR IMAGE-->
+                                    <div class="home_featured_content_text" style="margin-bottom:120px;">
+                                        <div class="seven columns offset-by-five"> <small>For Iowa. Forever More.</small> 
+                                            <!--HEADER 1-->
+                                            <h1>Ensuring a healthier and more sustainable world</h1>  <a class="button medium" href="http://www.uifoundation.org/campaign/strategies/ensuring-a-healthier-and-more-sustainable-world/">Read more</a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--SLIDE 4-->
+                    <li style="background-image: url(images/artist.jpg); float: none; list-style: none; position: absolute; width: 1425px; z-index: 50; display: list-item; background-position: 50% 100%; background-repeat: no-repeat no-repeat;">
+                        <div class="row">
+                            <!--RELATIVE POSITIONING-->
+                            <div class="home_featured_content_holder">
+                                <!--TEXT FOR IMAGE-->
+                                <div class="twelve columns" style="height:448px; margin:0px; padding:0px;">
+                                    <div class="home_featured_content_text" style="margin-bottom:100px;">
+                                        <div class="seven columns offset-by-five"> <small>For Iowa. Forever More.</small> 
+                                            <!--HEADER 1-->
+                                            <h1>Enriching commerce, culture, and communities</h1>  <a class="button medium" href="http://www.uifoundation.org/campaign/strategies/enriching-commerce-culture-and-communities/">Read more</a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bx-controls"></div>
+        </div>
+    </section>
+    <section class="featured_menu hide-for-small" style="position:absolute; width:100%; margin-top:-30px; z-index:999;">
+        <div class="row">
+            <div class="twelve columns">
+                <ul id="slider-pager" class="block-grid four-up mobile-two-up">
+                    <li>
+                        <a data-slide-index="0" href="#" class="active">
+                            <img src="http://www.uifoundation.org/wp-content/uploads/2013/04/old_cap_small.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a data-slide-index="1" href="#" class="">
+                            <img src="http://www.uifoundation.org/wp-content/uploads/2013/04/grad_small.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a data-slide-index="2" href="#" class="">
+                            <img src="http://www.uifoundation.org/wp-content/uploads/2013/04/researcher_small.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a data-slide-index="3" href="#" class="">
+                            <img src="http://www.uifoundation.org/wp-content/themes/common_3_home/images/artist_small.jpg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="home_video_section">
+        <div class="row">
+            <style>
+                @media screen and (max-width:800px) {
+                    .ai-feature p {
+                        left:0 !important;
+                        bottom:0 !important;
+                        width:100% !important;
+                    }
+                }
+            </style>
+            <div class="twelve columns ">
+                <div class="six columns">
+                    <iframe width="450" height="252" src="//www.youtube.com/embed/3ZvW0AdMF90?rel=0&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen="" style="margin:10px auto; display:block;"></iframe>
+                </div>
+                <div class="six columns">
+                    <h5>Ensuring a healthy and sustainable world through discovery</h5> 
+                    <p>UI Presidential Scholar <strong>Nick J. Rolston's</strong>decision to attend Iowa was inspired by a visit he had with Professor <strong>Jack D.Scudder</strong>of the UI Physics and Astronomy Department as a high school junior. Three
+                        years later, Nick meets with Professor Scudder to discuss that initial encounter, the challenges and successes of scientific research, and the thrill of discovery.</p>
+                </div>
+            </div>
+            <div class="twelve columns">
+                <div class="six columns">
+                    <iframe width="450" height="252" src="//www.youtube.com/embed/zYijQRr7ZMs?rel=0&amp;showinfo=0&amp;controls=0" frameborder="0" allowfullscreen="" style="margin:10px auto; display:block;"></iframe>
+                </div>
+                <div class="six columns">
+                    <h5>Enriching commerce, culture, and communities for Iowans thorugh the arts</h5> 
+                    <p>President Emeritus <strong>Willard L. "Sandy" Boyd</strong>is a renowned educator and longtime champion for Iowa nonprofits. <strong>Aly L. Olson</strong>is a music major and presidential scholar who came to the UI to pursue her dreams
+                        of working in the arts. They discuss Iowa's strong tradition of artistic excellence, the UI community's commitment to rebuilding the arts campus, and the importance of culture and creativity in our lives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="new_campaign_statistics">
+        <div class="new_campaign_progress" style="width: 67%;">
+            <div class="new_campaign_percentage_bar">67% Percent Unit Progress</div>
+            <div class="new_campaign_dollars">$1.144 Billion <span class="new_goal">of $1.7 Billion</span> 
+            </div>
+        </div>
+    </section>
+    <section class="our_commitment">
+        <div class="row">
+            <div class="five columns">
+                <h2>For Iowa. Forever More: The Campaign for the University of Iowa</h2> 
+                <p>The University of Iowa stands at the threshold of an era of great promise, and we must act quickly and boldly to bring change to life for new generations. For Iowa. Forever More: The Campaign for the University of Iowa will help us do
+                    just that.</p> <a class="button" href="http://www.uifoundation.org/about/our-commitment/">Read more</a> 
+            </div>
+        </div>
+    </section>
+    <section class="stories_section">
+        <div class="row">
+            <div class="twelve columns">
+                <h3>Stories</h3> 
+            </div>
+        </div>
+        <div xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+        xmlns:slash="http://purl.org/rss/1.0/modules/slash/" class="row">
+            <div class="twelve columns">
+                <ul class="block-grid three-up mobile-one-up home_page_story">
+                    <li id="home_page_story" style="display: list-item;">
+                        <div class="stories_image_holder">
+                            <img alt="" src="http://www.uifoundation.org/stories/wp-content/uploads/sites/40/2013/04/rose-garfinkle.jpg" width="100%" height="100%">
+                            <div class="stories_image_text">
+                                <div class="twelve columns">
+                                    <a href="http://www.uifoundation.org/stories/features/rose-garfinkle/"> <small>Holden Comprehensive Cancer Center</small> 
+                                    </a>
+                                    <a href="http://www.uifoundation.org/stories/features/rose-garfinkle/">
+                                        <h4 width="100%" height="100%">Rose Garfinkle</h4> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sup_lead">
+                            <a href="http://www.uifoundation.org/stories/features/rose-garfinkle/">
+                                <blockquote>"The cancer center was a protective, caring environment. I felt comfortable and safe there."</blockquote>
+                            </a>
+                        </div>
+                    </li>
+                    <li id="home_page_story" style="display: list-item;">
+                        <div class="stories_image_holder">
+                            <img alt="" src="http://www.uifoundation.org/stories/wp-content/uploads/sites/40/2013/04/mark-wilkinson.jpg" width="100%" height="100%">
+                            <div class="stories_image_text">
+                                <div class="twelve columns">
+                                    <a href="http://www.uifoundation.org/stories/features/dr-mark-e-wilkinson/"> <small>UI Carver College of Medicine</small> 
+                                    </a>
+                                    <a href="http://www.uifoundation.org/stories/features/dr-mark-e-wilkinson/">
+                                        <h4 width="100%" height="100%">Dr. Mark E. Wilkinson</h4> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sup_lead">
+                            <a href="http://www.uifoundation.org/stories/features/dr-mark-e-wilkinson/">
+                                <blockquote>"We couldn't be more grateful for the generosity of those who help us in our mission."</blockquote>
+                            </a>
+                        </div>
+                    </li>
+                    <li id="home_page_story">
+                        <div class="stories_image_holder">
+                            <img alt="" src="http://www.uifoundation.org/stories/wp-content/uploads/sites/40/2013/04/jack-lynch.jpg" width="100%" height="100%">
+                            <div class="stories_image_text">
+                                <div class="twelve columns">
+                                    <a href="http://www.uifoundation.org/stories/features/jack-lynch/"> <small>Iowa Impact Fund</small> 
+                                    </a>
+                                    <a href="http://www.uifoundation.org/stories/features/jack-lynch/">
+                                        <h4 width="100%" height="100%">Jack Lynch</h4> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sup_lead">
+                            <a href="http://www.uifoundation.org/stories/features/jack-lynch/">
+                                <blockquote>"When an opportunity came, I wasn't denied the chance to seize upon it just because I didn't have the financial ability to go."</blockquote>
+                            </a>
+                        </div>
+                    </li>
+                    <li id="home_page_story">
+                        <div class="stories_image_holder">
+                            <img alt="" src="http://www.uifoundation.org/stories/wp-content/uploads/sites/40/2013/04/heidi-wagler.jpg" width="100%" height="100%">
+                            <div class="stories_image_text">
+                                <div class="twelve columns">
+                                    <a href="http://www.uifoundation.org/stories/features/heidi-bernau-wagler/"> <small>Holden Comprehensive Cancer Center</small> 
+                                    </a>
+                                    <a href="http://www.uifoundation.org/stories/features/heidi-bernau-wagler/">
+                                        <h4 width="100%" height="100%">Heidi Bernau Wagler</h4> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sup_lead">
+                            <a href="http://www.uifoundation.org/stories/features/heidi-bernau-wagler/">
+                                <blockquote>"The physicians and staff got to know my mother so well; they really care personally about every patient."</blockquote>
+                            </a>
+                        </div>
+                    </li>
+                    <li id="home_page_story">
+                        <div class="stories_image_holder">
+                            <img alt="" src="http://www.uifoundation.org/stories/wp-content/uploads/sites/40/2013/04/david-gompper.jpg" width="100%" height="100%">
+                            <div class="stories_image_text">
+                                <div class="twelve columns">
+                                    <a href="http://www.uifoundation.org/stories/features/david-gompper/"> <small>College of Liberal Arts &amp; Sciences</small> 
+                                    </a>
+                                    <a href="http://www.uifoundation.org/stories/features/david-gompper/">
+                                        <h4 width="100%" height="100%">David Gompper</h4> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sup_lead">
+                            <a href="http://www.uifoundation.org/stories/features/david-gompper/">
+                                <blockquote>"I’m so blessed to be at Iowa."</blockquote>
+                            </a>
+                        </div>
+                    </li>
+                    <li id="home_page_story" style="display: list-item;">
+                        <div class="stories_image_holder">
+                            <img alt="" src="http://www.uifoundation.org/stories/wp-content/uploads/sites/40/2013/04/brandon-cochran.jpg" width="100%" height="100%">
+                            <div class="stories_image_text">
+                                <div class="twelve columns">
+                                    <a href="http://www.uifoundation.org/stories/features/brandon-cochran/"> <small>Pentacrest Museums</small> 
+                                    </a>
+                                    <a href="http://www.uifoundation.org/stories/features/brandon-cochran/">
+                                        <h4 width="100%" height="100%">Brandon Cochran</h4> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sup_lead">
+                            <a href="http://www.uifoundation.org/stories/features/brandon-cochran/">
+                                <blockquote>"I never would have had these opportunities without contributors' generous investments in the Pentacrest Museums."</blockquote>
+                            </a>
+                        </div>
+                    </li>
+                    <li id="home_page_story">
+                        <div class="stories_image_holder">
+                            <img alt="" src="http://www.uifoundation.org/stories/wp-content/uploads/sites/40/2013/04/mark-maryjo-abbott.jpg" width="100%" height="100%">
+                            <div class="stories_image_text">
+                                <div class="twelve columns">
+                                    <a href="http://www.uifoundation.org/stories/features/mark-and-mary-jo-abbott/"> <small>Parents Fund for Student Support</small> 
+                                    </a>
+                                    <a href="http://www.uifoundation.org/stories/features/mark-and-mary-jo-abbott/">
+                                        <h4 width="100%" height="100%">Mark and Mary Jo Abbott</h4> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sup_lead">
+                            <a href="http://www.uifoundation.org/stories/features/mark-and-mary-jo-abbott/">
+                                <blockquote>"Contributing to the Parents Fund and taking an active role in the Parents Association seemed like a natural extension..."</blockquote>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section style="width:100%; float:left;">
+        <div class="row">
+            <div class="twelve columns">
+                <h4>Additional Campaigns</h4> 
+                <ul class="block-grid four-up mobile-two-up">
+                    <li>
+                        <a href="http://www.uifoundation.org/iowafirst">
+                            <img src="http://www.uifoundation.org/wp-content/uploads/2013/04/iowa_first_logo1.jpg" border="0">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.uifoundation.org/artscampaign">
+                            <img src="http://www.uifoundation.org/wp-content/uploads/2013/04/arts_and_minds_logo.jpg" border="0">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.uifoundation.org/iowainspired">
+                            <img src="http://www.uifoundation.org/wp-content/uploads/2013/04/law_campaign_logo2.jpg" border="0">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.uifoundation.org/facultystaff">
+                            <img src="http://www.uifoundation.org/wp-content/uploads/2013/05/we-are-phil.png" border="0">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="sidebar_related">
+        <div class="row">
+            <div class="small-block-grid-2 columns">
+                <h4>Related News</h4> 
+            </div>
+        </div>
+        <div class="row">
+            <!--NEWS ITEMS-->
+            <div xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"
+            xmlns:slash="http://purl.org/rss/1.0/modules/slash/" class="three columns">
+                <h5>                      <a href="http://www.uifoundation.org/press/steads-commit-10-million-to-further-childrens-medicine-at-iowa/">Steads commit $10 million to further children’s medicine at Iowa</a>                  </h5> 
+                <p>October 24, 2013
+                    <br>
+                </p>
+            </div>
+            <div xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"
+            xmlns:slash="http://purl.org/rss/1.0/modules/slash/" class="three columns">
+                <h5>                      <a href="http://www.uifoundation.org/press/john-and-mary-pappajohn-receive-national-arts-award/">John and Mary Pappajohn Receive National Arts Award</a>                  </h5> 
+                <p>October 24, 2013
+                    <br>
+                </p>
+            </div>
+            <div xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"
+            xmlns:slash="http://purl.org/rss/1.0/modules/slash/" class="three columns">
+                <h5>                      <a href="http://www.uifoundation.org/press/the-university-of-iowa-commemorates-the-naming-of-the-stephen-a-wynn-institute-for-vision-research/">The University of Iowa commemorates the naming of the Stephen A. Wynn Institute for Vision Research</a>                  </h5> 
+                <p>October 18, 2013
+                    <br>
+                </p>
+            </div>
+            <div xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"
+            xmlns:slash="http://purl.org/rss/1.0/modules/slash/" class="three columns">
+                <h5>                      <a href="http://www.uifoundation.org/press/500000-gift-from-alumnus-to-expand-philanthropy-studies-at-the-ui/">$500,000 gift from alumnus to expand philanthropy studies at the UI</a>                  </h5> 
+                <p>October 15, 2013
+                    <br>
+                </p>
+            </div>
+        </div>
+    </section>
+    <div id="footer">
+        <!--BREADCRUMBS/TOP-->
+        <section class="footer_header">
+            <div class="row">
+                <div class="twelve columns">
+                    <p>Home / Welcome</p>
+                </div>
+            </div>
+        </section>
+        <!--CAMPAIGN/SEARCH-->
+        <section class="search_campaign">
+            <div class="row">
+                <!--CAMPAIGN-->
+                <div class="six columns">
+                    <a href="http://www3.uifoundation.org/campaign/">
+                        <img src="http://www.uifoundation.org/wp-content/themes/common_3_home//images/fifm.png" alt="For Iowa. Forever More." style="border:0;">
+                    </a>
+                </div>
+                <!--SEARCH-->
+                <div class="six columns">
+                    <!-- Postfix action -->
+                    <div class="row collapse">
+                        <div class="ten mobile-three columns">
+                            <!--Search results sent to /stories page using goolge custom search -->
+                            <form action="http://www.uifoundation.org/search/" id="cse-search-box">
+                                <input type="hidden" name="cx" value="004292187385298253618:rfbc288j0ps">
+                                <input type="hidden" name="ie" value="UTF-8">
+                                <input class="search" type="text" name="q" placeholder="Search the UI Foundation">
+                            </form>
+                        </div>
+                        <div class="two mobile-one columns">
+                            <input class="button expand postfix" type="submit" name="sa" value="Search">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--SITE DESTINATIONS-->
+        <!--Footer links from RSS feed. Colleges, Programs, Ways to Give, Communication Options, and Connect with Us columns/links included                Bottom Section with Contact Us, Private Poilicy, Trouble w/site, and Questions links included in footer-links.php as well -->
+        <section class="site_map">
+            <div class="row">
+                <div class="three columns">
+                    <h4>Colleges</h4> 
+                    <nav>
+                        <ul>
+                            <li> <a href="http://www.uifoundation.org/business/" title="Tippie College of Business">                    Tippie College of Business</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/dentistry/" title="College of Dentistry">                    College of Dentistry</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/education/" title="College of Education">                    College of Education</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/engineering/" title="College of Engineering">                    College of Engineering</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/law/" title="College of Law">                    College of Law</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/liberal-arts/" title="College of Liberal Arts &amp; Sciences">                    College of Liberal Arts &amp; Sciences</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/medicine/" title="UI Carver College of Medicine">                    UI Carver College of Medicine</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/nursing/" title="College of Nursing">                    College of Nursing</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/pharmacy/" title="College of Pharmacy">                    College of Pharmacy</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/public-health/" title="College of Public Health">                    College of Public Health</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/graduate/" title="Graduate College">                    Graduate College</a> 
+                            </li>
+                        </ul>
+                    </nav>
+                    <h4>Campaigns</h4> 
+                    <nav>
+                        <ul>
+                            <li> <a href="http://www.uifoundation.org/campaign/" title="For Iowa. Forever More.">                    For Iowa. Forever More.</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/iowafirst/" title="Iowa First">                    Iowa First</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/artscampaign/" title="Arts and Minds">                    Arts and Minds</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/iowainspired/" title="Iowa Inspired">                    Iowa Inspired</a> 
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="three columns">
+                    <h4>Programs</h4> 
+                    <nav>
+                        <ul>
+                            <li> <a href="http://www.uifoundation.org/athletics/" title="Athletics">                    Athletics</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/hancher/" title="Hancher">                    Hancher</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/cancer/" title="Holden Comprehensive Cancer Center">                    Holden Comprehensive Cancer Center</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/international/" title="International Programs">                    International Programs</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/parents/" title="Parents Fund for Student Support">                    Parents Fund for Student Support</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/museums/" title="Pentacrest Museums">                    Pentacrest Museums</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/childrens-hospital/" title="UI Children's Hospital">                    UI Children's Hospital</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/hospitals/" title="UI Hospitals and Clinics">                    UI Hospitals and Clinics</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/uima/" title="UI Museum of Art">                    UI Museum of Art</a> 
+                            </li>
+                        </ul>
+                    </nav>
+                    <h4>University</h4> 
+                    <nav>
+                        <ul>
+                            <li> <a href="http://www.uifoundation.org/impact/" title="Iowa Impact Fund">                    Iowa Impact Fund</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/libraries/" title="UI Libraries">                    UI Libraries</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/student-aid/" title="Student Success">                    Student Success</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/uiaa/" title="UI Alumni Association">                    UI Alumni Association</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/grand-challenges/" title="Grand Challenges Initiative">                    Grand Challenges Initiative</a> 
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="three columns">
+                    <h4>Ways to give</h4> 
+                    <nav>
+                        <ul>
+                            <li> <a href="http://www.givetoiowa.org/all/" title="A-Z List of all areas">                    A-Z List of all areas</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/ways/annual-giving/" title="Annual Giving">                    Annual Giving</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/planned-giving/" title="Planned Giving">                    Planned Giving</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/ways/cfr/" title="Corporate and Foundation Relations">                    Corporate and Foundation Relations</a> 
+                            </li>
+                        </ul>
+                    </nav>
+                    <h4>Contact Us</h4> 
+                    <nav>
+                        <ul>
+                            <li> <a href="http://www.uifoundation.org/press" title="Press center">                    Press center</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/careers/" title="Careers at the foundation">                    Careers at the foundation</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/contact/staff-directory/" title="Staff directory">                    Staff directory</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/forms/update-your-contact-information/" title="Update your information">                    Update your information</a> 
+                            </li>
+                            <li> <a href="http://www.uifoundation.org/forms/register-email-preferences/" title="Manage your email preferences">                    Manage your email preferences</a> 
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="three columns">
+                    <h4>The University of Iowa Foundation</h4> 
+                    <p>P.O. Box 4550
+                        <br>Iowa City, Iowa 52244
+                        <br>(319) 335-3305 / (800) 648-6973
+                        <br> <a href="#">Directions</a> 
+                    </p>
+                    <p> <a href="http://www.uiowa.edu" target="_blank">The University of Iowa</a> 
+                    </p>
+                    <h4>Connect with us</h4> 
+                    <nav>
+                        <ul>
+                            <li> <a href="http://facebook.com/givetoiowa" title="Facebook">                    Facebook</a> 
+                            </li>
+                            <li> <a href="http://twitter.com/givetoiowa" title="Twitter">                    Twitter</a> 
+                            </li>
+                            <li> <a href="http://vimeo.com/givetoiowa" title="Vimeo">                    Vimeo</a> 
+                            </li>
+                            <li> <a href="http://www.youtube.com/user/givetoiowa" title="YouTube">                    YouTube</a> 
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section class="bottom">
+            <div class="row">
+                <div class="twelve columns">
+                    <ul>
+                        <li> <span class="footer_copy">© 1996-2013 University of Iowa Foundation</span> 
+                        </li>
+                        <li> <a href="http://www.uifoundation.org/contact/" title="Contact Us">Contact Us</a> 
+                        </li>
+                        <li> <a href="http://www.uifoundation.org/privacy/" title="Privacy Policy">Privacy Policy</a> 
+                        </li>
+                        <li> <a href="http://www.uifoundation.org/about/site" title="Trouble viewing this site?">Trouble viewing this site?</a> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="twelve columns">
+                    <p>NOTICE: The State University of Iowa Foundation is a 501(c)(3) tax-exempt organization soliciting tax-deductible private contributions for the benefit of the University of Iowa. Please review its <a href="/about/disclosure">full disclosure statement</a>.</p>
+                </div>
+            </div>
+        </section>
+        <!--END FOOTER-->
+    </div>
+</body>
+
+</html>
