@@ -221,7 +221,7 @@
                         </div>
                     </li>
                     <li id="home_page_story">
-                        <div class="stories_image_holder">
+                        <div claClass 'XSLTProcessor' not found in ss="stories_image_holder">
                             <img alt="" src="http://www.uifoundation.org/stories/wp-content/uploads/sites/40/2013/04/heidi-wagler.jpg" width="100%" height="100%">
                             <div class="stories_image_text">
                                 <div class="twelve columns">
