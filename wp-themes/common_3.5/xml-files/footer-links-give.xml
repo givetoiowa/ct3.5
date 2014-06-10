@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<!--Ways to Give links RSS feed for footer-->
+<channel>
+	<item>
+		<title>A-Z List of all areas</title>
+		<link>http://www.givetoiowa.org/all/</link>
+	</item>
+	
+	<item>
+		<title>Annual Giving</title>
+		<link>http://www.uifoundation.org/ways/annual-giving/</link>
+	</item>
+
+	<item>
+		<title>Planned Giving</title>
+		<link>http://www.uifoundation.org/planned-giving/</link>
+	</item>
+
+	<item>
+		<title>Corporate and Foundation Relations</title>
+		<link>http://www.uifoundation.org/ways/cfr/</link>
+	</item>
+</channel>
+</rss>

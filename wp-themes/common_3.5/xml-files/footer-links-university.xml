@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<!--University links RSS feed for footer-->
+<channel>
+	
+	<item>
+		<title>Iowa Impact Fund</title>
+		<link>http://www.uifoundation.org/impact/</link>
+	</item>
+
+	<item>
+		<title>UI Libraries</title>
+		<link>http://www.uifoundation.org/libraries/</link>
+	</item>
+
+	<item>
+		<title>Student Success</title>
+		<link>http://www.uifoundation.org/student-aid/</link>
+	</item>
+
+	<item>
+		<title>UI Alumni Association</title>
+		<link>http://www.uifoundation.org/uiaa/</link>
+	</item>
+
+	<item>
+		<title>Grand Challenges Initiative</title>
+		<link>http://www.uifoundation.org/grand-challenges/</link>
+	</item>
+
+
+</channel>
+
+</rss>

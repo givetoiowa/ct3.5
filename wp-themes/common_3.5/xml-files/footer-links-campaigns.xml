@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<!--Campaign links RSS feed for footer-->
+<channel>
+	
+	<item>
+		<title>For Iowa. Forever More.</title>
+		<link>http://www.uifoundation.org/campaign/</link>
+	</item>
+
+	<item>
+		<title>Iowa First</title>
+		<link>http://www.uifoundation.org/iowafirst/</link>
+	</item>
+
+	<item>
+		<title>Arts and Minds</title>
+		<link>http://www.uifoundation.org/artscampaign/</link>
+	</item>
+
+	<item>
+		<title>Iowa Inspired</title>
+		<link>http://www.uifoundation.org/iowainspired/</link>
+	</item>
+
+
+</channel>
+
+</rss>
