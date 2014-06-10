@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<!--Prgoram links RSS feed for footer-->
+<channel>
+	<item>
+		<title>Athletics</title>
+		<link>http://www.uifoundation.org/athletics/</link>
+	</item>
+	
+	<item>
+		<title>Hancher</title>
+		<link>http://www.uifoundation.org/hancher/</link>
+	</item>
+
+	<item>
+		<title>Holden Comprehensive Cancer Center</title>
+		<link>http://www.uifoundation.org/cancer/</link>
+	</item>
+
+	<item>
+		<title>International Programs</title>
+		<link>http://www.uifoundation.org/international/</link>
+	</item>
+	
+	<item>
+		<title>Parents Fund for Student Support</title>
+		<link>http://www.uifoundation.org/parents/</link>
+	</item>
+
+	<item>
+		<title>Pentacrest Museums</title>
+		<link>http://www.uifoundation.org/museums/</link>
+	</item>
+	
+	<item>
+		<title>UI Children's Hospital</title>
+		<link>http://www.uifoundation.org/childrens-hospital/</link>
+	</item>
+	
+	<item>
+		<title>UI Hospitals and Clinics</title>
+		<link>http://www.uifoundation.org/hospitals/</link>
+	</item>
+	
+	<item>
+		<title>UI Museum of Art</title>
+		<link>http://www.uifoundation.org/uima/</link>
+	</item>
+</channel>
+
+</rss>

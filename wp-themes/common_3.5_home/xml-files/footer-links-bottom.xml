@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<!--Bottom LinksRSS feed for footer-->
+<channel>
+	<item>
+		<title>Contact Us</title>
+		<link>http://www.uifoundation.org/contact/</link>
+	</item>
+	
+	<item>
+		<title>Privacy Policy</title>
+		<link>http://www.uifoundation.org/privacy/</link>
+	</item>
+
+	<item>
+		<title>Trouble viewing this site?</title>
+		<link>http://www.uifoundation.org/about/site</link>
+	</item>
+	
+</channel>
+</rss>
