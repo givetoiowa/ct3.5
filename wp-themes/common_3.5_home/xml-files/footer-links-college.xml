@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<!--College links RSS feed for footer--> 
+<channel>
+	<item>
+		<title>Tippie College of Business</title>
+		<link>http://www.uifoundation.org/business/</link>
+	</item>
+	
+	<item>
+		<title>College of Dentistry</title>
+		<link>http://www.uifoundation.org/dentistry/</link>
+	</item>
+	
+	<item>
+		<title>College of Education</title>
+		<link>http://www.uifoundation.org/education/</link>
+	</item>
+
+	<item>
+		<title>College of Engineering</title>
+		<link>http://www.uifoundation.org/engineering/</link>
+	</item> <item>
+		<title>College of Law</title>
+		<link>http://www.uifoundation.org/law/</link>
+	</item>
+
+	<item>
+		<title>College of Liberal Arts &amp;amp; Sciences </title>
+		<link>http://www.uifoundation.org/liberal-arts/</link>
+	</item>
+
+	<item>
+		<title>UI Carver College of Medicine</title>
+		<link>http://www.uifoundation.org/medicine/</link>
+	</item>
+	
+	<item>
+		<title>College of Nursing</title>
+		<link>http://www.uifoundation.org/nursing/</link>
+	</item>
+	
+	<item>
+		<title>College of Pharmacy</title>
+		<link>http://www.uifoundation.org/pharmacy/</link>
+	</item>
+	
+	<item>
+		<title>College of Public Health</title>
+		<link>http://www.uifoundation.org/public-health/</link>
+	</item>
+
+	<item>
+		<title>Graduate College</title>
+		<link>http://www.uifoundation.org/graduate/</link>
+	</item>
+</channel>
+
+</rss>

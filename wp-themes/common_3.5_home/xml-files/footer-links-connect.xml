@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<!--Connect With US RSS feed for footer-->
+<channel>
+	<item>
+		<title>Facebook</title>
+		<link>http://facebook.com/givetoiowa</link>
+	</item>
+	
+	<item>
+		<title>Twitter</title>
+		<link>http://twitter.com/givetoiowa</link>
+	</item>
+
+	<item>
+		<title>Vimeo</title>
+		<link>http://vimeo.com/givetoiowa</link>
+	</item>
+	
+	<item>
+		<title>YouTube</title>
+		<link>http://www.youtube.com/user/givetoiowa</link>
+	</item>
+</channel>
+</rss>
