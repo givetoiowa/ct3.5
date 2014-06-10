@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<!--Communication Options RSS feed for footer-->
+<channel>
+	<item>
+		<title>Update your information</title>
+		<link>http://www.uifoundation.org/contact/update-your-information</link>
+	</item>
+	
+	<item>
+		<title>Sign up for mail on planned giving</title>
+		<link>http://www.gftpln.org/CategoryDetailList.do?orgId=158&amp;categoryId=1045</link>
+	</item>
+
+	<item>
+		<title>Manage your email preferences</title>
+		<link>http://www.uifoundation.org/contact/email-preferences/</link>
+	</item>
+</channel>
+</rss>

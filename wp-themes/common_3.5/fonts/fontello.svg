@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2013 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="help-circled" unicode="&#xe801;" d="m500 82v107q0 8-5 13t-13 5h-107q-8 0-13-5t-5-13v-107q0-8 5-13t13-5h107q8 0 13 5t5 13z m143 375q0 49-31 91t-77 65t-95 23q-136 0-207-119q-9-14 4-24l74-55q4-4 10-4q9 0 14 7q30 38 48 51q19 14 48 14q27 0 48-15t21-33q0-21-11-34t-38-25q-35-16-65-48t-29-70v-20q0-8 5-13t13-5h107q8 0 13 5t5 13q0 10 12 27t30 28q18 10 28 16t25 19t25 27t16 34t7 45z m214-107q0-117-57-215t-156-156t-215-58t-216 58t-155 156t-58 215t58 215t155 156t216 58t215-58t156-156t57-215z" horiz-adv-x="857.1" />
+<glyph glyph-name="info-circled" unicode="&#xe800;" d="m571 82v89q0 8-5 13t-12 5h-54v286q0 8-5 13t-13 5h-178q-8 0-13-5t-5-13v-89q0-8 5-13t13-5h53v-179h-53q-8 0-13-5t-5-13v-89q0-8 5-13t13-5h250q7 0 12 5t5 13z m-71 500v89q0 8-5 13t-13 5h-107q-8 0-13-5t-5-13v-89q0-8 5-13t13-5h107q8 0 13 5t5 13z m357-232q0-117-57-215t-156-156t-215-58t-216 58t-155 156t-58 215t58 215t155 156t216 58t215-58t156-156t57-215z" horiz-adv-x="857.1" />
+<glyph glyph-name="basket" unicode="&#xe802;" d="m357-7q0-30-21-51t-50-21t-51 21t-21 51t21 50t51 21t50-21t21-50z m500 0q0-30-21-51t-50-21t-51 21t-21 51t21 50t51 21t50-21t21-50z m72 607v-286q0-13-9-23t-23-12l-583-68q1-4 3-12t3-15t1-13q0-8-13-35h513q15 0 26-11t10-25t-10-25t-26-11h-571q-14 0-25 11t-11 25q0 8 6 22t17 33t11 21l-98 460h-114q-15 0-25 10t-11 25t11 26t25 10h143q9 0 16-3t11-9t7-14t4-15t3-16t3-14h670q14 0 25-11t11-25z" horiz-adv-x="928.6" />
+</font>
+</defs>
+</svg>

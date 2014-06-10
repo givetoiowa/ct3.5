@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<!--Communication Options RSS feed for footer-->
+<channel>
+	<item>
+		<title>Press center</title>
+		<link>http://www.uifoundation.org/press</link>
+	</item>
+	
+	<item>
+		<title>Work at the foundation</title>
+		<link>http://www3.uifoundation.org/jobs/</link>
+	</item>
+	
+	<item>
+		<title>Staff directory</title>
+		<link>http://www.uifoundation.org/contact/staff-directory/</link>
+	</item>
+	
+	<item>
+		<title>Update your information</title>
+		<link>http://www.uifoundation.org/forms/update-your-contact-information/</link>
+	</item>
+	
+	<item>
+		<title>Manage your email preferences</title>
+		<link>http://www.uifoundation.org/forms/register-email-preferences/</link>
+	</item>
+</channel>
+</rss>
