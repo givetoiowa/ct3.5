@@ -5,17 +5,7 @@
         </div>
     </div>
     <div class="row">
-        <?php
-            // Load the XML source
-            $xml = new DOMDocument;
-            $xml->load('http://localhost/wordpress/feed/');
-            $xsl = new DOMDocument;
-            $xsl->load('wp-content/themes/common_3.5_home/news.xsl');
-
-            // Configure the transformer
-            $proc = new XSLTProcessor;
-            $proc->importStyleSheet($xsl); // attach the xsl rules
-            echo $proc->transformToXML($xml);
-        ?>
+        <div id="newsFeed">
+        </div>
     </div>
 </section>

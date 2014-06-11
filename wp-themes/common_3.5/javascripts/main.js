@@ -7,7 +7,8 @@
             fancybox: 'vendor/jquery.fancybox',
             bxslider: 'vendor/jquery.bxslider',
             underscore: 'vendor/underscore/underscore',
-            progressChart: 'app/progressChart'
+            progressChart: 'app/progressChart',
+            transformXML: 'app/transformXML'
         },
         shim: {
             'jquery': {

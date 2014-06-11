@@ -1,4 +1,4 @@
-define(['jquery', 'app/iowa', 'underscore', 'fancybox', 'bxslider', 'progressChart'], function($, IOWA, _) {
+define(['jquery', 'app/iowa', 'underscore', 'fancybox', 'bxslider', 'progressChart', 'transformXML'], function($, IOWA, _) {
 
     // Run jQuery in no conflict to prevent clashing with other libs
     $.noConflict();
@@ -14,6 +14,7 @@ define(['jquery', 'app/iowa', 'underscore', 'fancybox', 'bxslider', 'progressCha
         startup: function() {
         }
     };
+
     _.extend(IOWA, campaign);
 
     IOWA.startup();

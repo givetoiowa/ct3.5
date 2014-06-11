@@ -475,6 +475,45 @@ body {
     color:#FFDE5C;
     text-shadow:1px 2px 7px #111;
 }
+
+.additional_profile img{
+    border:1px solid #EFEFEF;
+}
+
+.additional_profile small{
+    font-family: 'OpenSansBold';
+    text-transform:uppercase;
+    font-size:14px;
+    font-weight:100;
+    color:#FFDE5C;
+    text-shadow:1px 2px 7px #111;
+}
+.small{
+    font-family: 'OpenSansBold';
+    text-transform:uppercase;
+    font-size:14px;
+    font-weight:100;
+    color:#FFDE5C;
+    text-shadow:1px 2px 7px #111;
+}
+
+.additional_profile h3{
+    margin:2px 0 0 0;
+    padding:0px;
+    font-family: 'OpenSansRegular';
+    color:#FFF;
+    font-size:28px;
+    text-shadow:1px 2px 7px #111;
+}
+
+
+.additional_profile_text{
+    position:absolute;
+    z-index:999;
+    bottom:40px;
+    width:100%;
+}
+
 .building_text {
     position:absolute;
     bottom:10px;
