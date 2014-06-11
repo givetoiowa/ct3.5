@@ -124,7 +124,7 @@ function area_contact ($atts) {
 
         // Connect to MySQL database
         include 'db_connect.php';
-        $con = new mysqli('', '', "", "");
+        $con = new mysqli('sandboxuif.db.10188817.hostedresource.com', 'sandboxuif', "edHinkel@11", "sandboxuif");
         if ($con->connect_error) {
             die('Could not connect establish a connection with the database.');
         }

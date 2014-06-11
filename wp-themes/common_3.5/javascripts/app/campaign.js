@@ -1,4 +1,4 @@
-define(['jquery', 'app/iowa', 'underscore', 'fancybox', 'bxslider'], function($, IOWA, _) {
+define(['jquery', 'app/iowa', 'underscore', 'fancybox', 'bxslider', 'progressChart'], function($, IOWA, _) {
 
     // Run jQuery in no conflict to prevent clashing with other libs
     $.noConflict();

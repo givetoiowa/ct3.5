@@ -9,14 +9,13 @@
         <!--BEGIN FEATURED CONTENT-->
         <?php if (has_post_thumbnail( $post->ID ) ): ?>
             <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-            <section class="featured_content" style="background-image:url('/wordpress/engineering/wp-content/uploads/sites/3/2013/04/engineering_photo.jpg'); background-repeat:no-repeat; background-position:center top;">
+            <section class="featured_content" style="background-image:url(<?php echo "{$image[0]}"; ?>); background-repeat:no-repeat; background-position:center top;">
                 <div class="row">
                     <div class="ten columns centered">
                         <!--RELATIVE POSITIONING-->
                         <div class="featured_content_holder">
                             <!--ABSOLUTE POSITIONING-->
                             <div class="building_text hide-for-small">
-                                <!--<p>New Hancher Building view from the Iowa River</p>-->
                             </div>
                             <div class="featured_content_text">
                                 <small>For Iowa. Forever More.</small>
@@ -29,11 +28,9 @@
                 </div>
             </section>
         <?php endif; ?>
-
         <!--BEGIN PROGRESS BAR-->
         <section style="width:100%;  height:120px;  clear:both;" >
-            <section class="campaign_statistics" style="background-color:#EFEFEF;">
-                <?php include('wp-content/themes/common_3.5/progress_chart.php'); ?>
+            <section id="progressBar" class="campaign_statistics" style="background-color:#EFEFEF;">
             </section>
         </section> <!--END PROGRESS BAR-->
         <!--BEGIN MAIN CONTENT-->
@@ -64,7 +61,6 @@
             $xsl = $proc ->setParameter('', 'category', $slug);
             echo $proc->transformToXML($xml);
         ?> <!--END FEATURED CONTENT-->
-
         <div class="row">
             <!--TEN COLUMNS CENTERED-->
             <div class="ten columns centered">
