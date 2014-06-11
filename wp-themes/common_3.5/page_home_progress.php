@@ -43,47 +43,15 @@
             </div> <!--END TEN COLUMNS-->
         </div>
         <!--FEATURED PROFILE-->
-        <?php
-            //Get blog slug
-            $blog_details = get_blog_details($GLOBALS['blog_id']);
-            $slug = str_replace('/', '', $blog_details->path);
-
-            // Load the XML source
-            $xml = new DOMDocument;
-            $xml->load('http://localhost/wordpress/engineering/wp-content/themes/common_3.5/xml-files/stories-feed.xml');
-            $xsl = new DOMDocument;
-            $xsl->load('wp-content/themes/common_3.5/student.xsl');
-
-            // Configure the transformer
-            $proc = new XSLTProcessor;
-            $proc->importStyleSheet($xsl); // attach the xsl rules
-            //Pass the blog slug to determine which leaders to post
-            $xsl = $proc ->setParameter('', 'category', $slug);
-            echo $proc->transformToXML($xml);
-        ?> <!--END FEATURED CONTENT-->
+        <section id = "featuredProfile">
+        </section><!--END FEATURED CONTENT-->
         <div class="row">
             <!--TEN COLUMNS CENTERED-->
             <div class="ten columns centered">
                 <?php the_field('honor_clubs'); ?>
                 <!-- VOLUNTEER LEADERS-->
-                <?php
-                    //Get blog slug
-                    $blog_details = get_blog_details($GLOBALS['blog_id']);
-                    $slug = str_replace('/', '', $blog_details->path);
-
-                    // Load the XML source
-                    $xml = new DOMDocument;
-                    $xml->load('http://localhost/wordpress/engineering/wp-content/themes/common_3.5/xml-files/campaign-feed.xml');
-                    $xsl = new DOMDocument;
-                    $xsl->load('wp-content/themes/common_3.5/volunteer.xsl');
-
-                    // Configure the transformer
-                    $proc = new XSLTProcessor;
-                    $proc->importStyleSheet($xsl); // attach the xsl rules
-                    //Pass the blog slug to determine which leaders to post
-                    $xsl = $proc ->setParameter('', 'category', $slug);
-                    echo $proc->transformToXML($xml);
-                ?> <!--END VOLUNTEER LEADERS-->
+                <div id="volunteerLeaders">
+                </div>
             </div>
         </div>
         <div class="row">
@@ -94,24 +62,8 @@
             <div class="row">
                 <div class="ten columns centered" style="padding:0px;">
                     <!--DONORS-->
-                    <?php
-                        //Get blog slug
-                        $blog_details = get_blog_details($GLOBALS['blog_id']);
-                        $slug = str_replace('/', '', $blog_details->path);
-
-                        // Load the XML source
-                        $xml = new DOMDocument;
-                        $xml->load('http://localhost/wordpress/engineering/wp-content/themes/common_3.5/xml-files/stories-feed.xml');
-                        $xsl = new DOMDocument;
-                        $xsl->load('wp-content/themes/common_3.5/donor.xsl');
-
-                        // Configure the transformer
-                        $proc = new XSLTProcessor;
-                        $proc->importStyleSheet($xsl); // attach the xsl rules
-                        //Pass the blog slug to determine which leaders to post
-                        $xsl = $proc ->setParameter('', 'category', $slug);
-                        echo $proc->transformToXML($xml);
-                    ?> <!--END DONORS-->
+                    <div id="donorProfile">
+                    </div>
                 </div>
             </div>
         </section>

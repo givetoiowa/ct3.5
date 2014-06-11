@@ -11,8 +11,7 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 <xsl:output method="html" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"/>
 	<xsl:template match="/">
 		<!--Depending on page enter the correct category ($category = page slug and must be equal to category = post category)-->
-		<section id = "featured_profile">
-			<xsl:for-each select="rss/channel/item[category = $category and category = 'students']">
+			<xsl:for-each select="rss/channel/item[category = 'engineering' and category = 'students'][position() &lt;= 1]">
 				<div class ="row featured_profile" id = "" >
 			      <ul class="block-grid two-up mobile-one-up">
 					<li>
@@ -27,6 +26,5 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 			       </ul>
 				</div>
 			</xsl:for-each>
-		</section>
 	</xsl:template>
 </xsl:stylesheet>	
