@@ -269,21 +269,21 @@ function get_category(){
 }
 
 function news_feed() {
-    new Transformation().setXml("http://localhost/wordpress/feed/")
+    new Transformation().setXml("/feed/")
         .setXslt("/wordpress/wp-content/themes/common_3.5/news.xsl").transform("newsFeed");
 }
 
 function volunteer_leaders_feed(){
-    new Transformation().setXml("/wordpress/wp-content/themes/common_3.5/xml-files/campaign-feed.xml")
+    new Transformation().setXml("/campaign/feed/")
         .setXslt("/wordpress/wp-content/themes/common_3.5/volunteer.xsl").transform("volunteerLeaders");
 }
 
 function students_feed(){
-    new Transformation().setXml("/wordpress/wp-content/themes/common_3.5/xml-files/stories-feed.xml")
+    new Transformation().setXml("/stories/feed/")
         .setXslt("/wordpress/wp-content/themes/common_3.5/student.xsl").transform("featuredProfile");
 }
 function donor_feed(){
-    new Transformation().setXml("/wordpress/wp-content/themes/common_3.5/xml-files/stories-feed.xml")
+    new Transformation().setXml("/stories/feed/")
         .setXslt("/wordpress/wp-content/themes/common_3.5/donor.xsl").transform("donorProfile");
 }
 function call_feeds(){

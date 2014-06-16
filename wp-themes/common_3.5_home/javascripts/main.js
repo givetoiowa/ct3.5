@@ -6,7 +6,8 @@
             jquery: 'vendor/jquery/jquery',
             fancybox: 'vendor/jquery.fancybox',
             bxslider: 'vendor/jquery.bxslider',
-            underscore: 'vendor/underscore/underscore'
+            underscore: 'vendor/underscore/underscore',
+            progressChart: 'app/progressChart'
         },
         shim: {
             'jquery': {

@@ -13,9 +13,7 @@ Author URI: http://www.harrisonwheeler.com
 @import'stylesheets/common3.css';
 @import'stylesheets/new.css';
 @import'stylesheets/fonts.css';
-body {
-    /*display: none;*/
-}
+
  .main-container {
     background: #fff;
 }
