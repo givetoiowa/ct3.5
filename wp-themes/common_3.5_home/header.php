@@ -11,8 +11,6 @@
     <!--Styles-->
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css" />
     <!--Javascripts-->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/javascripts/vendor/reload-client.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/javascripts/vendor/requirejs/require.js" data-main="wp-content/themes/common_3.5_home/javascripts/main.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
 
