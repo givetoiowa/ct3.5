@@ -3,8 +3,8 @@
 Theme Name: UIF Common Home Template v3.5
 Theme URI:  http://www.uifoundation.org
 Description: Designed by Harrison Wheeler / University of Iowa Foundation
-Version: 2.0
-Author: Harrison Wheeler
+Version: 3.5
+Author: Harrison Wheeler / UIF
 Author URI: http://www.harrisonwheeler.com
 
 */
@@ -729,6 +729,7 @@ body {
     -webkit-box-shadow: 1px 1px 6px 1px #999;
     box-shadow: 1px 1px 6px 1px #999;
 }
+
 .campaign_statistics {
     width:100%;
     background-color:#ACA797;
@@ -748,19 +749,50 @@ body {
 }
 .campaign_percentage_bar {
     background-color:#09C;
+    color:white;
     padding:10px;
     text-transform:uppercase;
 }
 .campaign_dollars {
-    padding:10px;
-    font-family:'Open Sans';
+    background-color: rgb(245, 245, 245);
+    font-family: 'Open Sans';
     font-style: italic;
-    font-size:38px;
-    text-shadow:1px 1px 6px #999;
+    font-weight: 100;
+    font-size: 38px !important;
+    color: rgb(204, 153, 0);
+    line-height: 20px;
+    height: 41px;
+    width: 482px;
+    white-space: nowrap;
+    padding: 10px;
+    display: block;
+    float: right;
+    position: relative;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(227, 227, 227);
+    border-radius: 3px;
+    box-sizing: border-box;
+    text-shadow: none;
+
 }
+
+.campaign_dollars:after {
+    content: ' ';
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 10px solid transparent;
+    border-bottom-color: #F5F5F5;
+    top: -20px;
+    left: 50%;
+    margin-left: -10px;
+}
+
 .goal {
-    color:#EFEFEF;
+    color: rgb(153, 153, 153) !important;
+    text-shadow: none;
 }
+
 /* UPDATED COMMITMENT */
  .new_our_commitment {
     width:100%;
