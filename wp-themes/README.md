@@ -24,4 +24,12 @@ uses PHP for feeds and Common_3.5 is using JS. Currently the JS transformation i
 - If chosen to go the PHP route I would write a function that determines the page and makes the appropraite transformation instead of just resuing the same 8 lines of code all over the place (I may have time to write this function before I leave). 
 
 ###Progress Bar:
-- The progress bar/chart has been refactored to only use JS and is in /javascripts/app/progressChart.js. To determine what page the user is on there is a funciton get_current_site(). This function may need to be altered since in the development environment the site was set up on the /wordpress/ directory instead of root. 
+- The progress bar/chart has been refactored to only use JS and is in /javascripts/app/progressChart.js. 
+- To determine what page the user is on there is a funciton get_current_site(). This function may need to be altered since in the development environment the site was set up on the /wordpress/ directory instead of root.
+
+###Issues that need to be fixed:
+- Fonts are inconsistent accross site
+- Common3.css should be merged with style.css since they are essentially the same stylesheet (because of this there are conflicts) 
+- Stories have not been set up in Common_3.5. In the past they used custom wordpress post types and were handled with WP generated rss feeds. This would work again but I think we wanted to explore other options
+- The concept of UIF Stream could be developed (idea of having news feed, stories, donor features, etc in a dynamic slider instead of having individual sections for each) 
+
