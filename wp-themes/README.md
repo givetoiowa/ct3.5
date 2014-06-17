@@ -16,7 +16,7 @@ Things to consider when migrating from Mimosa to WordPress:
 ###Common 3.5 Home:
 - When updating the home page use the Home Page Template (page_home.php). Please do not make other templates for the homepage. If there is a part of the template that you would like to change use advanced custom fields.
 
-## XSL Transformations 
+###XSL Transformations 
 - Stories, news feeds, volunteer leaders, etc all handled with xsl transformations. The transformation can be done either with PHP or JavaScript. The benefit with using JS is that the feeds can be called asynchronously. Common_3.5_home
 uses PHP for feeds and Common_3.5 is using JS. Currently the JS transformation isn't workign in IE 
 - There are two menus Primary and Press. Primary is for the global nav and Press is for the site nav 
