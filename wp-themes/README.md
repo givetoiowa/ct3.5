@@ -1,9 +1,9 @@
-#Common 3.5 Wordpress Themes
+#UIF Wordpress Themes
 - In the wp-themes directory migrated wordpress themes will be stored
 - The plan is to create a Common 3.5 main theme with appropriate child themes
 - There will also be themes separate from common 3 (like phil, campaign, etc)
 
-##WordPress Theme Migration 
+##Theme Migration 
 Things to consider when migrating from Mimosa to WordPress:
 - All JavaScript files are called with [requrie.js](http://requirejs.org/) and should be referenced in /javascripts/main.js
 - Require.js and main.js should be registered with wp_register_script() in functions.php 
@@ -14,7 +14,8 @@ Things to consider when migrating from Mimosa to WordPress:
 - For the footer there are a bunch of xml files used for links.
 
 ###Common 3.5 Home:
-- When updating the home page use the Home Page Template (page_home.php). Please do not make other templates for the homepage. If there is a part of the template that you would like to change use advanced custom fields.
+- When updating the home page use the Home Page Template (page_home.php). 
+- Please do not make other templates for the homepage. If there is a part of the template that you would like to change use advanced custom fields or alter the template itself
 
 ###XSL Transformations 
 - Stories, news feeds, volunteer leaders, etc all handled with xsl transformations. The transformation can be done either with PHP or JavaScript. The benefit with using JS is that the feeds can be called asynchronously. Common_3.5_home
@@ -26,6 +27,14 @@ uses PHP for feeds and Common_3.5 is using JS. Currently the JS transformation i
 ###Progress Bar:
 - The progress bar/chart has been refactored to only use JS and is in /javascripts/app/progressChart.js. 
 - To determine what page the user is on there is a funciton get_current_site(). This function may need to be altered since in the development environment the site was set up on the /wordpress/ directory instead of root.
+
+###Additional themes that need to be converted:
+- Phil Was Here
+- Careers
+- Campaign 
+	- would include philsday, faculty staff, iowa inspired, football legacy, grand challenges in addition to the main campaign site
+	- Future campaigns should use this theme as a template or child theme 
+- Try and stick to these five themes (the three above in addtion to Common_3.5/home) for the site 
 
 ###Issues that need to be fixed:
 - Fonts are inconsistent accross site
