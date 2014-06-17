@@ -1,7 +1,7 @@
 #Amazon Web Services Set Up
 The setup we decided to go with for the aws sandbox is with the site in EC2 with the wp database in RDS. The benefit of this being that the site will handle an infulx in visitors better, run a little faster in general, and has a bunch of amazon services for backing up and maintaining the database.
 
-The stack will be EC2, Linux, Apache2, RDS, MySQL, WordPress 
+The stack will be EC2, Linux, Apache2, PHP, RDS, MySQL, WordPress 
  
 ##EC2 set up
 - Launch new instance 
@@ -24,20 +24,20 @@ The stack will be EC2, Linux, Apache2, RDS, MySQL, WordPress
 
 ##Setting up WordPress
 - After you've connected to EC2 connect to RDS from EC2 with something like:
-'''
+```
 sudo mysql -u givetoiowa -p -h uifsandbox.c1euslesivew.us-west-2.rds.amazonaws.com
-''' 
+``` 
 - Next set up your wordpress database, wp user, and grant priveleges 
 - In EC2 install wordpress (here is a [tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-on-centos-6--2)) 
 - **Important** In wp-config make sure to change localhost to the RDS Endpoint! Use the same database and user info you just set up in RDS for the config 
 
-##Configure WP MultiSite 
+###Configure WP MultiSite 
 - [Here is a good tutorial](https://www.digitalocean.com/community/tutorials/how-to-set-up-multiple-wordpress-sites-using-multisite) for configurign multisite 
 - Basically enable the wp network then update the config and .htaccess then restart the server and your good to go 
 
 ##FTP Set Up 
 - Install vsftpd
-- Make the needed changes to the conf file in _/etc/vsftpd/vsftpd.conf_ 
+- Make the needed changes to the conf file in `/etc/vsftpd/vsftpd.conf
 - **Important** Make sure TCP ports are open for FTP and passive FTP 
 
  

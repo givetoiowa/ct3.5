@@ -26,11 +26,11 @@ Things to consider when migrating from Mimosa to WordPress:
 - JS XSL transformations are done with the script in /javascripts/app/transformXML.js and uses [XSLT.js](http://johannburkard.de/software/xsltjs/). 
 	- XSLT.js makes it really easy but currently isn't working in IE (this may be an issue with require.js and not XSLT.js)
 - If chosen to go the PHP route I would write a function that determines the page using something like:
-'''
+```
 global $blog_id;
 $current_blog_details = get_blog_details( array( 'blog_id' => $blog_id ) );
 $current_site =  $current_blog_details->blogname;
-'''
+```
 	- Then make the appropraite transformation based on $current_site  
 
 ###Progress Bar:
