@@ -25,6 +25,7 @@ $ sudo ssh -i EC2SandboxUIF.pem ec2-user@54.213.144.58
 - This is pretty straight forward and a microinstance + default values were used for the sandbox 
 - Note the server address and mysql user details 
 - **Important**: in RDS make sure to open port 3306 in the security group! For a microinstance this is done by looking at which security group the RDS instance is using and then opening up the port in the matching EC2 security group. 
+
 **Once you've set up RDS:**
 - After you've connected to EC2 and set up RDS connect to RDS from EC2 with something like:
 ```
