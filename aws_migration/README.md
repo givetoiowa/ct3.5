@@ -48,7 +48,7 @@ $ sudo mysql -u givetoiowa -p -h uifsandbox.c1euslesivew.us-west-2.rds.amazonaws
 	AllowOverride All
 </Directory>
 ```
-- Restart the server and your good to go 
+- Restart the server and you're good to go 
 
 ##FTP Set Up 
 - You can connect using sftp similarly to ssh like:
