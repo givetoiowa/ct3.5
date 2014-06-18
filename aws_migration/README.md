@@ -10,7 +10,7 @@ The stack will be Linux, Apache2, PHP, MySQL, and WordPress
 	- Default values work for most 
 	- Sandbox set up with a microinstance (this may need to be upgraded to medium). 
 - Name instance
-- **Important** On step 6 remember to open up the HTTP port (80) for all incoming sources. If you set up ftp (which we will get to later) you will need to also open up ports 20-21 
+- **Important**: On step 6 remember to open up the HTTP port (80) for all incoming sources. If you set up ftp (which we will get to later) you will need to also open up ports 20-21 
 - When assigning a key pair it is important to keep a backup of the key pair. You will need this when connecting to the server
 - After the instance has been launched assign an Elastic IP 
 
@@ -24,7 +24,7 @@ $ sudo ssh -i EC2SandboxUIF.pem ec2-user@54.213.144.58
 ##RDS set up
 - This is pretty straight forward and a microinstance + default values were used for the sandbox 
 - Note the server address and mysql user details 
-- **Important** in RDS make sure to open port 3306 in the security group! For a microinstance this is done by looking at which security group the RDS instance is using and then opening up the port in the matching EC2 security group. 
+- **Important**: in RDS make sure to open port 3306 in the security group! For a microinstance this is done by looking at which security group the RDS instance is using and then opening up the port in the matching EC2 security group. 
 
 ###Once you've set up RDS:
 - After you've connected to EC2 and set up RDS connect to RDS from EC2 with something like:
@@ -35,9 +35,9 @@ $ sudo mysql -u givetoiowa -p -h uifsandbox.c1euslesivew.us-west-2.rds.amazonaws
 
 ##Setting up WordPress
 - The WP site will sit on EC2 and reference a database on RDS
-- First set up your wordpress database, wp user, and grant priveleges in MySWL on your RDS server 
+- First set up your wordpress database, wp user, and grant priveleges in MySQL on your RDS server 
 - Next install wordpress on your EC2 server (here is a [tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-on-centos-6--2) you can skip the steps for setting up the WP database since that should have already been done on the RDS instance) 
-- **Important** In wp-config make sure to change localhost to the RDS Endpoint! This is how you connect EC2 and RDS (use the same database and user info you just set up in RDS for the config) 
+- **Important**: In wp-config make sure to change localhost to the RDS Endpoint! This is how you connect EC2 and RDS (use the same database and user info you just set up in RDS for the config) 
 
 ###Configure WP MultiSite 
 - [Here is a tutorial](https://www.digitalocean.com/community/tutorials/how-to-set-up-multiple-wordpress-sites-using-multisite) for multisite config
@@ -53,7 +53,7 @@ $ sudo sftp -i EC2SandboxUIF.pem ec2-user@54.213.144.58
 	- Install vsftpd ([tutorial](http://blog.liwen.name/configure-vsftpd-on-amazon-ec2/148))
 	- Make the needed changes to the conf file in /etc/vsftpd/vsftpd.conf
 	- **Important** Make sure TCP ports are open for FTP and passive FTP 
-	- Generate an ssh key to use for authentication on EC2 server 
+	- Connect with an ftp client  
  
 
  

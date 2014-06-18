@@ -19,7 +19,7 @@ Things to consider when migrating from Mimosa to WordPress:
 	- 404.php 
 	- style.css
 	- Framework css/js   
-	- In the footer there are a bunch of xml files used for the links so the folder xml-links should be included as well 
+	- In the footer there are a bunch of xml files used for the links so the folder xml-files should be included as well 
 - There are the two menus of Primary and Press.The Primary Menu is for global navigation and Press is for site navigation 
 - The unit pages in ct3.5 have the advanced custom fields of honor clubs, area contact information, and the giving link. Look to ct3 for how to set these up
 
@@ -41,7 +41,7 @@ global $blog_id;
 $current_blog_details = get_blog_details( array( 'blog_id' => $blog_id ) );
 $current_site =  $current_blog_details->blogname;
 ```
-	- Then make the appropraite transformation based on $current_site  
+- Then make the appropraite transformation based on $current_site  
 
 ###Progress Bar:
 - The progress bar/chart has been refactored to only use JS and is in /javascripts/app/progressChart.js. 
