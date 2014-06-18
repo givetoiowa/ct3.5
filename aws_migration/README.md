@@ -47,7 +47,11 @@ $ sudo mysql -u givetoiowa -p -h uifsandbox.c1euslesivew.us-west-2.rds.amazonaws
 - You may need to change the apache config settings to allow for changes to htaccess. To do so change the AllowOverride to All in /etc/httpd/conf/httpd.conf (if you're on an ubuntu machine httpd will be apache2)
 ```
 <Directory "/var/www/html">
-	AllowOverride All
+	...
+
+	AllowOverride ALL
+	
+	...
 </Directory>
 ```
 - Restart the server and you're good to go 
