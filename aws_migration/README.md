@@ -1,7 +1,9 @@
 #Amazon Web Services Set Up
 The setup we decided to go with for the aws sandbox is with the site in EC2 and the wp database in RDS. The benefit of this being that the site will handle an infulx in visitors better, run a little faster, and has a bunch of amazon services for backing up and maintaining the database.
 
-The stack will be Linux, Apache2, PHP, MySQL, and WordPress 
+- The stack for the sandbox is Linux, Apache2, PHP, MySQL, and WordPress 
+- [Sandbox common_3.5_Home on AWS](http://ec2-54-213-144-58.us-west-2.compute.amazonaws.com/wordpress/)
+- [Sandbox common_3.5 on AWS](http://ec2-54-213-144-58.us-west-2.compute.amazonaws.com/wordpress/engineering/) 
  
 ##EC2 set up
 - Launch new instance 
