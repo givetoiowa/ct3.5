@@ -60,4 +60,5 @@ $current_site =  $current_blog_details->blogname;
 - Common3.css should be merged with style.css since they are essentially the same stylesheet (because of this there are conflicts) 
 - Stories have not been set up in Common_3.5. In the past they used custom wordpress post types and were handled with WP generated rss feeds. This would work again but I think we wanted to explore other options
 - The concept of UIF Stream could be developed (idea of having news feed, stories, donor features, etc in a dynamic slider instead of having individual sections for each) 
+- Get rid of breadcrumbs in footer 
 
