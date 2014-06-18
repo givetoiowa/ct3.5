@@ -42,6 +42,12 @@ $ sudo mysql -u givetoiowa -p -h uifsandbox.c1euslesivew.us-west-2.rds.amazonaws
 **Configure WP MultiSite** 
 - [Here is a tutorial](https://www.digitalocean.com/community/tutorials/how-to-set-up-multiple-wordpress-sites-using-multisite) for multisite config
 - Basically enable the wp network then update the config and .htaccess 
+- You may need to change the apache config settings to allow for changes to htaccess. To do so change the AllowOverride to All in /etc/httpd/conf/httpd.conf (if you're on an ubuntu machine httpd will be apache2)
+```
+<Directory "/var/www/html">
+	AllowOverride All
+</Directory>
+```
 - Restart the server and your good to go 
 
 ##FTP Set Up 
