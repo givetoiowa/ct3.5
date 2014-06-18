@@ -56,8 +56,6 @@ $ sudo sftp -i EC2SandboxUIF.pem ec2-user@54.213.144.58
 	- Connect with an ftp client  
  
 ##Notes about sandbox server
-- When first setting things up I used nginx instead of apache. Since I only was able to get the server partially working I uninstalled nginx and installed apache2. 
-- Because of this the server is kind of a mess and needs to be cleaned up (finish removing old nginx/php-fpm files)
-- Since this was just a sandbox this really shouldn't be much of an issue. I think it would be a good idea to have the live server be an ubuntu machine since that what our local machine is now. 
+When first setting things up I used nginx instead of apache. Since I only was able to get the server partially working I uninstalled nginx and installed apache2. Because of this the server is kind of a mess and needs to be cleaned up (finish removing old nginx/php-fpm files). Since this was just a sandbox this really shouldn't be much of an issue. I think it would be a good idea to have the live server be an ubuntu machine since that what our local machine is now. 
 
  
