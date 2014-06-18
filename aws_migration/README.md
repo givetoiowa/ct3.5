@@ -14,7 +14,7 @@ The stack will be Linux, Apache2, PHP, MySQL, and WordPress
 - When assigning a key pair it is important to keep a backup of the key pair. You will need this when connecting to the server
 - After the instance has been launched assign an Elastic IP 
 
-###Once you've set up EC2:
+**Once you've set up EC2:**
 - Connect to it using ssh (note your key pair and ip may be different):
 ```
 $ sudo ssh -i EC2SandboxUIF.pem ec2-user@54.213.144.58
@@ -25,8 +25,7 @@ $ sudo ssh -i EC2SandboxUIF.pem ec2-user@54.213.144.58
 - This is pretty straight forward and a microinstance + default values were used for the sandbox 
 - Note the server address and mysql user details 
 - **Important**: in RDS make sure to open port 3306 in the security group! For a microinstance this is done by looking at which security group the RDS instance is using and then opening up the port in the matching EC2 security group. 
-
-###Once you've set up RDS:
+**Once you've set up RDS:**
 - After you've connected to EC2 and set up RDS connect to RDS from EC2 with something like:
 ```
 $ sudo mysql -u givetoiowa -p -h uifsandbox.c1euslesivew.us-west-2.rds.amazonaws.com
@@ -39,7 +38,7 @@ $ sudo mysql -u givetoiowa -p -h uifsandbox.c1euslesivew.us-west-2.rds.amazonaws
 - Next install wordpress on your EC2 server (here is a [tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-on-centos-6--2) you can skip the steps for setting up the WP database since that should have already been done on the RDS instance) 
 - **Important**: In wp-config make sure to change localhost to the RDS Endpoint! This is how you connect EC2 and RDS (use the same database and user info you just set up in RDS for the config) 
 
-###Configure WP MultiSite 
+**Configure WP MultiSite** 
 - [Here is a tutorial](https://www.digitalocean.com/community/tutorials/how-to-set-up-multiple-wordpress-sites-using-multisite) for multisite config
 - Basically enable the wp network then update the config and .htaccess 
 - Restart the server and your good to go 
@@ -55,5 +54,9 @@ $ sudo sftp -i EC2SandboxUIF.pem ec2-user@54.213.144.58
 	- **Important** Make sure TCP ports are open for FTP and passive FTP 
 	- Connect with an ftp client  
  
+##Notes about sandbox server
+- When first setting things up I used nginx instead of apache. Since I only was able to get the server partially working I uninstalled nginx and installed apache2. 
+- Because of this the server is kind of a mess and needs to be cleaned up (finish removing old nginx/php-fpm files)
+- Since this was just a sandbox this really shouldn't be much of an issue. I think it would be a good idea to have the live server be an ubuntu machine since that what our local machine is now. 
 
  
