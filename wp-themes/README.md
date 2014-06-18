@@ -1,22 +1,32 @@
 #UIF WordPress Themes
-- In the wp-themes directory migrated wordpress themes will be stored
-- The plan is to create a Common 3.5 main theme with appropriate child themes
-- There will also be themes separate from common 3 (like phil, campaign, etc)
 
 ##Theme Migration 
 Things to consider when migrating from Mimosa to WordPress:
 - All JavaScript files are called with [requrie.js](http://requirejs.org/) and should be referenced in /javascripts/main.js
 - Require.js and main.js should be registered with wp_register_script() in functions.php 
 - Try to keep one stylesheet (style.css) and import other stylesheets
-
+- The only external plugin needed is [advanced custom fields](http://www.advancedcustomfields.com/) 
+ 
 ###Common 3.5: 
-- Basic pages/files needed are footer-links.php, footer.php, funcitons.php, header.php, index.php, page.php, sidebar.php, 404.php, and style.css, in addition to the framework javascript stuff.  
-- In the footer there are a bunch of xml files used for links.
-- There are two menus Primary and Press. Primary is for global navigation and Press is for site navigation 
+- Basic pages/files needed:
+	- footer-links.php
+	- footer.php
+	- funcitons.php
+	- header.php
+	- index.php
+	- page.php
+	- sidebar.php
+	- 404.php 
+	- style.css
+	- Framework css/js   
+	- In the footer there are a bunch of xml files used for the links so the folder xml-links should be included as well 
+- There are the two menus of Primary and Press.The Primary Menu is for global navigation and Press is for site navigation 
+- The unit pages in ct3.5 have the advanced custom fields of honor clubs, area contact information, and the giving link. Look to ct3 for how to set these up
 
 ###Common 3.5 Home:
 - When updating the home page use the Home Page Template (page_home.php). 
 - Please do not make other templates for the homepage. If there is a part of the template that you would like to change use advanced custom fields or alter the template itself
+- The home page has the custom field of additional campaigns 
 
 ###XSL Transformations 
 - Stories, news feeds, volunteer leaders, etc all handled with xsl transformations. 
